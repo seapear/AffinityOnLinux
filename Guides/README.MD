@@ -1,4 +1,4 @@
-Click to the folder folder of your wine manager.
+Click to the folder of your Wine manager.
 
 Cover files can be found [here](/Assets/Covers)
 
