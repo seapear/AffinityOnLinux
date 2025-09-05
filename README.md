@@ -1,10 +1,8 @@
 # AffinityOnLinux
 
-A repository that contains information on how to get Affinity software working on GNU/Linux with WINE 🐧
+A repository containing information on how to get Affinity software working on GNU/Linux with WINE 🐧
 
-# Join for support 🤝
-
-[Discord 💬](https://discord.gg/t5V9ecpJWZ)
+[Affinity Apps 📢](https://affinity.serif.com)
 
 <div style="display: flex; gap: 10px; align-items: center;">
   <img src="/Assets/Icons/Photo.svg" width="200"/>
@@ -12,17 +10,18 @@ A repository that contains information on how to get Affinity software working o
   <img src="/Assets/Icons/Publisher.svg" width="200"/>
 </div>
 
-[Affinity Apps 📢](https://affinity.serif.com)
+## Contents
 
-# List of contents
+These guides help with step by step installation of Serif's Affinity apps using [Bottles](https://usebottles.com/), [Heroic Games Launcher](https://heroicgameslauncher.com/) or [Lutris](https://lutris.net/).
 
-### [Written Guide 📕](/Guides/)
+### Written Guides 📕
+- [Bottles](./Guides/Bottles/Guide.md)
+- [Heroic Games Launcher](./Guides/Heroic/Guide.md)
+- [Lutris](./Guides/Lutris/Guide.md) (Recommended)
 
-This guide helps you step by step by hand using lutris/bottles/heroic games launcher.
+We are not affiliated with Serif or Canva.
 
-We aren't affiliated with serif or canva.
-
-### Miscellaneous
+### Miscellaneous 
 
 [Known issues ⚠️](/Known-issues.md)
 
@@ -31,3 +30,7 @@ We aren't affiliated with serif or canva.
 [Featured stuff 🎨](/Featured/FEATURED-1.MD)
 
 [Credits 📜 ](/Credits.md)
+
+## Join for support 🤝
+
+[Discord 💬](https://discord.gg/t5V9ecpJWZ)
