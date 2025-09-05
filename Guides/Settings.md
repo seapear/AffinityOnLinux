@@ -2,7 +2,7 @@
 
 Affinity apps sometimes tend to not save settings properly. There's 2 ways of fixing this. Given a `wineprefix` of `drive_c/users/$USERNAME/AppData/Roaming/Affinity/`:
 
-1. Clone this repository and copy the files from [Aux](Auxillary/Settings) to their respective paths inside the `wineprefix`.
+1. Clone this repository and copy the files from [Aux](../Auxillary/Settings) to their respective paths inside the `wineprefix`.
 2. Locate the settings folders on a windows machine and paste them into the
    corresponding locations in your `wineprefix`.
 
