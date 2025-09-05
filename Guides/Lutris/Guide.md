@@ -1,30 +1,31 @@
+# How to Set Up Wine for Affinity on Lutris
+
 Currently, Lutris is the best method for Nvidia GPU users.
 
 <img src="/Assets/NewLogos/AffinityLutris.png" width="400"/>
 
-# How to Set Up Wine for Affinity on Lutris
 
-### 1. Install Lutris (Flatpak recommended)
+## 1. Install Lutris (Flatpak recommended)
 
 Install Lutris using either **Flatpak** or **AppImage**.
 
 - Flatpak: https://flathub.org/apps/net.lutris.Lutris
 - AppImage: https://github.com/pkgforge-dev/Lutris-AppImage
 
-### 2. Install wine version of your choice
+## 2. Install Wine version of your choice
 
-- [ElementalWarriorWine](https://github.com/Twig6943/wine/releases) (Recommended) (Just right click and extract)
+- [**ElementalWarriorWine**](https://github.com/Twig6943/wine/releases) (Recommended) (Just right click and extract)
 
-- [wine-tkg-affinity](https://github.com/daegalus/wine-tkg-affinity/releases) (you need to extract the `usr` folder inside the archive to your wine runners folder and then rename it to `wine-tkg-affinity-x86_64` )
+- [**Wine-TKG-affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) (extract the `usr/` folder inside the archive and rename it to `wine-tkg-affinity-x86_64`)
 
-### 3. Copy & paste Wine Binaries
+## 3. Copy & paste Wine Binaries
 
-Copy & paste the wine binaries you've extracted earlier to Lutris’ runners directory:
+Copy & paste the previously extracted folder to the Lutris runners directory:
 
 - **Flatpak:** `~/.var/app/net.lutris.Lutris/data/lutris/runners/wine/`
 - **AppImage:** `~/.local/share/lutris/runners/wine/` 
 
-### 4. Add Affinity to Lutris
+## 4. Add Affinity to Lutris
 
 1. Open Lutris and click on the plus icon.
 2. Install from a local install script.
@@ -33,40 +34,36 @@ Copy & paste the wine binaries you've extracted earlier to Lutris’ runners dir
 - [ElementalWarrior](/Guides/Lutris/InstallScripts/Affinity-ew.yaml)
 - [Wine-tkg-affinity](/Guides/Lutris/InstallScripts/Affinity-tkg.yaml)
 
-4.Press `Install`
-
-5. Select the affinity's setup .exe
-
+4. Press `Install`
+5. Select the affinity setup `.exe`
 6. Press `Install`
 
-# Configuring the executable path
+## 5. Configure the Executable Path
 
-Once its done installing right click to affinity on lutris and go to configure.
-* Game info.
+Once the install finishes, right click the Affinity entry in Lutris and choose `Configure`.
 
-Change the name to
+1. Navigate to `Game Info`.
+2. Change the name field to the correlated app name: 
 
-* `Affinity Photo`
-* `Affinity Designer`
-* `Affinity Publisher`
+    * `Affinity Photo` 
+    * `Affinity Designer`
+    * `Affinity Publisher`
 
-Go to
-* Game options
+3. Select `Game Options` 
+4. Change the executable to one of the following:
 
-Change the executable to:
+    * `drive_c/Program Files/Affinity/Photo 2/Photo.exe`
+    * `drive_c/Program Files/Affinity/Designer 2/Designer.exe`
+    * `drive_c/Program Files/Affinity/Publisher 2/Publisher.exe`
 
-* `drive_c/Program Files/Affinity/Photo 2/Photo.exe`
-* `drive_c/Program Files/Affinity/Designer 2/Designer.exe`
-* `drive_c/Program Files/Affinity/Publisher 2/Publisher.exe`
+5. Click `Save` & launch the app.
 
-Click save & launch it.
+## Optional: Installing Other Apps to the Same Prefix
 
-# Installing other apps to the same prefix
-
-You can install other apps by:
-* Select existing Affinity app.
-* Click `Run EXE inside Wine prefix` in the Wine dropdown (bottom of window).
-* Run the installer for the other Affinity app.
-* Right click to the app you've installed first > duplicate.
-* Name it According to the Affinity app you are using in Game info.
-* Set the correct .exe in Game options.
+After installing one app using the steps above, you can install the others to the same prefix as follows:
+1. Select existing Affinity app.
+2. Click `Run EXE inside Wine prefix` in the Wine dropdown (bottom of window).
+3. Run the installer for the other Affinity app.
+4. Right click the app you've installed first and choose Duplicate.
+5. Edit the name under `Configure > Game Info` 
+6. Set the correct `.exe` under `Configure > Game Options`.
