@@ -1,26 +1,29 @@
 # Settings
 
-Affinity apps sometimes tend to not save settings properly. There's 2 ways of fixing this. Given a `wineprefix` of `drive_c/users/$USERNAME/AppData/Roaming/Affinity/`:
+Affinity apps sometimes tend not to save settings properly. There are two methods of fixing this. Given a `wineprefix` of `drive_c/users/$USERNAME/AppData/Roaming/Affinity/`:
 
-1. Clone this repository and copy the files from [Aux](../Auxillary/Settings) to their respective paths inside the `wineprefix`.
+1. Clone this repository and copy the files from [./Auxillary/](../Auxillary/Settings) to their respective paths inside the `wineprefix`.
 2. Locate the settings folders on a windows machine and paste them into the
-   corresponding locations in your `wineprefix`.
+   corresponding locations in the `wineprefix`.
 
 ## Method 1
 
-This method is tested and working for the recommended Lutris/EW install. Execute
-the following code line by line replacing `$APP` with the name of the target Affinity
-application and `$USERNAME` with the name of the user. 
+This method is tested and working for the recommended [Lutris/EW](../Guides/Lutris/Guide.md) install. 
 
+Clone the repository and move into the source directory:
 ```sh
 git clone git@github.com:seapear/AffinityOnLinux.git
 cd AffinityOnLinux/Auxillary/Settings/
+```
+
+Execute the following code for each app, each time replacing `$APP` with the name of the
+target Affinity application and `$USERNAME` with the name of the user. 
+
+```sh
 mv $APP/2.0/Settings drive_c/users/$USERNAME/AppData/Roaming/Affinity/
 ```
 
 ## Method 2
-
-Get your settings from a windows machine and then paste them to the right directory inside the `wineprefix`.
 
 Copy the respective settings folders from `C:\\\users\$USERNAME\AppData\Roaming\Affinity\$APP\$VERSION\Settings\` on windows into the corresponding directory inside the `wineprefix`.
 
@@ -34,6 +37,6 @@ C:\\\users\$USERNAME\AppData\Roaming\Affinity\Photo\2.0\Settings\ -> drive_c/use
 C:\\\users\$USERNAME\AppData\Roaming\Affinity\Publisher\2.0\Settings\ -> drive_c/users/$USERNAME/AppData/Roaming/Affinity/Designer/2.0/
 ```
 
-## Editing the settings
+## Editing The Settings Files
 
-The settings files use the `.xml` format and can be edited with a text editor.
+The settings files use the `.xml` format and can be modified using a text editor.
