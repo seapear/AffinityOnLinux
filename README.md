@@ -15,7 +15,6 @@ A repository containing information on how to get Affinity software working on G
 These guides help with step by step installation of Serif's Affinity apps using [Bottles](https://usebottles.com/), [Heroic Games Launcher](https://heroicgameslauncher.com/) or [Lutris](https://lutris.net/).
 
 We are not affiliated with Serif or Canva.
-Squirmy Wormy!
 
 ### Written Guides 📕
 - [Bottles](./Guides/Bottles/Guide.md)
