@@ -30,7 +30,7 @@ Copy & paste the wine binaries you've extracted earlier to Bottles’ runners di
 2. Set the enviroment to Custom.
 3. Import the configuration file for your wine fork
 
-- [ElementalWarrior](/Guides/Lutris/InstallScripts/Affinity-ew.yaml)
+- [ElementalWarrior](/Guides/Bottles/InstallScripts/Affinity-ew.yml)
 - [Wine-tkg-affinity](/Guides/Bottles/InstallScripts/Affinity-tkg.yaml)
 
 4. Set the runner to **ElementalWarriorWine** or **wine-tkg-affinity**
