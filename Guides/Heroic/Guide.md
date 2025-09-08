@@ -2,14 +2,12 @@
 
 <img src="/Assets/NewLogos/AffinityHGL.png" width="400"/>
 
----
 ## 1. Install Heroic Games Launcher (Flatpak recommended)
 
 Install Heroic Games Launcher using either **Flatpak** or **AppImage**.
 
 - Flatpak: https://flathub.org/apps/com.heroicgameslauncher.hgl
 - AppImage: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases
----
 
 ## 2. Download Desired Wine Version
 
@@ -17,18 +15,14 @@ Choose one of the following Wine versions:
 
 - [**ElementalWarrior**](https://github.com/Twig6943/wine/releases) (Recommended) (Just right click and extract)
 
-- [**Wine-TKG-Affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) (You're supposed to extract the usr folder inside the archive and then rename it to `wine-tkg-affinity-x86_64` )
-
----
+- [**Wine-TKG-Affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) (extract the `usr/` folder inside the archive and rename it to `wine-tkg-affinity-x86_64`)
 
 ## 3. Copy & paste Wine Binaries
 
-Copy & paste the wine binaries you've extracted earlier to Heroic Games Launcher’s wine directory:
+Copy & paste the previously extracted folder to Heroic Games Launcher’s wine directory:
 
 - **Flatpak:** `~/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/wine`
 - **AppImage:** `~/.config/heroic/tools/wine`
-
----
 
 ## 4. Add Game in Heroic Games Launcher
 
@@ -38,14 +32,10 @@ Copy & paste the wine binaries you've extracted earlier to Heroic Games Launcher
 4. Select the x64 setup `.exe` you downloaded from Affinity's website as the executable.
 5. Click **Finish**.
 
----
-
 ## 5. Initialize the Wine Prefix
 
 1. Run the setup file from Heroic to initialize the prefix.
    - It may crash. If it somehow runs successfully, close it manually.
-
----
 
 ## 6. Configure Dependencies with Winetricks
 
@@ -55,9 +45,7 @@ Copy & paste the wine binaries you've extracted earlier to Heroic Games Launcher
     - `allfonts`
     - `dotnet48`
     - `vcrun2022`
-4. Wait for the dependencies to install. Be patient—it's not stuck, just taking time.
-
----
+4. Wait for the dependencies to install. Be patient, it's not stuck, just taking time.
 
 ## 7. Adjust Wine Settings
 
@@ -69,13 +57,9 @@ Copy & paste the wine binaries you've extracted earlier to Heroic Games Launcher
     - **renderer=vulkan**
 5. Click **OK** and keep pressing **Cancel** until the Winetricks window closes.
 
----
-
 ## 8. Install WinMetadata
 
 1. Unzip the `WinMetadata` folder from the [WinMetadata.zip file](https://archive.org/download/win-metadata/WinMetadata.zip) into `drive_c/windows/system32`.
-
----
 
 ## 9. Complete the Setup
 
@@ -87,8 +71,6 @@ Copy & paste the wine binaries you've extracted earlier to Heroic Games Launcher
       `drive_c/Program Files/Affinity/APPNAMEHERE/APPNAMEHERE.exe`
     - Click **Finish** and **Launch** the game.
 
----
-
 ## 10. Performance Settings
 
 To optimize performance and reduce latency, adjust these settings:
@@ -99,8 +81,6 @@ Quote from **darkside99**:
 *"These are the best settings for improving performance and reducing latency."*
 
 ![Performance.png](./Images/Performance.png)
-
----
 
 ## 11. Optional: Enable Dark Theme
 

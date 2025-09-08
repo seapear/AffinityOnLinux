@@ -13,13 +13,13 @@ Install Bottles using either **Flatpak** or **AppImage**.
 
 Choose one of the following Wine versions:
 
-- [ElementalWarrior](https://github.com/Twig6943/wine/releases) (Recommended) (Just right click and extract)
+- [**ElementalWarrior**](https://github.com/Twig6943/wine/releases) (Recommended) (Just right click and extract)
 
-- [**Wine-TKG-Affinity**](https://github.com/daegalus/wine-tkg-affinity/releases)  (You're supposed to extract the usr folder inside the  and then rename it to `wine-tkg-affinity-x86_64` )
+- [**Wine-TKG-Affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) (extract the `usr/` folder inside the archive and rename it to `wine-tkg-affinity-x86_64`)
 
 ## 3. Copy & paste Wine Binaries
 
-Copy & paste the wine binaries you've extracted earlier to Bottles’ runners directory:
+Copy & paste the previously extracted folder to Bottles’ runners directory:
 
 - **Flatpak:** `~/.var/app/com.usebottles.bottles/data/bottles/runners`
 - **AppImage:** `~/.local/share/bottles/runners`
@@ -31,7 +31,7 @@ Copy & paste the wine binaries you've extracted earlier to Bottles’ runners di
 3. Import the configuration file for your wine fork
 
 - [ElementalWarrior](/Guides/Bottles/InstallScripts/Affinity-ew.yml)
-- [Wine-tkg-affinity](/Guides/Bottles/InstallScripts/Affinity-tkg.yaml)
+- [Wine-tkg-affinity](/Guides/Bottles/InstallScripts/Affinity-tkg.yml)
 
 4. Set the runner to **ElementalWarriorWine** or **wine-tkg-affinity**
 5. Click **Create**.
@@ -40,7 +40,7 @@ Copy & paste the wine binaries you've extracted earlier to Bottles’ runners di
 
 1. Unzip the `WinMetadata` folder from the [WinMetadata.zip file](https://archive.org/download/win-metadata/WinMetadata.zip) into `drive_c/windows/system32`
 
-Affinity Apps should now be working inside that bottle.
+Affinity Apps should now work inside that bottle.
 
 ## Optional: Enable Dark Theme
 
