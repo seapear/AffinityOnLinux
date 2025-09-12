@@ -46,7 +46,7 @@ cd /opt/
 sudo git clone https://gitlab.com/xkero/rum.git
 ```
 
-Take ownership of the folder, replace your_username with your actual user.
+Let the current user you're logged in as take ownership of the folder.
 
 ```
 sudo chown -R $(whoami) rum/
