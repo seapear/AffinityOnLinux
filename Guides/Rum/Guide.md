@@ -123,7 +123,8 @@ Now, uninstall Wine Mono, wine's own .NET Framework replacement.
 ```bash
 wine-ew-affinity wine uninstaller
 ```
-This window should open:
+This window should open:  
+
 ![Wine Mono](./Screenshots/winemono.png)
 
 Click on `Wine Mono Runtime` and remove it.  
