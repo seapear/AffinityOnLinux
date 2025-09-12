@@ -143,7 +143,7 @@ wine-ew-affinity winetricks --unattended --force vcrun2022 dotnet48 renderer=vul
 
 ### Getting WinMetadata
 
-We'll now download some Windows system files and place them in the C drive of out prefix:
+We'll now download some Windows system files and place them in the C drive of our prefix:
 
 ```bash
 pushd ~/.local/share/wine/prefixes/affinity/drive_c/windows/system32/ &&
