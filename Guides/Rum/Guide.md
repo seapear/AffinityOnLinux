@@ -39,13 +39,26 @@ popd
 
 ## `rum` Setup
 
+Download `rum` into `/opt`
+
 ```
-git clone https://gitlab.com/xkero/rum.git /opt/rum
+cd /opt/
+sudo git clone https://gitlab.com/xkero/rum.git
+```
+
+Take ownership of the folder, replace your_username with your actual user.
+
+```
+sudo chown -R $(whoami) rum/
+```
+
+Create a symlink in `/usr/local/bin/`
+
+```
 ln -sf /opt/rum/rum /usr/local/bin/rum
 ```
-TODO: check if needs chown
 
-We need to make a small change in `rum` to adapt it the custom runners path we previously set up:
+We also need to make a small change in `rum` to adapt it the custom runners path we previously set up:
 
 ```bash
 nano /usr/local/bin/rum
