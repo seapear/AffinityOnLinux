@@ -4,13 +4,13 @@
 
 > [!WARNING]
 > Be advised that, if you purchased the old **V1 version** of your Affinity software(s) through the **Windows store**, you will **not** be able to activate your old licence on another OS.  
-> The Windows Store just doesn't provide the product key you will need to enter after the installation, so, if you want to stay on Linux and not upgrade to V2 your only option is to user a virtual machine.  
+> The Windows Store just doesn't provide the product key you will need to enter after the installation, so, if you want to stay on Linux and not upgrade to V2 your only option is to use a virtual machine.  
 
 This guide aims to provide a way to manage wine that does not make use of launchers like Lutris or Bottles.  
 We will instead use `rum`, a small shell script that will help us manage multiple wine runners.
 
 ## Dependencies
-Install the following programs (or your the equivalent for your distro) before proceding. 
+Install the following programs (or the equivalent for your distro) before proceeding. 
 - wget
 - unzip
 - git
@@ -71,7 +71,7 @@ wines="$HOME/.local/share/wine/runners"
 ```
 
 Now let's test if it's setup correctly.
-Just run `rum` without argouments and check if it prints the following:
+Just run `rum` without arguments and check if it prints the following:
 
 ```plain
 Not enough arguments!
@@ -84,8 +84,8 @@ ElementalWarriorWine-x86_64
 Notice how `rum` correctly found our `ElementalWarriorWine`.
 
 ## Alias setup
-We'll register an alias so that we don't need to always give `rum` the full path to the affinity wine prefix.
-Open either you `.bashrc` or dedicated `.bash_aliases` file, and add the follwing alias:
+We'll register an alias so that we don't need to always give `rum` the full path to the affinity wine prefix.  
+Open either you `.bashrc` or dedicated `.bash_aliases` file, and add the following alias:
 
 ```bash
 alias wine-ew-affinity='rum ElementalWarriorWine-x86_64 $HOME/.local/share/wine/prefixes/affinity/'
@@ -96,12 +96,12 @@ Also remember to `source` the file you just modified for the changes to take eff
 ```bash
 source .bash_aliases
 ```
-Verify once again that your alias is setup correctly by calling it without argouments and checking that you see the same error as before.
+Verify once again that your alias is setup correctly by calling it without arguments and checking that you see the same error as before.
 
 ## Wine Prefix configuration
 
 ### Initialization
-We're now ready to actually set up the wine environent to run our Affinity installer in.
+We're now ready to actually set up the wine environment to run our Affinity installer in.
 
 First, initialize the prefix:
 
@@ -128,7 +128,7 @@ Both entries should now disappear and you should see an empty page.
 
 ### Winetricks
 
-Now run winetricks with the following options to install all the needed dependecies in your Affinity prefix:
+Now run winetricks with the following options to install all the needed dependencies in your Affinity prefix:
 
 ```bash
 wine-ew-affinity winetricks --unattended --force vcrun2022 dotnet48 renderer=vulkan corefonts win11
@@ -199,8 +199,8 @@ wine-ew-affinity winecfg
 - Increase the `dpi`
 
 > [!NOTE]
-> As I understood it, the `dpi` value is a percentage applied to the currently set `Desktop Size`.  
-> So, for a 4k monitor, setting the the desktop size to `1920 x 1080` and scaling it by 200% works quite well.
+> As I understand it, the `dpi` value is a percentage applied to the currently set `Desktop Size`.  
+> So, for a 4k monitor, setting the desktop size to `1920 x 1080` and scaling it by 200% works quite well.
 
 ![DPI Fix](./Screenshots/dpifix.png)
 
