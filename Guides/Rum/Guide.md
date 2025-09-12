@@ -159,8 +159,8 @@ We're finally ready to actually run the installer.
 > [!TIP]
 > Official installers download links:
 >
-> |   |   |
-> |---|---|
+> | Program | URL |
+> |---------|-----|
 > |V2 (all)     |https://store.serif.com/en-us/account/licences/         |
 > |Photo V1     | https://store.serif.com/it/update/windows/photo/1/     |
 > |Designer V1  | https://store.serif.com/it/update/windows/designer/1/  |
