@@ -29,10 +29,13 @@ mkdir -p ~/.local/share/wine/prefixes
 
 Then we'll download a build of ElementalWarrior's wine fork and `unzip` it.
 
+> [!NOTE]
+> You can check [Twig6943's GitHub releases](https://github.com/Twig6943/wine/releases) page for newer builds of ElementalWarrior's wine fork.
+
 ```bash
 pushd ~/.local/share/wine/runners &&
 wget https://github.com/Twig6943/wine/releases/download/9.13/ElementalWarriorWine-x86_64.tar.gz &&
-unzip ElementalWarriorWine-x86_64.tar.gz &&
+tar xvzf ElementalWarriorWine-x86_64.tar.gz &&
 rm ElementalWarriorWine-x86_64.tar.gz &&
 popd
 ```
@@ -49,19 +52,19 @@ sudo git clone https://gitlab.com/xkero/rum.git
 Let the current user you're logged in as take ownership of the folder.
 
 ```
-sudo chown -R $(whoami) rum/
+sudo chown -R $USER:$USER rum/
 ```
 
 Create a symlink in `/usr/local/bin/`
 
 ```
-ln -sf /opt/rum/rum /usr/local/bin/rum
+sudo ln -sf /opt/rum/rum /usr/local/bin/rum
 ```
 
 We also need to make a small change in `rum` to adapt it the custom runners path we previously set up:
 
 ```bash
-nano /usr/local/bin/rum
+nano /opt/rum/rum
 ```
 
 Change the `wines` variable to:
@@ -85,7 +88,7 @@ Notice how `rum` correctly found our `ElementalWarriorWine`.
 
 ## Alias setup
 We'll register an alias so that we don't need to always give `rum` the full path to the affinity wine prefix.  
-Open either you `.bashrc` or dedicated `.bash_aliases` file, and add the following alias:
+Open either your `.bashrc` or dedicated `.bash_aliases` file, and add the following alias:
 
 ```bash
 alias wine-ew-affinity='rum ElementalWarriorWine-x86_64 $HOME/.local/share/wine/prefixes/affinity/'
@@ -94,7 +97,7 @@ alias wine-ew-affinity='rum ElementalWarriorWine-x86_64 $HOME/.local/share/wine/
 I gave mine a pretty verbose name, but feel free to name it how you like.  
 Also remember to `source` the file you just modified for the changes to take effect, e.g:
 ```bash
-source .bash_aliases
+source ~/.bash_aliases
 ```
 Verify once again that your alias is setup correctly by calling it without arguments and checking that you see the same error as before.
 
@@ -106,7 +109,7 @@ We're now ready to actually set up the wine environment to run our Affinity inst
 First, initialize the prefix:
 
 ```bash
-wine-ew-affinity wine --init
+wine-ew-affinity wineboot --init
 ```
 
 ### .NET Fix
@@ -193,10 +196,10 @@ To adjust the scaling on high resolution monitors, run:
 wine-ew-affinity winecfg
 ```
 - Go on the `Graphics` tab
-- Check `Emulate a virtual desktop`
+- Temporarily enable `Emulate a virtual desktop`
 - Adjust the `Desktop size`
-- Uncheck `Emulate a virtual desktop`
-- Increase the `dpi`
+- Disable `Emulate a virtual desktop`
+- Increase the `dpi` to your preference
 
 > [!NOTE]
 > As I understand it, the `dpi` value is a percentage applied to the currently set `Desktop Size`.  
