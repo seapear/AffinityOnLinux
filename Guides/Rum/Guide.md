@@ -102,7 +102,7 @@ Now, uninstall Wine Mono, wine's own .NET Framework replacement.
 
 > [!IMPORTANT]
 > We'll need to remove Wine Mono because it comes preinstalled, but will conflict with and bork our own .NET Framework installation.  
-Credits to [foinf](https://github.com/foinf) for coming up with [discovering this](https://github.com/bottlesdevs/Bottles/issues/2887#issuecomment-2646118028)
+
 
 ```bash
 wine-ew-affinity wine uninstaller
@@ -190,3 +190,11 @@ wine-ew-affinity winecfg
 > So, for a 4k monitor, setting the the desktop size to `1920 x 1080` and scaling it by 200% works quite well.
 
 ![DPI Fix](./Screenshots/dpifix.png)
+
+## Credits
+Thanks to:
+- [ElementalWarrior](https://gitlab.winehq.org/ElementalWarrior) for his wine fork
+- [Twig6943](https://github.com/Twig6943) for building the wine binary
+- [xkero](https://gitlab.com/xkero) for his [rum script](https://gitlab.com/xkero/rum)
+- [foinf](https://github.com/foinf) for [finding a fix](https://github.com/bottlesdevs/Bottles/issues/2887#issuecomment-2646118028) for the broken .NET install
+- [wanesty](https://codeberg.org/wanesty) for the original [rum guide](https://affinity.liz.pet/docs/1-intro.html)
