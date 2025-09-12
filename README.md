@@ -20,6 +20,7 @@ We are not affiliated with Serif or Canva.
 - [Bottles](./Guides/Bottles/Guide.md)
 - [Heroic Games Launcher](./Guides/Heroic/Guide.md)
 - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
+- [Rum](./Guides/Rum/Guide.md) 
 
 ### Miscellaneous 
 
