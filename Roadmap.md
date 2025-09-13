@@ -1,3 +1,5 @@
+# Roadmap
+
 [ ✅ ] Get the whole winmetadata thing sorted out. ( [Issue #6](https://github.com/Twig6943/AffinityOnLinux/issues/6) )
 
 [ ✅ ] Fix crashes upon saving/exporting
