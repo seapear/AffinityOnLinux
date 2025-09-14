@@ -112,30 +112,15 @@ First, initialize the prefix:
 wine-ew-affinity wineboot --init
 ```
 
-### .NET Fix
-
-Now, uninstall Wine Mono, wine's own .NET Framework replacement.  
+### Winetricks
 
 > [!IMPORTANT]
-> We'll need to remove Wine Mono because it comes preinstalled, but will conflict with and bork our own .NET Framework installation.  
-
-
-```bash
-wine-ew-affinity wine uninstaller
-```
-This window should open:  
-
-![Wine Mono](./Screenshots/winemono.png)
-
-Click on `Wine Mono Runtime` and remove it.  
-Both entries should now disappear and you should see an empty page.
-
-### Winetricks
+> We use the `remove_mono` verb becase the .NET version we're installing would directly conflict with it, as stated in the [Wine Mono README](https://github.com/wine-mono/wine-mono?tab=readme-ov-file#composition:~:text=Wine%20Mono%20should%20always%20be%20removed%20before%20installing%20.NET%20Framework%204.8%20and%20earlier%2C%20it%20can%20coexist%20with%20.NET%20Core%20and%20.NET%205%20or%20later.)
 
 Now run winetricks with the following options to install all the needed dependencies in your Affinity prefix:
 
 ```bash
-wine-ew-affinity winetricks --unattended --force vcrun2022 dotnet48 renderer=vulkan corefonts win11
+wine-ew-affinity winetricks --unattended --force remove_mono vcrun2022 dotnet48 renderer=vulkan corefonts win11
 ```
 
 > [!NOTE]
