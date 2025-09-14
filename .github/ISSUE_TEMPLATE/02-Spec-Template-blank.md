@@ -28,7 +28,7 @@
 
 ## Logs
 
-## Your environment
+## Config
 
 ## Self-service
 

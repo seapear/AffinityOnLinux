@@ -21,6 +21,10 @@ We are not affiliated with Serif or Canva.
 - [Heroic Games Launcher](./Guides/Heroic/Guide.md)
 - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
 
+### Caveats
+
+UI settings sometimes don't save. There is a [workaround](Guides/Settings.md).
+
 ### Miscellaneous 
 
 [Known issues ⚠️](/Known-issues.md)
