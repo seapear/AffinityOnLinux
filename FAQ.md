@@ -55,12 +55,22 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 
 ## Usage
 
-### What platforms do we support?
-- Lutris (reccomended)
-- Heroic
-- Bottles
-- Wine
-- RUM
+### Tested Methods
+
+| OS\Method | Lutris | Heroic | Bottles | RUM |
+|-----------|--------|--------|---------|-----|
+| Debian    | ✔️     | ✔️     | ✔️     | ✔️  |
+| Fedora    | ✔️     | ✔️     | ✔️     | ✔️  |
+| Arch      | ✔️     | ✔️     | ✔️     | ✔️  |
+| Ubuntu    | ✔️     | ✔️     | ✔️     | ✔️  |
+| Zorin     | ❌     | ❌     | ❌     | ❓  | 
+| Cachy     | ✔️     | ✔️     | ❓     | ✔️  |
+| Endevor   | ✔️     | ✔️     | ❓     | ✔️  |
+
+- [Lutris](./Guides/Lutris/Guide.md) (Recommended)
+- [Heroic Games Launcher](./Guides/Heroic/Guide.md)
+- [Bottles](./Guides/Bottles/Guide.md)
+- [Rum](./Guides/Rum/Guide.md) (terminal)
 
 ## Commonly Asked Questions
 - [Does this not work on ZorinOS?](https://github.com/seapear/AffinityOnLinux/issues/53)
