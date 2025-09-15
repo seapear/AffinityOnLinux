@@ -52,6 +52,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 | [Cachy](https://cachyos.org/)     | ✔️     | ✔️     | ❓     | ✔️  |
 | [Endevor](https://endeavouros.com/)   | ✔️     | ✔️     | ❓     | ✔️  |
 | [Nobara](https://nobaraproject.org/)   | ✔️     | ✔️     | ❓     | ✔️  |
+| [SteamOS](https://store.steampowered.com/steamos)   | ✔️     | ✔️     | ❓     | ✔️  |
 
 ### Guides
 
