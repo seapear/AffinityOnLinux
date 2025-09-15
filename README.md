@@ -34,8 +34,6 @@ UI settings sometimes don't save. There is a [workaround](Guides/Settings.md).
 
 [Roadmap 🗺️](/Roadmap.md)
 
-[Featured stuff 🎨](/Featured/FEATURED-1.MD)
-
 [Credits 📜 ](/Credits.md)
 
 ## Join for support 🤝
