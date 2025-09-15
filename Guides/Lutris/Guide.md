@@ -10,6 +10,23 @@ Make sure you have the following programs installed in your Linux system before 
 
 - [winetricks](https://github.com/Winetricks/winetricks)
 
+The dependencies are available in the package repositories of major Linux distributions, and can be installed by running commands in the terminal.
+
+For Debian- or Ubuntu-based distros, run the command:
+```shell
+sudo apt install winetricks
+```
+
+For Fedora-based distros, run the command:
+```shell
+sudo dnf install winetricks
+```
+
+For Arch Linux-based distros, run the command:
+```shell
+sudo pacman -S winetricks
+```
+
 ## 1. Install Lutris
 
 Visit the [download page of Lutris' official website](https://lutris.net/downloads), and follow the instructions to download and install Lutris. [Flatpak](https://flathub.org/apps/net.lutris.Lutris) is recommended.
