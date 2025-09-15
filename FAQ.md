@@ -14,6 +14,9 @@ This document covers common questions and answers about this project.
 - [Usage](#usage)
   - [How do I run this project?](#how-do-i-run-this-project)
   - [Where can I find examples?](#where-can-i-find-examples)
+- [Commonly Asked Questions](Commonly-Asked-Questions)
+  - [Does this not work on ZorinOS?](https://github.com/seapear/AffinityOnLinux/issues/53)
+  - [My UI settings aren't saving.](Guides/Settings.md)
 - [Contributing](#contributing)
   - [How can I contribute?](#how-can-i-contribute)
   - [Where can I report issues?](#where-can-i-report-issues)
@@ -58,6 +61,10 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 - Bottles
 - Wine
 - RUM
+
+## Commonly Asked Questions
+- [Does this not work on ZorinOS?](https://github.com/seapear/AffinityOnLinux/issues/53)
+- [My UI settings aren't saving.](Guides/Settings.md)
 
 ---
 
