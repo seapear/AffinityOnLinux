@@ -61,6 +61,9 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 - [Bottles](./Guides/Bottles/Guide.md)
 - [Rum](./Guides/Rum/Guide.md) (terminal)
 
+### Use these if the main mirrors are down
+- https://gitlab.com/twig6943/affinityonlinux
+- https://gitlab.com/twig6943/ElementalWarrior-Wine-binaries/-/releases
 ---
 
 ## Commonly Asked Questions
@@ -71,17 +74,12 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 > - [4k/2k Display, UI is really small and hard to read, how to increase the size?](https://github.com/seapear/AffinityOnLinux/issues/47)
 > - [Does Bottles work?](https://github.com/seapear/AffinityOnLinux/issues/37)
 
-### How can I contribute?
-> *Submit a PR request and let us know in the #Feedback channel on [Discord](https://discord.com/invite/YhBv2AThax).*
+### How do I get support?
+> *Post a question in the [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or Check out the [Discord](https://discord.com/invite/t5V9ecpJWZ)*
 
 ### Where can I report issues?
 > *Either report it on [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or on [Discord](https://discord.com/invite/YhBv2AThax)*
 
-### How do I get support?
-> *Post a question in the [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or Check out the [Discord](https://discord.com/invite/t5V9ecpJWZ)*
-
-### Use these if the main mirrors are down
-- https://gitlab.com/twig6943/affinityonlinux
-- https://gitlab.com/twig6943/ElementalWarrior-Wine-binaries/-/releases
-
+### How can I contribute?
+> *Submit a PR request and let us know in the #Feedback channel on [Discord](https://discord.com/invite/YhBv2AThax).*
 ---
