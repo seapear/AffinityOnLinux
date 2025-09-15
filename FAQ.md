@@ -12,8 +12,8 @@ This document covers common questions and answers about this project.
   - [How do I install it?](#how-do-i-install-it)
   - [What versions are supported?](#what-versions-are-supported)
 - [Usage](#usage)
-  - [How do I run this project?](#how-do-i-run-this-project)
-  - [Where can I find examples?](#where-can-i-find-examples)
+  - [Tested Methods](#tested-methods)
+  - [Link to Guides](#guides)
 - [Commonly Asked Questions](Commonly-Asked-Questions)
   - [Does this not work on ZorinOS?](https://github.com/seapear/AffinityOnLinux/issues/53)
   - [My UI settings aren't saving.](Guides/Settings.md)
@@ -66,6 +66,8 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 | Zorin     | ❌     | ❌     | ❌     | ❓  | 
 | Cachy     | ✔️     | ✔️     | ❓     | ✔️  |
 | Endevor   | ✔️     | ✔️     | ❓     | ✔️  |
+
+## Guides
 
 - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
 - [Heroic Games Launcher](./Guides/Heroic/Guide.md)
