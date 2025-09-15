@@ -12,6 +12,6 @@
 
 [Twig](https://github.com/Twig6943) (Project Founder)
 
-Don't forget our many contributors and the active community on Discord!
+Don't forget our many [contributors](https://github.com/seapear/AffinityOnLinux/graphs/contributors) and the active community on [Discord](https://discord.gg/t5V9ecpJWZ)!
 
 *Note: If your PR gets merged you will get a special **GitHub-Contributor** badge!*
