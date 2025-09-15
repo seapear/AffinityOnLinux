@@ -101,6 +101,10 @@ source ~/.bash_aliases
 ```
 Verify once again that your alias is setup correctly by calling it without arguments and checking that you see the same error as before.
 
+> *If you're using Fish as your default shell, you might have to manage your aliases and environment variables in Fish's configuration files instead of .bashrc. For the alias you added, you can define it in Fish by editing `nano ~/.config/fish/config.fish` (create it if it doesn't exist) and adding:*
+
+> `alias wine-ew-affinity='rum ElementalWarriorWine-x86_64 $HOME/.local/share/wine/prefixes/affinity/`
+
 ## Wine Prefix configuration
 
 ### Initialization
