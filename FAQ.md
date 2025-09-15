@@ -32,7 +32,9 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 - Streamline the onboarding process so creativity can stay the main focus
 
 ### Who maintains this project?
-*GameDirection (interfaceas on discord) and Seapear (M on discord) among our many contributors and the active community. If your PR gets merged you will get a special **GitHub-Contributor** badge.*
+*[GameDirection](https://github.com/Gamedirection) (interfaceas on discord) and [Seapear](https://github.com/seapear) (M on discord) among our many contributors and the active community.*
+*Check out [Credits](https://github.com/seapear/AffinityOnLinux/blob/main/Credits.md) for more!*
+*If your PR gets merged you will get a special **GitHub-Contributor** badge.*
 
 ---
 
