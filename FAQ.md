@@ -1,33 +1,5 @@
 # Frequently Asked Questions (FAQ)
 
-This document covers common questions and answers about this project.
-
----
-
-## Table of Contents
-- [General](#general)
-  - [What is this project about?](#what-is-this-project-about)
-  - [Who maintains this project?](#who-maintains-this-project)
-- [How to use this Guide](#how-to-use-this-guide)
-  - [How do I install it?](#how-do-i-install-it)
-  - [What versions are supported?](#what-versions-are-supported)
-- [Usage](#usage)
-  - [Tested Methods](#tested-methods)
-  - [Link to Guides](#guides)
-- [Commonly Asked Questions](Commonly-Asked-Questions)
-  - [Does this not work on ZorinOS?](https://github.com/seapear/AffinityOnLinux/issues/53)
-  - [My UI settings aren't saving.](Guides/Settings.md)
-- [Contributing](#contributing)
-  - [How can I contribute?](#how-can-i-contribute)
-  - [Where can I report issues?](#where-can-i-report-issues)
-- [Other](#other)
-  - [How do I get support?](#how-do-i-get-support)
-  - [What license applies to this project?](#what-license-applies-to-this-project)
-  - [Use these if the main mirrors are down.](#Use-these-if-the-main-mirrors-are-down)
----
-
-## General
-
 ### What is this project about?
 As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool is. Our goal is to:
 - Maintain reliability and ease-of-use to install Serifs program Affinity Sutie, Photo, Designer & Publisher on Linux.
@@ -56,48 +28,56 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 
 ## Usage
 
-### What versions are supported?
+### Which Affinity versions are supported?
 *Affinity v1 and v2 both work in most cases using this tutorial.*
+> [!TIP]
+> Official installers download links:
+>
+> | Program | URL |
+> |---------|-----|
+> |V2 (all)     |https://store.serif.com/en-us/account/licences/         |
+> |Photo V1     | https://store.serif.com/it/update/windows/photo/1/     |
+> |Designer V1  | https://store.serif.com/it/update/windows/designer/1/  |
+> |Publisher V1 | https://store.serif.com/it/update/windows/publisher/1/ |
 
 ### Tested Methods
 
-| OS\Method | Lutris | Heroic | Bottles | RUM |
+| OS\Method | [Lutris](https://lutris.net/) | [Heroic](https://heroicgameslauncher.com/) | [Bottles](https://usebottles.com/) | [Rum](https://gitlab.com/xkero/rum) |
 |-----------|--------|--------|---------|-----|
-| Debian    | ✔️     | ✔️     | ✔️     | ✔️  |
-| Fedora    | ✔️     | ✔️     | ✔️     | ✔️  |
-| Arch      | ✔️     | ✔️     | ✔️     | ✔️  |
-| Ubuntu    | ✔️     | ✔️     | ✔️     | ✔️  |
-| Zorin     | ❌     | ❌     | ❌     | ❓  | 
-| Cachy     | ✔️     | ✔️     | ❓     | ✔️  |
-| Endevor   | ✔️     | ✔️     | ❓     | ✔️  |
+| [Debian](https://www.debian.org/)    | ✔️     | ✔️     | ✔️     | ✔️  |
+| [Fedora](https://fedoraproject.org/)    | ✔️     | ✔️     | ✔️     | ✔️  |
+| [Arch](https://archlinux.org/)      | ✔️     | ✔️     | ✔️     | ✔️  |
+| [Ubuntu](https://ubuntu.com/)    | ✔️     | ✔️     | ✔️     | ✔️  |
+| [Zorin](https://zorin.com/os/)     | ❌     | ❌     | ❌     | ❓  | 
+| [Cachy](https://cachyos.org/)     | ✔️     | ✔️     | ❓     | ✔️  |
+| [Endevor](https://endeavouros.com/)   | ✔️     | ✔️     | ❓     | ✔️  |
+| [Nobara](https://nobaraproject.org/)   | ✔️     | ✔️     | ❓     | ✔️  |
 
-## Guides
+### Guides
 
 - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
 - [Heroic Games Launcher](./Guides/Heroic/Guide.md)
 - [Bottles](./Guides/Bottles/Guide.md)
 - [Rum](./Guides/Rum/Guide.md) (terminal)
 
-## Commonly Asked Questions
-- [Does this not work on ZorinOS?](https://github.com/seapear/AffinityOnLinux/issues/53)
-- [My UI settings aren't saving.](Guides/Settings.md)
-
 ---
 
-## Contributing
+## Commonly Asked Questions
+
+### Already Asked Questions:
+> - [I can't get ZorinOS to work?](https://github.com/seapear/AffinityOnLinux/issues/53)
+> - [My settings aren't saving.](Guides/Settings.md)
+> - [4k/2k Display, UI is really small and hard to read, how to increase the size?](https://github.com/seapear/AffinityOnLinux/issues/47)
+> - [Does Bottles work?](https://github.com/seapear/AffinityOnLinux/issues/37)
 
 ### How can I contribute?
-*Submit a PR request and let us know in the #Feedback channel on [Discord](https://discord.com/invite/YhBv2AThax).*
+> *Submit a PR request and let us know in the #Feedback channel on [Discord](https://discord.com/invite/YhBv2AThax).*
 
 ### Where can I report issues?
-*Either report it on [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or on [Discord](https://discord.com/invite/YhBv2AThax)*
-
----
-
-## Other
+> *Either report it on [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or on [Discord](https://discord.com/invite/YhBv2AThax)*
 
 ### How do I get support?
-*Post a question in the [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or Check out the [Discord](https://discord.com/invite/t5V9ecpJWZ)*
+> *Post a question in the [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or Check out the [Discord](https://discord.com/invite/t5V9ecpJWZ)*
 
 ### Use these if the main mirrors are down
 - https://gitlab.com/twig6943/affinityonlinux
