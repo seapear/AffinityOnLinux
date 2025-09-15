@@ -72,7 +72,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 ## Other
 
 ### How do I get support?
-*Check out the [Discord](https://discord.com/invite/t5V9ecpJWZ)*
+*Post a question in the [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or Check out the [Discord](https://discord.com/invite/t5V9ecpJWZ)*
 
 ### Use these if the main mirrors are down
 - https://gitlab.com/twig6943/affinityonlinux
