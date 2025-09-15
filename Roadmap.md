@@ -17,10 +17,10 @@
 [ ❌ ] OpenCL for Amd/Intel gpus (waiting ElementalWarrior)
 
 [ ❌ ] Video walkthrough tutorials.
-    [ ❌ ] Lutris Method.
-    [ ❌ ] Heroic Method.
-    [ ❌ ] Bottles Method.
-    [ ❌ ] RUM Method.
+ - [ ❌ ] Lutris Method.
+ - [ ❌ ] Heroic Method.
+ - [ ❌ ] Bottles Method.
+ - [ ❌ ] RUM Method.
 
 # ⚠️ Known Issues
 Some users get these errors with the script but are able to get it working with the guide method
