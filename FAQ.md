@@ -65,7 +65,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 *Submit a PR request and let us know in the #Feedback channel on [Discord](https://discord.com/invite/YhBv2AThax).*
 
 ### Where can I report issues?
-*Either report it on [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or on discord at [Discord](https://discord.com/invite/YhBv2AThax)*
+*Either report it on [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or on [Discord](https://discord.com/invite/YhBv2AThax)*
 
 ---
 
