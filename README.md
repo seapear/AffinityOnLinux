@@ -27,6 +27,9 @@ UI settings sometimes don't save. There is a [workaround](Guides/Settings.md).
 
 ### Miscellaneous 
 
+[FAQ](/FAQ.md)
+  - [Backup Mirrors](https://github.com/seapear/AffinityOnLinux/blob/main/FAQ.md#use-these-if-the-main-mirrors-are-down)
+
 [Known issues ⚠️](/Known-issues.md)
 
 [Roadmap 🗺️](/Roadmap.md)
