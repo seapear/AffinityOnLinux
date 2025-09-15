@@ -26,7 +26,11 @@ These guides help with step by step installation of Serif's Affinity apps using 
 - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
 - [Rum](./Guides/Rum/Guide.md) 
 
-### Miscellaneous 
+### Information 
+
+[FAQ ❓](/FAQ.md)
+  - [Backup Mirrors](https://github.com/seapear/AffinityOnLinux/blob/main/FAQ.md#use-these-if-the-main-mirrors-are-down)
+  - UI settings sometimes don't save. There is a [workaround](Guides/Settings.md).
 
 [⚠️ Known issues](/Known-issues.md)
 
@@ -35,8 +39,6 @@ These guides help with step by step installation of Serif's Affinity apps using 
 [🎨 Featured stuff](/Featured/FEATURED-1.MD)
 
 [📜 Credits](/Credits.md)
-
-## 🤝 Join for support
 
 [💬 Discord](https://discord.gg/t5V9ecpJWZ)
 
