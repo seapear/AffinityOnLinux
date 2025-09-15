@@ -42,7 +42,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 ---
 
 ## How to use this Guide:
-1. Check to see if your OS is compatable: ([FAQ ❓](/FAQ.md))
+1. Check to see if your OS is compatable: ([Tested OS](#tested-methods))
 2. Choose an Installer: [Lutris](https://lutris.net/), [Heroic Games Launcher](https://heroicgameslauncher.com/), [Bottles](https://usebottles.com/) or [Rum](https://gitlab.com/xkero/rum).
 3. Choose your guide you feel suits your needs: 
   - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
