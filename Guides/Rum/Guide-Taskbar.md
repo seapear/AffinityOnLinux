@@ -69,6 +69,10 @@ StartupNotify=true
 Icon=affinity-designer
 Categories=Graphics;Design;
 ```
+Alternative exec=
+```ini
+Exec=env 'WINEPREFIX=$HOME/.local/share/wine/prefixes/affinity' wine-ew-affinity '$HOME/.local/share/wine/prefixes/affinity/drive_c/Program Files/Affinity/Designer 2/Designer.exe'
+```
 
 ---
 
@@ -85,7 +89,10 @@ StartupNotify=true
 Icon=affinity-photo
 Categories=Graphics;Photography;
 ```
-
+Alternative exec=
+```ini
+Exec=env 'WINEPREFIX=$HOME/.local/share/wine/prefixes/affinity' wine-ew-affinity '$HOME/.local/share/wine/prefixes/affinity/drive_c/Program Files/Affinity/Photo 2/Photo.exe'
+```
 ---
 
 ### Affinity Publisher 2
@@ -100,6 +107,10 @@ Type=Application
 StartupNotify=true
 Icon=affinity-publisher
 Categories=Graphics;Publishing;
+```
+Alternative exec=
+```ini
+Exec=env 'WINEPREFIX=$HOME/.local/share/wine/prefixes/affinity' wine-ew-affinity '$HOME/.local/share/wine/prefixes/affinity/drive_c/Program Files/Affinity/Publisher 2/Publisher.exe'
 ```
 
 ---
