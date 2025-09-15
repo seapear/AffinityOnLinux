@@ -30,9 +30,10 @@ body:
       description: Which app launcher are you using?
       multiple: false
       options:
+        - Lutris (Recommended)
         - Bottles
         - Heroic Games Launcher
-        - Lutris (Recommended)
+        - RUM
       default: 2
     validations:
       required: true
