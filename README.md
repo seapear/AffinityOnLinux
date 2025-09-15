@@ -26,15 +26,17 @@ These guides help with step by step installation of Serif's Affinity apps using 
 - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
 - [Rum](./Guides/Rum/Guide.md) 
 
-### Information 
+### Information
+
+> [!WARNING]
+> Be advised that, if you purchased the old **1.X version** of the Affinity applications through the [**Windows Store**](https://apps.microsoft.com/), you will **not** be able to activate your old licence on another operating systems other than Windows.  
+> The Windows Store does not provide the product key you will need to enter after the installation, so, if you want to stay on Linux and don't want to buy a V2 licence (since V1 isn't sold anymore), your only option is to use a Windows virtual machine, sign into your Microsoft account on the Windows Store, and download your V1 apps from there.
 
 [FAQ ❓](/FAQ.md)
   - [Backup Mirrors](https://github.com/seapear/AffinityOnLinux/blob/main/FAQ.md#use-these-if-the-main-mirrors-are-down)
   - UI settings sometimes don't save. There is a [workaround](Guides/Settings.md).
 
 [🗺️ Roadmap & ⚠️ Known issues](/Roadmap.md)
-
-[🎨 Featured stuff](/Featured/FEATURED-1.MD)
 
 [📜 Credits](/Credits.md)
 

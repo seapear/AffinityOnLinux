@@ -2,10 +2,6 @@
 
 ## Preface
 
-> [!WARNING]
-> Be advised that, if you purchased the old **V1 version** of your Affinity software(s) through the **Windows store**, you will **not** be able to activate your old licence on another OS.  
-> The Windows Store just doesn't provide the product key you will need to enter after the installation, so, if you want to stay on Linux and not upgrade to V2 your only option is to use a virtual machine.  
-
 This guide aims to provide a way to manage wine that does not make use of launchers like Lutris or Bottles.  
 We will instead use `rum`, a small shell script that will help us manage multiple wine runners.
 
