@@ -1,4 +1,4 @@
-# Complete Setup: Affinity Apps with Clean Wrappers & Icons
+# Affinity Apps with Clean Wrappers & Icons
 
 ---
 
