@@ -111,3 +111,17 @@ After installing an Affinity app with Lutris, you can set the icon and cover art
 You can find icons and cover art for Affinity apps from the AffinityOnLinux repository's [`Assets/Icons`](/Assets/Icons) and [`Assets/Covers`](/Assets/Covers) directories.
 
 Make sure the `Identifier` has been changed to the corresponding name of each different Affinity app, as instructed the above steps to configure your Affinity apps' executable paths, otherwise Lutris will make the icons and cover art the same across all the different Affinity apps.
+
+## Additional Tips and Tricks
+
+### Fixing Scaling on HiDPI Screens
+
+To adjust the scaling of Affinity apps' UI on high resolution monitors, follow these steps:
+
+1. Launch Lutris.
+2. Select one of the Affinity apps you have installed.
+3. Open the WIne menu at the bottom of the Lutris window, and select `Wine configuration`.
+4. Go to the `Graphics` tab.
+5. Under the `Screen resolution` section, increase the `dpi` value to your preference.
+
+Note that these Wine configuration settings will apply to all Affinity apps you installed with Lutris, since they share the same Wine prefix.
