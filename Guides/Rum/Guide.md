@@ -1,4 +1,4 @@
-# How to Set Up Wine for Affinity using Rum
+# Set Up Wine for Affinity Apps Using Rum
 
 ## Preface
 
