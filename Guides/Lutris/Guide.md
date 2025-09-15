@@ -52,8 +52,9 @@ If there is no `wine` folder inside your Lutris runners directory, create it, th
 1. Open Lutris and click on the plus icon on the top left corner of the window.
 2. Press "Install from a local install script".
 3. Download the install script for your Wine fork — Visit one of the following links based on your choice of Wine fork, then click the download button located on the top right of the file content to download the install script file, which is in YAML format.
-    - [ElementalWarrior](/Guides/Lutris/InstallScripts/Affinity-ew.yaml)
+    - [ElementalWarrior](https://raw.githubusercontent.com/helenclx/AffinityOnLinux/refs/heads/main/Guides/Lutris/InstallScripts/Affinity-ew.yaml)
     - [Wine-tkg-affinity](/Guides/Lutris/InstallScripts/Affinity-tkg.yaml)
+
 4. In Lutris, import the install script file for your Wine fork.
 7. Press `Install`.
 6. Select the setup `.exe` file of an Affinity app (Photo, Designer or Publisher).
@@ -104,6 +105,6 @@ After installing an Affinity app with Lutris, you can set the icon and cover art
 1. Right click an Affinity app entry, then select `Configure`.
 2. Under the `Game info` tab, set custom icon and cover art.
 
-You can find icons and cover art for Affinity apps from the AffinityOnLinux repository's [`Assets/Icons`](Assets/Icons) and [`Assets/Covers`](Assets/Covers) directories.
+You can find icons and cover art for Affinity apps from the AffinityOnLinux repository's [`Assets/Icons`](/Assets/Icons) and [`Assets/Covers`](/Assets/Covers) directories.
 
 Make sure the `Identifier` has been changed to the corresponding name of each different Affinity app, as instructed the above steps to configure your Affinity apps' executable paths, otherwise Lutris will make the icons and cover art the same across all the different Affinity apps.
