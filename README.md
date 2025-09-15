@@ -19,7 +19,7 @@ _A repository containing information on how to get Affinity software working on 
 ## How to use this Guide:
 1. Check to see if your OS is compatable: ([FAQ ❓](/FAQ.md#tested-methods))
 2. Choose an Installer: [Lutris](https://lutris.net/), [Heroic Games Launcher](https://heroicgameslauncher.com/), [Bottles](https://usebottles.com/) or [Rum](https://gitlab.com/xkero/rum).
-3. Choose your guide you feel suits your needs: 
+3. Choose a Guide: 
   - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
   - [Heroic Games Launcher](./Guides/Heroic/Guide.md)
   - [Bottles](./Guides/Bottles/Guide.md)
