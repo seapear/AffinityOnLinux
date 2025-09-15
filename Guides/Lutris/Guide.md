@@ -4,33 +4,19 @@ Currently, Lutris is the best method for Nvidia GPU users.
 
 <img src="/Assets/NewLogos/AffinityLutris.png" width="400"/>
 
-## 1. Install Wine and Winetricks
+## Dependencies 
 
-Make sure Wine and Winetricks are installed in your Linux system. Both are available in the package repositories of major Linux distributions.
+Make sure you have the following programs installed in your Linux system before proceeding:
 
-For Debian/Ubuntu-based distros, run the command:
-```shell
-sudo apt install wine winetricks
-```
+- [winetricks](https://github.com/Winetricks/winetricks)
 
-For Fedora-based distros, run the command:
-```shell
-sudo dnf install wine winetricks
-```
-
-For Arch-based distros, run the command:
-```shell
-sudo pacman -S wine winetricks
-```
-
-
-## 2. Install Lutris
+## 1. Install Lutris
 
 Visit the [download page of Lutris' official website](https://lutris.net/downloads), and follow the instructions to download and install Lutris. [Flatpak](https://flathub.org/apps/net.lutris.Lutris) is recommended.
 
 Alternately, you may install Lutris using the [unofficial AppImage](https://github.com/pkgforge-dev/Lutris-AppImage).
 
-## 3. Download and Extract a Wine Fork
+## 2. Download and Extract a Wine Fork
 
 Choose one of the following forks of Wine, and download and extract it: 
 
@@ -38,7 +24,7 @@ Choose one of the following forks of Wine, and download and extract it:
 
 - [**Wine-TKG-affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) — Download the ` wine-tkg-affinity-archbuilt.tar.zst` archive file, then extract the `usr/` folder from the archive and rename the folder to `wine-tkg-affinity-x86_64`.
 
-## 4. Copy and Paste Wine Fork Binaries to Lutris
+## 3. Copy and Paste Wine Fork Binaries to Lutris
 
 Copy and paste the extracted Wine fork folder from the previous step to the Lutris runners' Wine directory:
 
@@ -47,7 +33,7 @@ Copy and paste the extracted Wine fork folder from the previous step to the Lutr
 
 If there is no `wine` folder inside your Lutris runners directory, create it, then copy and paste your Wine fork folder into the `wine` folder.
 
-## 5. Install Affinity with Lutris
+## 4. Install Affinity with Lutris
 
 1. Open Lutris and click on the plus icon on the top left corner of the window.
 2. Press "Install from a local install script".
@@ -60,7 +46,7 @@ If there is no `wine` folder inside your Lutris runners directory, create it, th
 6. Select the setup `.exe` file of an Affinity app (Photo, Designer or Publisher).
 7. Press `Install`.
 
-## 6. Configure the Executable Path
+## 5. Configure the Executable Path
 
 Once the install of the Affinity app finishes, right click the Affinity app entry in Lutris and select `Configure` from the menu.
 
