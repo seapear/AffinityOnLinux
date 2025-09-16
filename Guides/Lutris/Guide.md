@@ -17,7 +17,7 @@ For Debian- or Ubuntu-based distros, run the command:
 sudo apt install winetricks
 ```
 
-For Fedora-based distros, run the command:
+For Fedora Linux-based distros, run the command:
 ```shell
 sudo dnf install winetricks
 ```

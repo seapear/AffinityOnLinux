@@ -32,7 +32,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 ### Which Affinity versions are supported?
 *Affinity v1 and v2 both work in most cases using this tutorial.*
 > [!TIP]
-> Official installers download links:
+> Official Affinity installers download links:
 >
 > | Program | URL |
 > |---------|-----|
@@ -47,15 +47,15 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 
 ### 🧪 Tested Methods
 
-| OS\Method | [Lutris](https://lutris.net/) | [Heroic](https://heroicgameslauncher.com/) | [Bottles](https://usebottles.com/) | [Rum](https://gitlab.com/xkero/rum) |
-|-----------|--------|--------|---------|-----|
+| Distro/Method | [Lutris](https://lutris.net/) | [Heroic](https://heroicgameslauncher.com/) | [Bottles](https://usebottles.com/) | [Rum](https://gitlab.com/xkero/rum) |
+|---------------|--------|--------|---------|-----|
 | [Debian](https://www.debian.org/)    | ✔️     | ✔️     | ✔️     | ✔️  |
-| [Fedora](https://fedoraproject.org/)    | ✔️     | ✔️     | ✔️     | ✔️  |
-| [Arch](https://archlinux.org/)      | ✔️     | ✔️     | ✔️     | ✔️  |
+| [Fedora Linux](https://fedoraproject.org/)    | ✔️     | ✔️     | ✔️     | ✔️  |
+| [Arch Linux](https://archlinux.org/)      | ✔️     | ✔️     | ✔️     | ✔️  |
 | [Ubuntu](https://ubuntu.com/)    | ✔️     | ✔️     | ✔️     | ✔️  |
-| [Zorin](https://zorin.com/os/)     | ❌     | ❌     | ❌     | ❓  | 
-| [Cachy](https://cachyos.org/)     | ✔️     | ✔️     | ❓     | ✔️  |
-| [Endevor](https://endeavouros.com/)   | ✔️     | ✔️     | ❓     | ✔️  |
+| [Zorin OS](https://zorin.com/os/)     | ❌     | ❌     | ❌     | ❓  | 
+| [CachyOS](https://cachyos.org/)     | ✔️     | ✔️     | ❓     | ✔️  |
+| [EndeavourOS](https://endeavouros.com/)   | ✔️     | ✔️     | ❓     | ✔️  |
 | [Nobara](https://nobaraproject.org/)   | ✔️     | ✔️     | ❓     | ✔️  |
 | [SteamOS](https://store.steampowered.com/steamos)   | ✔️     | ✔️     | ❓     | ❓  |
 
