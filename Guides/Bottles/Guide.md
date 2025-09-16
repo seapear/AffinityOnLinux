@@ -4,7 +4,7 @@
 
 ## 1. Install Bottles
 
-Visit the [download page of Bottles' official website](https://heroicgameslauncher.com/downloads), and follow the instructions to download and install Bottles. [Flatpak](https://flathub.org/apps/com.usebottles.bottles) is recommended, as it is the only officially supported install method for Bottles.
+Visit the [download page of Bottles' official website](https://usebottles.com/download/), and follow the instructions to download and install Bottles. [Flatpak](https://flathub.org/apps/com.usebottles.bottles) is recommended, as it is the only officially supported install method for Bottles.
 
 Alternately, you may want to install Bottles using the [unofficial AppImage](https://github.com/ivan-hc/Bottles-appimage).
 
@@ -44,8 +44,11 @@ The Affinity app should now work inside that Bottle.
 
 ## Additional Tips and Tricks
 
-### Common locations:
-`/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/Affinity/drive_c`
+### Common Location
+
+The Affinity apps installed with Bottles are located at the following location:
+
+- **Flatpak**: `~/.var/app/com.usebottles.bottles/data/bottles/bottles/Affinity/drive_c`
 
 ### How to Fix Studdering
 Bottles -> Settings -> # Performance | Toggle on Feral GameMode
