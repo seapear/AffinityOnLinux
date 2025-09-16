@@ -135,7 +135,15 @@ wine-ew-affinity wineboot --init
 Now run winetricks with the following options to install all the needed dependencies in your Affinity prefix:
 
 ```bash
-wine-ew-affinity winetricks --unattended --force remove_mono vcrun2022 dotnet48 renderer=vulkan corefonts win11
+wine-ew-affinity winetricks --unattended --force remove_mono vcrun2022 dotnet48  corefonts win11
+```
+
+> [!NOTE]
+> We set the renderer to vulkan in a separate step, after all the previews winetricks have been applied.
+
+
+```bash
+wine-ew-affinity winetricks renderer=vulkan
 ```
 
 > [!NOTE]
