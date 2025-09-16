@@ -24,7 +24,7 @@ sudo dnf install winetricks
 
 For Arch Linux-based distros, run the command:
 ```shell
-sudo pacman -S winetricks
+sudo pacman -Sy winetricks
 ```
 
 ## 1. Install Lutris
@@ -125,3 +125,7 @@ To adjust the scaling of Affinity apps' UI on high resolution monitors, follow t
 5. Under the `Screen resolution` section, increase the `dpi` value to your preference.
 
 Note that these Wine configuration settings will apply to all Affinity apps you installed with Lutris, since they share the same Wine prefix.
+
+### Dark Theme for Wine
+
+To enable the dark theme for Wine, run [this registry file](/wine-dark-theme.reg) inside the Wine prefix.
