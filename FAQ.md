@@ -26,7 +26,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 6. Finally grab your ✔️Success Badge on the [Discord](https://discord.gg/t5V9ecpJWZ), we would be love to hear about your real world use of AOL!
 
 
-## Usage
+## 🛠️ Usage
 
 ### Which Affinity versions are supported?
 *Affinity v1 and v2 both work in most cases using this tutorial.*
@@ -44,7 +44,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 > Be advised that, if you purchased the old **1.X version** of the Affinity applications through the [**Windows Store**](https://apps.microsoft.com/), you will **not** be able to activate your old licence on another operating systems other than Windows.  
 > The Windows Store does not provide the product key you will need to enter after the installation, so, if you want to stay on Linux and don't want to buy a V2 licence (since V1 isn't sold anymore), your only option is to use a Windows virtual machine, sign into your Microsoft account on the Windows Store, and download your V1 apps from there.
 
-### Tested Methods
+### 🧪 Tested Methods
 
 | OS\Method | [Lutris](https://lutris.net/) | [Heroic](https://heroicgameslauncher.com/) | [Bottles](https://usebottles.com/) | [Rum](https://gitlab.com/xkero/rum) |
 |-----------|--------|--------|---------|-----|
@@ -58,19 +58,19 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 | [Nobara](https://nobaraproject.org/)   | ✔️     | ✔️     | ❓     | ✔️  |
 | [SteamOS](https://store.steampowered.com/steamos)   | ✔️     | ✔️     | ❓     | ❓  |
 
-### Guides
+### 📚 Guides
 
 - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
 - [Heroic Games Launcher](./Guides/Heroic/Guide.md)
 - [Bottles](./Guides/Bottles/Guide.md)
 - [Rum](./Guides/Rum/Guide.md) (terminal)
 
-### Use these if the main mirrors are down
+### ⚠️ Use these if the main mirrors are down
 - https://gitlab.com/twig6943/affinityonlinux
 - https://gitlab.com/twig6943/ElementalWarrior-Wine-binaries/-/releases
 ---
 
-## Commonly Asked Questions
+## ❓ Commonly Asked Questions
 
 ### Already Asked Questions:
 > - [I can't get ZorinOS to work?](https://github.com/seapear/AffinityOnLinux/issues/53)
