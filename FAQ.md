@@ -13,17 +13,18 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 
 ---
 
-## How to use this Guide:
-1. Check to see if your OS is compatable: ([Tested OS](#tested-methods))
-2. Choose an Installer: [Lutris](https://lutris.net/), [Heroic Games Launcher](https://heroicgameslauncher.com/), [Bottles](https://usebottles.com/) or [Rum](https://gitlab.com/xkero/rum).
-3. Choose your guide you feel suits your needs: 
+## How to Use This Guide:
+
+1. Check if your Linux distribution is compatable: [Tested distros](#tested-methods)
+2. Choose a Wine manager: [Lutris](https://lutris.net/), [Heroic Games Launcher](https://heroicgameslauncher.com/), [Bottles](https://usebottles.com/) or [Rum](https://gitlab.com/xkero/rum).
+3. Choose a guide based on your Wine manager of choice: 
   - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
   - [Heroic Games Launcher](./Guides/Heroic/Guide.md)
   - [Bottles](./Guides/Bottles/Guide.md)
   - [Rum](./Guides/Rum/Guide.md) (terminal)
-4. Post any issues or bugs you find in the github [Issues](https://github.com/seapear/AffinityOnLinux/issues) tab, or on the [Discord](https://discord.gg/t5V9ecpJWZ) in the Help channel.
-5. If you have a fix or a solution, submit a [Pull Request](https://github.com/seapear/AffinityOnLinux/pulls) and let us know in #feedback on the [Discord](https://discord.gg/t5V9ecpJWZ).
-6. Finally grab your ✔️Success Badge on the [Discord](https://discord.gg/t5V9ecpJWZ), we would be love to hear about your real world use of AOL!
+4. Report any issues or bugs you find in our repository's [Issues](https://github.com/seapear/AffinityOnLinux/issues) tab, or on our [Discord](https://discord.gg/t5V9ecpJWZ) in the Help channel.
+5. If you have a fix or a solution for our guides, submit a [Pull Request](https://github.com/seapear/AffinityOnLinux/pulls) and let us know in #feedback on our [Discord](https://discord.gg/t5V9ecpJWZ).
+6. Finally, grab your ✔️Success Badge on our [Discord](https://discord.gg/t5V9ecpJWZ), we would be love to hear about your real world use of AffinityOnLinux!
 
 
 ## 🛠️ Usage

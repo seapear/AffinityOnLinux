@@ -16,7 +16,7 @@ _A repository containing information on how to get Affinity software working on 
   </a>
 </div>
 
-## How to use this Guide:
+## How to Use This Guide:
 
 1. Check if your Linux distributon is compatable in [FAQ ❓](/FAQ.md#tested-methods).
 2. Choose a Wine manager: [Lutris](https://lutris.net/), [Heroic Games Launcher](https://heroicgameslauncher.com/), [Bottles](https://usebottles.com/) or [Rum](https://gitlab.com/xkero/rum).
