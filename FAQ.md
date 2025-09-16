@@ -56,7 +56,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 | [Zorin OS](https://zorin.com/os/)     | ❌     | ❌     | ❌     | ❓  | 
 | [CachyOS](https://cachyos.org/)     | ✔️     | ✔️     | ❓     | ✔️  |
 | [EndeavourOS](https://endeavouros.com/)   | ✔️     | ✔️     | ❓     | ✔️  |
-| [Nobara](https://nobaraproject.org/)   | ✔️     | ✔️     | ❓     | ✔️  |
+| [Nobara Linux](https://nobaraproject.org/)   | ✔️     | ✔️     | ❓     | ✔️  |
 | [SteamOS](https://store.steampowered.com/steamos)   | ✔️     | ✔️     | ❓     | ❓  |
 
 ### 📚 Guides
