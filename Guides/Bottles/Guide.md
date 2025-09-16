@@ -42,7 +42,13 @@ Copy and paste the extracted Wine fork folder from the previous step to Bottles'
 
 The Affinity app should now work inside that Bottle.
 
-## Additional TIps and Tricks
+## Additional Tips and Tricks
+
+### Common locations:
+`/home/$USER/.var/app/com.usebottles.bottles/data/bottles/bottles/Affinity/drive_c`
+
+### How to Fix Studdering
+Bottles -> Settings -> # Performance | Toggle on Feral GameMode
 
 ### Dark Theme for Wine
 
