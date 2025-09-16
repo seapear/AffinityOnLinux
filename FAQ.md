@@ -40,6 +40,10 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 > |Designer V1  | https://store.serif.com/it/update/windows/designer/1/  |
 > |Publisher V1 | https://store.serif.com/it/update/windows/publisher/1/ |
 
+> [!WARNING]
+> Be advised that, if you purchased the old **1.X version** of the Affinity applications through the [**Windows Store**](https://apps.microsoft.com/), you will **not** be able to activate your old licence on another operating systems other than Windows.  
+> The Windows Store does not provide the product key you will need to enter after the installation, so, if you want to stay on Linux and don't want to buy a V2 licence (since V1 isn't sold anymore), your only option is to use a Windows virtual machine, sign into your Microsoft account on the Windows Store, and download your V1 apps from there.
+
 ### Tested Methods
 
 | OS\Method | [Lutris](https://lutris.net/) | [Heroic](https://heroicgameslauncher.com/) | [Bottles](https://usebottles.com/) | [Rum](https://gitlab.com/xkero/rum) |
