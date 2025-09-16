@@ -4,7 +4,7 @@
 
 ## 1. Install Heroic Games Launcher
 
-Visit the [download page of Heroic Games Launcher's official website](https://heroicgameslauncher.com/downloads), and follow the instructions to download and install Lutris. [Flatpak](https://flathub.org/en/apps/com.heroicgameslauncher.hgl) is recommended.
+Visit the [download page of Heroic Games Launcher's official website](https://heroicgameslauncher.com/downloads), and follow the instructions to download and install Heroic Games Launcher. [Flatpak](https://flathub.org/en/apps/com.heroicgameslauncher.hgl) is recommended.
 
 ## 2. Download and Extract a Wine Fork
 
