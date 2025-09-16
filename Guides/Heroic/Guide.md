@@ -2,27 +2,24 @@
 
 <img src="/Assets/NewLogos/AffinityHGL.png" width="400"/>
 
-## 1. Install Heroic Games Launcher (Flatpak recommended)
+## 1. Install Heroic Games Launcher
 
-Install Heroic Games Launcher using either **Flatpak** or **AppImage**.
+Visit the [download page of Heroic Games Launcher's official website](https://heroicgameslauncher.com/downloads), and follow the instructions to download and install Heroic Games Launcher. [Flatpak](https://flathub.org/en/apps/com.heroicgameslauncher.hgl) is recommended.
 
-- Flatpak: https://flathub.org/apps/com.heroicgameslauncher.hgl
-- AppImage: https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases
+## 2. Download and Extract a Wine Fork
 
-## 2. Download Desired Wine Version
+Choose one of the following forks of Wine, and download and extract it: 
 
-Choose one of the following Wine versions:
+- [**ElementalWarriorWine**](https://github.com/Twig6943/wine/releases) (Recommended) — After downloading the `ElementalWarriorWine-x86_64.tar.gz` archive file, right click and extract the archive into an `ElementalWarriorWine-x86_64` folder.
 
-- [**ElementalWarrior**](https://github.com/Twig6943/wine/releases) (Recommended) (Just right click and extract)
+- [**Wine-TKG-affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) — Download the ` wine-tkg-affinity-archbuilt.tar.zst` archive file, then extract the `usr/` folder from the archive and rename the folder to `wine-tkg-affinity-x86_64`.
 
-- [**Wine-TKG-Affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) (extract the `usr/` folder inside the archive and rename it to `wine-tkg-affinity-x86_64`)
+## 3. Copy and Paste Wine Fork Binaries to Heroic Games Launcher
 
-## 3. Copy & paste Wine Binaries
-
-Copy & paste the previously extracted folder to Heroic Games Launcher’s wine directory:
+Copy and paste the extracted Wine fork folder from the previous step to Heroic Games Launcher’s Wine directory:
 
 - **Flatpak:** `~/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/wine`
-- **AppImage:** `~/.config/heroic/tools/wine`
+- **Other Install Methods:** `~/.config/heroic/tools/wine`
 
 ## 4. Add Game in Heroic Games Launcher
 
@@ -39,8 +36,8 @@ Copy & paste the previously extracted folder to Heroic Games Launcher’s wine d
 
 ## 6. Configure Dependencies with Winetricks
 
-1. Right-click on the game in Heroic and go to **Settings**.
-2. Scroll down and click on **Winetricks**.
+1. Right-click on the game in Heroic and select **Settings** from the menu.
+2. On the **WINE** tab, scroll down and click on **Winetricks**.
 3. Search and install the following dependencies:
     - `allfonts`
     - `dotnet48`
@@ -59,29 +56,32 @@ Copy & paste the previously extracted folder to Heroic Games Launcher’s wine d
 
 ## 8. Install WinMetadata
 
-1. Unzip the `WinMetadata` folder from the [WinMetadata.zip file](https://archive.org/download/win-metadata/WinMetadata.zip) into `drive_c/windows/system32`.
+1. Download the [`WinMetadata.zip` archive file](https://archive.org/download/win-metadata/WinMetadata.zip).
+2. Extract the `WinMetadata` folder from the archive into `drive_c/windows/system32`.
 
 ## 9. Complete the Setup
 
 1. Press **Launch** and complete the setup.
 2. Once installation is finished:
-    - Right-click on the game in Heroic and go to the **Details** tab.
-    - Click on the three dots (top-right corner) and select **Edit App/Game**.
+    - Right-click on the game in Heroic and select **Details** from the menu.
+    - Click on the three dots at the top-right corner and select **Edit App/Game**.
     - Change the executable to:  
       `drive_c/Program Files/Affinity/APPNAMEHERE/APPNAMEHERE.exe`
     - Click **Finish** and **Launch** the game.
 
-## 10. Performance Settings
+## Additional TIps and Tricks
 
-To optimize performance and reduce latency, adjust these settings:
+### Performance Settings
 
-- **Other Tab:** Check the **Game Mode** option.
+To optimize performance and reduce latency, right click on a game, select **Settings** from the menu, then adjust these settings:
+
+- Go to the **Other** tab, and check the **Game Mode** option.
 
 Quote from **darkside99**:  
 *"These are the best settings for improving performance and reducing latency."*
 
 ![Performance.png](./Images/Performance.png)
 
-## 11. Optional: Enable Dark Theme
+### Dark Theme for Wine
 
-To enable the dark theme, run [this registry file](/wine-dark-theme.reg) inside the Wine prefix.
+To enable the dark theme for Wine, run [this registry file](/wine-dark-theme.reg) inside the Wine prefix.

@@ -1,4 +1,4 @@
-# How to Set Up Wine for Affinity using Rum
+# Set Up Wine for Affinity Apps Using Rum
 
 ## Preface
 
@@ -11,6 +11,21 @@ Install the following programs (or the equivalent for your distro) before procee
 - unzip
 - git
 - [winetricks](https://github.com/Winetricks/winetricks)
+
+### Debian-based distros:
+```bash
+sudo apt update && sudo apt install wget unzip git winetricks
+```
+
+### Arch-based distros:
+```bash
+sudo pacman -Sy wget unzip git winetricks
+```
+
+### Fedora-based distros:
+```bash
+sudo dnf install wget unzip git winetricks
+```
 
 ## Directories Setup
 
@@ -82,7 +97,7 @@ ElementalWarriorWine-x86_64
 
 Notice how `rum` correctly found our `ElementalWarriorWine`.
 
-## Alias setup
+## Alias Setup
 We'll register an alias so that we don't need to always give `rum` the full path to the affinity wine prefix.  
 Open either your `.bashrc` or dedicated `.bash_aliases` file, and add the following alias:
 
@@ -101,7 +116,7 @@ Verify once again that your alias is setup correctly by calling it without argum
 
 > `alias wine-ew-affinity='rum ElementalWarriorWine-x86_64 $HOME/.local/share/wine/prefixes/affinity/`
 
-## Wine Prefix configuration
+## Wine Prefix Configuration
 
 ### Initialization
 We're now ready to actually set up the wine environment to run our Affinity installer in.
