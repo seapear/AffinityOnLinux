@@ -216,6 +216,9 @@ wine-ew-affinity winecfg
 
 ![DPI Fix](./Screenshots/dpifix.png)
 
+## Creating a .desktop launcher
+Create a .desktop launcher by following this guide so you can open affinity from your desktop. 
+
 ## Credits
 Thanks to:
 - [ElementalWarrior](https://gitlab.winehq.org/ElementalWarrior) for his wine fork
