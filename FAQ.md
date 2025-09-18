@@ -84,6 +84,7 @@ Click on icon for more context if available:
 > - [My settings aren't saving.](Guides/Settings.md)
 > - [4k/2k Display, UI is really small and hard to read, how to increase the size?](https://github.com/seapear/AffinityOnLinux/issues/47)
 > - [Does Bottles work?](https://github.com/seapear/AffinityOnLinux/issues/37)
+> - [Exporting keeps offsetting by a Pixel?](https://discord.com/channels/1281706644073611358/1289640098589315174/1418123312151924829)
 
 ### How do I get support?
 > *Post a question in the [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or Check out the [Discord](https://discord.com/invite/t5V9ecpJWZ)*
