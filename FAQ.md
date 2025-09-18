@@ -53,7 +53,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 | [Fedora Linux](https://fedoraproject.org/)    | ✔️     | ✔️     | ✔️     | ✔️  |
 | [Arch Linux](https://archlinux.org/)      | ✔️     | ✔️     | ✔️     | ✔️  |
 | [Ubuntu](https://ubuntu.com/)    | ✔️     | ✔️     | ✔️     | ✔️  |
-| [Zorin OS](https://zorin.com/os/)     | ❌     | ❌     | ❌     | ❓  | 
+| [Zorin OS](https://zorin.com/os/)     | ✔️     | ❌     | ❌     | ❓  | 
 | [CachyOS](https://cachyos.org/)     | ✔️     | ✔️     | ❓     | ✔️  |
 | [EndeavourOS](https://endeavouros.com/)   | ✔️     | ✔️     | ❓     | ✔️  |
 | [Nobara Linux](https://nobaraproject.org/)   | ✔️     | ✔️     | ❓     | ✔️  |
