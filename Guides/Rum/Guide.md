@@ -178,7 +178,7 @@ We're finally ready to actually run the installer.
 I'll use the installer for Affinity Photo V1 as an example.
 
 ```bash
-wine-ew-affinity wine downloads/affinity-photo-1.10.6.exe
+wine-ew-affinity wine ~/Downloads/affinity-photo-1.10.6.exe
 ```
 
 ![installer](./Screenshots/installer.png)
