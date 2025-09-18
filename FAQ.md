@@ -51,7 +51,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 |---------------|--------|--------|---------|-----|
 | [Debian](https://www.debian.org/)    | ✔️     | ✔️     | ✔️     | ✔️  |
 | [Fedora Linux](https://fedoraproject.org/)    | ✔️     | ✔️     | ✔️     | ✔️  |
-| [Arch Linux](https://archlinux.org/)      | ✔️     | ✔️     | ✔️     | ✔️  |
+| [Arch Linux](https://archlinux.org/)      | ✔️     | ✔️     | [✔️](https://github.com/seapear/AffinityOnLinux/issues/64)     | ✔️  |
 | [Ubuntu](https://ubuntu.com/)    | ✔️     | ✔️     | ✔️     | ✔️  |
 | [Zorin OS](https://zorin.com/os/)     | [✔️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [⚠️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [⚠️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [❌](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305386111)  | 
 | [CachyOS](https://cachyos.org/)     | ✔️     | ✔️     | ❓     | ✔️  |
