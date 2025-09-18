@@ -84,4 +84,14 @@ Quote from **darkside99**:
 
 ### Dark Theme for Wine
 
-To enable the dark theme for Wine, run [this registry file](/wine-dark-theme.reg) inside the Wine prefix.
+1. Visit the [wine-dark-theme registry file](/Auxillary/Other/wine-dark-theme.reg) from this repository, and download the file by clicking the download button on the top right.
+2. In the folder where you downloaded the registry file into, run the following command:
+   ```shell
+   wine regedit wine-dark-theme.reg
+   ```
+3. If you also want to enable dark theme for the Wine fork for your installed Affinity apps on Heroic Games Launcher, run the command:
+    ```shell
+   WINEPREFIX="$HOME/path/to/wineprefix/folder" wine regedit wine-dark-theme.reg
+   ```
+   - To check your Affinity app's Wine prefix, launch Heroic Games Launcher, then click an Affinity app. Under the **INSTALL INFO** section, check the **WinePrefix folder**.
+   - Replace `$HOME/path/to/wineprefix/folder` with the WinePrefix folder location of your installed Affinity app.
