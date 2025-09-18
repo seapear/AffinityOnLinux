@@ -54,9 +54,17 @@ The Affinity apps installed with Bottles are located at the following location:
 - **Flatpak**: `~/.var/app/com.usebottles.bottles/data/bottles/bottles/Affinity/drive_c`
 
 ### How to Fix Studdering
+
 - Bottles -> Settings -> # Performance | Toggle on Feral GameMode
 - Bottles -> Settings -> # Compatibility | Windows 10 -> Windows 11 [*](https://discord.com/channels/1281706644073611358/1289640098589315174/1418124555406544956)
-
 ### Dark Theme for Wine
 
-To enable the dark theme for Wine, run [this registry file](/wine-dark-theme.reg) inside the Wine prefix.
+1. Visit the [wine-dark-theme registry file](/Auxillary/Other/wine-dark-theme.reg) from this repository, and download the file by clicking the download button on the top right.
+2. In the folder where you downloaded the registry file into, run the following command:
+   ```shell
+   wine regedit wine-dark-theme.reg
+   ```
+3. If you also want to enable dark theme for the Wine fork for your installed Affinity apps on Bottles, run the command:
+    ```shell
+   WINEPREFIX="$HOME/.var/app/com.usebottles.bottles/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
+   ```
