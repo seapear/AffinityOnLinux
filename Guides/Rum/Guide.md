@@ -118,7 +118,7 @@ Notice how `rum` correctly found our `ElementalWarriorWine`.
 We'll register an alias so that we don't need to always give `rum` the full path to the Affinity Wine prefix.  
 
 > [!NOTE] 
-> If you're using other shells other than `bash` make sure to register the alias in the approriate config file for your shell.
+> If you're using a shell different from `bash` make sure to register the alias in the appropriate config file.
 
 Open either your `.bashrc` or dedicated `.bash_aliases` file, and add the following alias:
 
