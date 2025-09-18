@@ -36,7 +36,7 @@ Copy and paste the extracted Wine fork folder from the previous step to Bottles'
 7. In Bottles, import the install script file for your Wine fork. `Import Configuration -> Affinity-ew.yaml`
 8. Click **Create**.
 
-<img width="1296" height="853" alt="image" src="https://github.com/user-attachments/assets/f17de84b-859a-49a2-8d01-09da643a2fbf" />
+<img height="350" alt="image" src="https://github.com/user-attachments/assets/f17de84b-859a-49a2-8d01-09da643a2fbf" />
 
 ## 5. Extract WinMetadata
 
