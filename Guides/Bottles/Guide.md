@@ -26,14 +26,17 @@ Copy and paste the extracted Wine fork folder from the previous step to Bottles'
 ## 4. Add Bottle in Bottles
 
 1. Open Bottles and click on the plus icon.
-2. Set the enviroment to Custom.
-3. Download the install script file for your Wine fork — Visit one of the following links based on your choice of Wine fork, then click the download button located on the top right of the file content to download the install script file, which is in YAML format.
-   - [ElementalWarrior](/Guides/Bottles/InstallScripts/Affinity-ew.yml)
-   - [Wine-tkg-affinity](/Guides/Bottles/InstallScripts/Affinity-tkg.yml)
-
-4. In Bottles, import the install script file for your Wine fork.
+2. Name it "Affinity" or "Serif".
+3. Set the enviroment to Custom.
+4. Keep Architecture -> `64bit`
 5. Set the runner to **ElementalWarriorWine** or **wine-tkg-affinity**, depending on your choice of Wine fork.
-6. Click **Create**.
+6. Download the install script file for your Wine fork — Visit one of the following links based on your choice of Wine fork, then click the download button located on the top right of the file content to download the install script file, which is in YAML format.
+   - [ElementalWarrior](/Guides/Bottles/InstallScripts/Affinity-ew.yaml)
+   - [Wine-tkg-affinity](/Guides/Bottles/InstallScripts/Affinity-tkg.yaml)
+7. In Bottles, import the install script file for your Wine fork. `Import Configuration -> Affinity-ew.yaml`
+8. Click **Create**.
+
+<img width="1296" height="853" alt="image" src="https://github.com/user-attachments/assets/f17de84b-859a-49a2-8d01-09da643a2fbf" />
 
 ## 5. Extract WinMetadata
 
