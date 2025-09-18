@@ -38,16 +38,33 @@ mkdir -p ~/.local/share/wine/prefixes
 
 ## Wine Runner Download
 
-Then we'll download a build of ElementalWarrior's wine fork and `unzip` it.
+First, check which `glibc` version your system is running:
+
+```bash
+getconf GNU_LIBC_VERSION
+```
+
+If have a version lower than `glibc 2.39`, like distros based on `Ubuntu 22.04` do, download [Bugg4](https://github.com/Bugg4/wine/releases)'s build, which was linked against `glibc 2.35`:
+
+```wget
+wget -O ~/.local/share/wine/runners/ElementalWarriorWine-x86_64.tar.gz https://github.com/Bugg4/wine/releases/download/9.13/ElementalWarriorWine-x86_64-Glibc-2.35.tar.gz
+```
+
+Else, download [Twig6943](https://github.com/Twig6943/wine/releases)'s build:
+
+```wget
+wget -O ~/.local/share/wine/runners/ElementalWarriorWine-x86_64.tar.gz https://github.com/Twig6943/wine/releases/download/9.13/ElementalWarriorWine-x86_64.tar.gz
+```
 
 > [!NOTE]
 > You can check [Twig6943's GitHub releases](https://github.com/Twig6943/wine/releases) page for newer builds of ElementalWarrior's wine fork.
 
+Now extract it:
+
 ```bash
 pushd ~/.local/share/wine/runners &&
-wget https://github.com/Twig6943/wine/releases/download/9.13/ElementalWarriorWine-x86_64.tar.gz &&
-tar xvzf ElementalWarriorWine-x86_64.tar.gz &&
-rm ElementalWarriorWine-x86_64.tar.gz &&
+tar xvzf ElementalWarriorWine.tar.gz &&
+rm ElementalWarriorWine.tar.gz &&
 popd
 ```
 
@@ -98,7 +115,11 @@ ElementalWarriorWine-x86_64
 Notice how `rum` correctly found our `ElementalWarriorWine`.
 
 ## Alias Setup
-We'll register an alias so that we don't need to always give `rum` the full path to the affinity wine prefix.  
+We'll register an alias so that we don't need to always give `rum` the full path to the Affinity Wine prefix.  
+
+> [!NOTE] 
+> If you're using other shells other than `bash` make sure to register the alias in the approriate config file for your shell.
+
 Open either your `.bashrc` or dedicated `.bash_aliases` file, and add the following alias:
 
 ```bash
@@ -106,15 +127,13 @@ alias wine-ew-affinity='rum ElementalWarriorWine-x86_64 $HOME/.local/share/wine/
 ```
 
 I gave mine a pretty verbose name, but feel free to name it how you like.  
-Also remember to `source` the file you just modified for the changes to take effect, e.g:
+Also remember to `source` the file you just modified for the changes to take effect:
 ```bash
 source ~/.bash_aliases
 ```
 Verify once again that your alias is setup correctly by calling it without arguments and checking that you see the same error as before.
 
-> *If you're using Fish as your default shell, you might have to manage your aliases and environment variables in Fish's configuration files instead of .bashrc. For the alias you added, you can define it in Fish by editing `nano ~/.config/fish/config.fish` (create it if it doesn't exist) and adding:*
 
-> `alias wine-ew-affinity='rum ElementalWarriorWine-x86_64 $HOME/.local/share/wine/prefixes/affinity/`
 
 ## Wine Prefix Configuration
 
@@ -135,7 +154,7 @@ wine-ew-affinity wineboot --init
 Now run winetricks with the following options to install all the needed dependencies in your Affinity prefix:
 
 ```bash
-wine-ew-affinity winetricks --unattended --force remove_mono vcrun2022 dotnet48  corefonts win11
+wine-ew-affinity winetricks --unattended remove_mono vcrun2022 dotnet48  corefonts win11
 ```
 
 > [!NOTE]
@@ -183,7 +202,7 @@ wine-ew-affinity wine ~/Downloads/affinity-photo-1.10.6.exe
 
 ![installer](./Screenshots/installer.png)
 
-Click `Install`, and ignore all the warnings wine throws.  
+Click `Install`, and ignore all the warnings Wine throws.  
 Once it completes, close the installer.
 
 Finally, launch the software!
@@ -204,19 +223,11 @@ To adjust the scaling on high resolution monitors, run:
 ```bash
 wine-ew-affinity winecfg
 ```
-- Go on the `Graphics` tab
-- Temporarily enable `Emulate a virtual desktop`
-- Adjust the `Desktop size`
-- Disable `Emulate a virtual desktop`
-- Increase the `dpi` to your preference
-
-> [!NOTE]
-> As I understand it, the `dpi` value is a percentage applied to the currently set `Desktop Size`.  
-> So, for a 4k monitor, setting the desktop size to `1920 x 1080` and scaling it by 200% works quite well.
+Go on the `Graphics` tab and increase the `dpi` to your preference.
 
 ![DPI Fix](./Screenshots/dpifix.png)
 
-## Creating a .desktop launcher
+## Creating a `.desktop` Launcher
 Create a .desktop launcher by following this [Desktop Launcher Guide](https://github.com/seapear/AffinityOnLinux/blob/main/Guides/Rum/Guide-DesktopLauncher.md) so you can open affinity from your desktop.
 
 ## Credits
