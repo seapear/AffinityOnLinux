@@ -54,8 +54,8 @@ The Affinity apps installed with Bottles are located at the following location:
 - **Flatpak**: `~/.var/app/com.usebottles.bottles/data/bottles/bottles/Affinity/drive_c`
 
 ### How to Fix Studdering
-Bottles -> Settings -> # Performance | Toggle on Feral GameMode
-Bottles -> Settings -> # Compatibility | Windows 10 -> Windows 11 [*](https://discord.com/channels/1281706644073611358/1289640098589315174/1418124555406544956)
+- Bottles -> Settings -> # Performance | Toggle on Feral GameMode
+- Bottles -> Settings -> # Compatibility | Windows 10 -> Windows 11 [*](https://discord.com/channels/1281706644073611358/1289640098589315174/1418124555406544956)
 
 ### Dark Theme for Wine
 
