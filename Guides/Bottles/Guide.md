@@ -55,6 +55,7 @@ The Affinity apps installed with Bottles are located at the following location:
 
 ### How to Fix Studdering
 Bottles -> Settings -> # Performance | Toggle on Feral GameMode
+Bottles -> Settings -> # Compatibility | Windows 10 -> Windows 11 [*](https://discord.com/channels/1281706644073611358/1289640098589315174/1418124555406544956)
 
 ### Dark Theme for Wine
 
