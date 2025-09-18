@@ -53,11 +53,17 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 | [Fedora Linux](https://fedoraproject.org/)    | ✔️     | ✔️     | ✔️     | ✔️  |
 | [Arch Linux](https://archlinux.org/)      | ✔️     | ✔️     | ✔️     | ✔️  |
 | [Ubuntu](https://ubuntu.com/)    | ✔️     | ✔️     | ✔️     | ✔️  |
-| [Zorin OS](https://zorin.com/os/)     | ✔️     | ❌     | ❌     | ❓  | 
+| [Zorin OS](https://zorin.com/os/)     | [✔️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [⚠️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [⚠️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [❌](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305386111)  | 
 | [CachyOS](https://cachyos.org/)     | ✔️     | ✔️     | ❓     | ✔️  |
 | [EndeavourOS](https://endeavouros.com/)   | ✔️     | ✔️     | ❓     | ✔️  |
 | [Nobara Linux](https://nobaraproject.org/)   | ✔️     | ✔️     | ❓     | ✔️  |
 | [SteamOS](https://store.steampowered.com/steamos)   | ✔️     | ✔️     | ❓     | ❓  |
+
+Click on icon for more context if available:
+❓ Untested
+✔️ Working and Tested
+⚠️ Working but unstable or buggy
+❌ Not Working
 
 ### 📚 Guides
 
