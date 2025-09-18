@@ -137,5 +137,7 @@ To enable the dark theme for Wine, follow these steps:
    ```
 3. If you also want to enable dark theme for the Wine fork for your installed Affinity apps on Lutris, run the command:
     ```shell
-   WINEPREFIX="$HOME/Games/affinity-suite" wine regedit wine-dark-theme.reg
+   WINEPREFIX="$HOME/path/to/wineprefix" wine regedit wine-dark-theme.reg
    ```
+   - To check your Affinity app's Wine prefix, launch Lutris, then right click on an Affinity app, and select `Configure` from the menu. Under the `Game options` tab, check the `Wine prefix` field.
+   - Replace `$HOME/path/to/wineprefix` in the command above with the Wine prefix of your installed Affinity app.

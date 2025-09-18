@@ -94,4 +94,4 @@ Quote from **darkside99**:
    WINEPREFIX="$HOME/path/to/wineprefix/folder" wine regedit wine-dark-theme.reg
    ```
    - To check your Affinity app's Wine prefix, launch Heroic Games Launcher, then click an Affinity app. Under the **INSTALL INFO** section, check the **WinePrefix folder**.
-   - Replace `$HOME/path/to/wineprefix/folder` with the WinePrefix folder location of your installed Affinity app.
+   - Replace `$HOME/path/to/wineprefix/folder` in the command above with the WinePrefix folder location of your installed Affinity app.
