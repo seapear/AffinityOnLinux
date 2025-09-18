@@ -101,14 +101,14 @@ After installing one Affinity app using the steps above, you can install the oth
 5. Edit the `Name` and `Identifier` fields under the `Game Info` tab.
 6. Set the correct `.exe` under the `Game Options` tab.
 
-## Optional: Set Icon and Cover Art for Affinity in Lutris
+## Optional: Set Icon, Cover Art and Banner for Affinity in Lutris
 
-After installing an Affinity app with Lutris, you can set the icon and cover art for the Affinity app.
+After installing an Affinity app with Lutris, you can set the icon, cover art and banner for the Affinity app.
 
 1. Right click an Affinity app entry, then select `Configure`.
-2. Under the `Game info` tab, set custom icon and cover art.
+2. Under the `Game info` tab, set custom icon, cover art and banner.
 
-You can find icons and cover art for Affinity apps from the AffinityOnLinux repository's [`Assets/Icons`](/Assets/Icons) and [`Assets/Covers`](/Assets/Covers) directories.
+You can find icons, cover art and banner for Affinity apps from the AffinityOnLinux repository's [`Assets/Icons`](/Assets/Icons) and [`Assets/Covers`](/Assets/Covers) directories.
 
 Make sure the `Identifier` has been changed to the corresponding name of each different Affinity app, as instructed the above steps to configure your Affinity apps' executable paths, otherwise Lutris will make the icons and cover art the same across all the different Affinity apps.
 
