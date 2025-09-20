@@ -48,21 +48,18 @@ Example:
 WINEPREFIX="$HOME/.var/app/com.usebottles.bottles/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
 ```
 
----
 #### Lutris
-1. Open Lutris and right-click an Affinity app.  
-2. Choose Configure → under the Game options tab check the Wine prefix field.  
-
-Example:  
-
-```bash
-WINEPREFIX="$HOME/.var/app/net.lutris.Lutris/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
+  1. Open Lutris and right-click an Affinity app.  
+  2. Choose Configure → under the Game options tab check the Wine prefix field.  
+  
+  Example:  
+  
+  ```bash
+  WINEPREFIX="$HOME/.var/app/net.lutris.Lutris/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
 ```
-
----
 
 #### Bottles
-If you are using Bottles directly, just use the Wine prefix folder configured for your Affinity app:
-```bash
-WINEPREFIX="/path/to/your/bottle" wine regedit wine-dark-theme.reg
-```
+  If you are using Bottles directly, just use the Wine prefix folder configured for your Affinity app:
+  ```bash
+  WINEPREFIX="/path/to/your/bottle" wine regedit wine-dark-theme.reg
+  ```
