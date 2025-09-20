@@ -37,29 +37,26 @@ Replace /path/to/wineprefix/folder with the exact Wine prefix of the app.
 
 ### TIP: Finding Your Wine Prefix Location
 
-#### Heroic Games Launcher
+#### _Heroic Games Launcher_
+  1. Launch Heroic.
+  2. Select an Affinity app.
+  3. Under INSTALL INFO, look at the WinePrefix folder path.
+  Example:
+  ```bash
+  WINEPREFIX="$HOME/.var/app/com.usebottles.bottles/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
+  ```
 
-1. Launch Heroic.
-2. Select an Affinity app.
-3. Under INSTALL INFO, look at the WinePrefix folder path.
-
-Example:  
-```bash
-WINEPREFIX="$HOME/.var/app/com.usebottles.bottles/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
-```
-
-#### Lutris
+#### _Lutris_
   1. Open Lutris and right-click an Affinity app.  
   2. Choose Configure → under the Game options tab check the Wine prefix field.  
-  
-  Example:  
-  
+  Example:
   ```bash
   WINEPREFIX="$HOME/.var/app/net.lutris.Lutris/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
-```
+  ```
 
-#### Bottles
+#### _Bottles_
   If you are using Bottles directly, just use the Wine prefix folder configured for your Affinity app:
+  Example:  
   ```bash
   WINEPREFIX="/path/to/your/bottle" wine regedit wine-dark-theme.reg
   ```
