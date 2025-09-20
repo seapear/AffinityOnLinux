@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workspace UID="Photo">
+	<Toolbars Version="2">
+		<Item>WorkspaceGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>AutoEnhanceGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>PixelSelectionGroup</Item>
+		<Item>Space</Item>
+		<Item>QuickMaskPopup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>SnappingGroup</Item>
+		<Item>Space</Item>
+		<Item>ShowAssistantOptions</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>OrderGroup</Item>
+		<Item>Space</Item>
+		<Item>AlignmentPopup</Item>
+		<Item>Space</Item>
+		<Item>InsertionTargetGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>UserStatus</Item>
+	</Toolbars>
+</Workspace>

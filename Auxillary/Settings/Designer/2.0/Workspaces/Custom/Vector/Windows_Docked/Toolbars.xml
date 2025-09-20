@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workspace UID="Vector">
+	<Toolbars Version="2">
+		<Item>WorkspaceGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>DefaultsGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>ViewModeGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>OrderGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>TransformGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>AlignmentPopup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>SnappingGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>OperationGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>InsertionTargetGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>UserStatus</Item>
+	</Toolbars>
+</Workspace>

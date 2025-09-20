@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workspace UID="Publisher">
+	<Toolbars Version="2">
+		<Item>WorkspaceGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>DefaultsGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>WrappingGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>PinToTextGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>PreviewMode</Item>
+		<Item>Space</Item>
+		<Item>BaselineGridGroup</Item>
+		<Item>Space</Item>
+		<Item>LayoutSnappingGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>OrderGroup</Item>
+		<Item>Space</Item>
+		<Item>AlignmentPopup</Item>
+		<Item>Space</Item>
+		<Item>TransformGroup</Item>
+		<Item>Space</Item>
+		<Item>InsertionTargetGroup</Item>
+		<Item>FlexibleSpace</Item>
+		<Item>UserStatus</Item>
+	</Toolbars>
+</Workspace>
