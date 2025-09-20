@@ -85,6 +85,8 @@ Click on icon for more context if available:
 > - [4k/2k Display, UI is really small and hard to read, how to increase the size?](https://github.com/seapear/AffinityOnLinux/issues/47)
 > - [Does Bottles work?](https://github.com/seapear/AffinityOnLinux/issues/37)
 > - [Exporting keeps offsetting by a Pixel?](https://discord.com/channels/1281706644073611358/1418128283408531509)
+> - [How to set wine to darkmode?](https://github.com/seapear/AffinityOnLinux/tree/main/Guides#enabling-dark-theme-in-wine)
+> - [I can't put redock/rearrange my panels?](https://github.com/seapear/AffinityOnLinux/issues/67#issuecomment-3314310457)
 
 ### How do I get support?
 > *Post a question in the [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or Check out the [Discord](https://discord.com/invite/t5V9ecpJWZ)*
