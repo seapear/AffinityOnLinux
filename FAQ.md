@@ -58,6 +58,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 | [EndeavourOS](https://endeavouros.com/)   | ✔️     | ✔️     | ❓     | ✔️  |
 | [Nobara Linux](https://nobaraproject.org/)   | ✔️     | ✔️     | ❓     | ✔️  |
 | [SteamOS](https://store.steampowered.com/steamos)   | ✔️     | ✔️     | ❓     | ❓  |
+| [PopOS](https://system76.com/pop/)   | ❓     | ❓     | ❓     | [✔️](https://discord.com/channels/1281706644073611358/1281706644715208809/1419434351019687948)  |
 
 Click on icon for more context if available:
 ❓ Untested
