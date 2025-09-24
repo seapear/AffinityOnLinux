@@ -55,7 +55,7 @@ If there is no `wine` folder inside your Lutris runners directory, create it, th
 1. Open Lutris and click on the plus icon on the top left corner of the window.
 2. Press "Install from a local install script".
 3. Download the install script for your Wine fork — Visit one of the following links based on your choice of Wine fork, then click the download button located on the top right of the file content to download the install script file, which is in YAML format.
-    - [ElementalWarrior](https://raw.githubusercontent.com/helenclx/AffinityOnLinux/refs/heads/main/Guides/Lutris/InstallScripts/Affinity-ew.yaml)
+    - [ElementalWarrior](/Guides/Lutris/InstallScripts/Affinity-ew.yaml)
     - [Wine-tkg-affinity](/Guides/Lutris/InstallScripts/Affinity-tkg.yaml)
 
 4. In Lutris, import the install script file for your Wine fork.
