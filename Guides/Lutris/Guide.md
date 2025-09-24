@@ -74,7 +74,7 @@ Once the install of the Affinity app finishes, right click the Affinity app entr
     * `Affinity Designer`
     * `Affinity Publisher`
 
-3. (Recommended) Change the `Identifier` field to the correlated app name in lowercase and dashes:
+3. (Recommended) Change the `Identifier` field to the correlated app name in lowercase and dashes, and click "Apply" to apply the changes:
 
     * `affinity-photo`
     * `affinity-designer`
