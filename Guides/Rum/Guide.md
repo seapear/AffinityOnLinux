@@ -33,7 +33,7 @@ First, we'll create two directories in `~/.local/share/` which will help us orga
 
 ```bash
 mkdir -p ~/.local/share/wine/runners
-mkdir -p ~/.local/share/wine/prefixes
+mkdir -p ~/.local/share/wine/prefixes/affinity
 ```
 
 ## Wine Runner Download
