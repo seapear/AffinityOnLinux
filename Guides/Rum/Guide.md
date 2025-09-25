@@ -63,8 +63,8 @@ Now extract it:
 
 ```bash
 pushd ~/.local/share/wine/runners &&
-tar xvzf ElementalWarriorWine.tar.gz &&
-rm ElementalWarriorWine.tar.gz &&
+tar xvzf ElementalWarriorWine-x86_64.tar.gz &&
+rm ElementalWarriorWine-x86_64.tar.gz &&
 popd
 ```
 
