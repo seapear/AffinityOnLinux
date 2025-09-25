@@ -46,8 +46,8 @@ getconf GNU_LIBC_VERSION
 
 If you're running a version lower than `glibc 2.39`, like distros based on `Ubuntu 22.04` do, download [Bugg4](https://github.com/Bugg4/wine/releases)'s build, which was linked against `glibc 2.35`:
 
-```wget
-wget -O ~/.local/share/wine/runners/ElementalWarriorWine-x86_64.tar.gz https://github.com/Bugg4/wine/releases/download/9.13/ElementalWarriorWine-x86_64-Glibc-2.35.tar.gz
+```bash
+wget -O ~/.local/share/wine/runners/ElementalWarriorWine-x86_64-Glibc-2.35.tar.gz https://github.com/Bugg4/wine/releases/download/9.13/ElementalWarriorWine-x86_64-Glibc-2.35.tar.gz
 ```
 
 Else, download [Twig6943](https://github.com/Twig6943/wine/releases)'s build:
@@ -63,7 +63,7 @@ Now extract it:
 
 ```bash
 pushd ~/.local/share/wine/runners &&
-tar xvzf ElementalWarriorWine-x86_64.tar.gz &&
+tar xvzf ElementalWarriorWine-x86_64*.tar.gz &&
 rm ElementalWarriorWine-x86_64.tar.gz &&
 popd
 ```
