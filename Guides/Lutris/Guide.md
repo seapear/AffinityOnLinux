@@ -47,8 +47,8 @@ Choose one of the following forks of Wine, and download and extract it:
 
 Lutris' Wine-related folders can be found in a hidden directory within your `home` folder. If you can't see hidden folders in your file browser, you can usually enable them by pressing `Ctrl + H`
 
-- If you installed Lutris via **Flatpak**, navigate to `/home/[your-username]/.var/app/net.lutris.Lutris/data/lutris/runners/`
-- If you installed Lutris via **AppImage** or other methods, navigate to `/home/[your-username]/.local/share/lutris/runners/`
+- If you installed Lutris via **Flatpak**, navigate to `/home/$USER/.var/app/net.lutris.Lutris/data/lutris/runners/`
+- If you installed Lutris via **AppImage** or other methods, navigate to `/home/$USER/.local/share/lutris/runners/`
 
 Create a folder called `wine` if one does not already exist, then copy and paste the folder you extracted in the previous step to this folder.
 
@@ -63,7 +63,7 @@ This is also known as your "Wine runner."
 3. Press "Install from a local install script".
 4. Press on the `⋮` three vertical dots button, then select the `.yaml` install script file you just downloaded for your Wine fork
 5. Press `Install`, then press `Install` again
-6. Select or create a filepath for where you would like everything to install, such as `/home/[your-username]/AffinityOnLinux`
+6. Select or create a filepath for where you would like everything to install, such as `/home/$USER/AffinityOnLinux`
 7. Check [✓] `Create desktop shortcut` and/or [✓] `Create application menu shortcut`, then press `Continue`
 8. Select Affinity's setup file by pressing on the `⋮` three vertical dots button then choosing the `.exe` for Affinity Photo, Affinity Designer, or Affinity Publisher
 9. Press `Install`.
