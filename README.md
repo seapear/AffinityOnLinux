@@ -19,12 +19,12 @@ _A repository containing information on how to get Affinity software working on 
 ## How to Use This Guide:
 
 1. Check if your Linux distributon is compatable in [FAQ ❓](/FAQ.md#tested-methods).
-2. Choose a Wine manager: [Lutris](https://lutris.net/), [Heroic Games Launcher](https://heroicgameslauncher.com/), [Bottles](https://usebottles.com/) or [Rum](https://gitlab.com/xkero/rum).
+2. Choose a Wine manager: [Lutris](https://lutris.net/) (recommended), [Heroic Games Launcher](https://heroicgameslauncher.com/), [Bottles](https://usebottles.com/) or [Rum](https://gitlab.com/xkero/rum) (terminal).
 3. Choose a guide based on your Wine manager of choice: 
-    - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
-    - [Heroic Games Launcher](./Guides/Heroic/Guide.md)
-    - [Bottles](./Guides/Bottles/Guide.md)
-    - [Rum](./Guides/Rum/Guide.md) (terminal)
+    - [Guide for Lutris](./Guides/Lutris/Guide.md) (Recommended)
+    - [Guide for Heroic Games Launcher](./Guides/Heroic/Guide.md)
+    - [Guide for Bottles](./Guides/Bottles/Guide.md)
+    - [Guide for Rum](./Guides/Rum/Guide.md) (terminal)
 4. Report any issues or bugs you find in our repository's [Issues](https://github.com/seapear/AffinityOnLinux/issues) tab, or on our [Discord](https://discord.gg/t5V9ecpJWZ) in the Help channel.
 5. If you have a fix or a solution for our guides, submit a [Pull Request](https://github.com/seapear/AffinityOnLinux/pulls) and let us know in #feedback on our [Discord](https://discord.gg/t5V9ecpJWZ).
 6. Finally, grab your ✔️Success Badge on our [Discord](https://discord.gg/t5V9ecpJWZ), we would be love to hear about your real world use of AffinityOnLinux!
