@@ -4,7 +4,7 @@ Currently, Lutris is the best method for Nvidia GPU users.
 
 <img src="/Assets/NewLogos/AffinityLutris.png" width="400"/>
 
-Before doing anything, make sure you have a `.exe` version of Affinity Photo, Affinity Designer, and/or Affinity Publisher downloaded from their website: https://store.serif.com/en-us/account/downloads
+Before doing anything, make sure you have a `.exe` version of Affinity Photo, Affinity Designer, and/or Affinity Publisher downloaded from the official Affinity website: https://store.serif.com/en-us/account/downloads
 
 ## 1. Install winetricks
 

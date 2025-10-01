@@ -2,6 +2,8 @@
 
 <img src="/Assets/NewLogos/AffinityHGL.png" width="400"/>
 
+Before doing anything, make sure you have a `.exe` version of Affinity Photo, Affinity Designer, and/or Affinity Publisher downloaded from the official Affinity website: https://store.serif.com/en-us/account/downloads
+
 ## 1. Install Heroic Games Launcher
 
 Visit the [download page of Heroic Games Launcher's official website](https://heroicgameslauncher.com/downloads), and follow the instructions to download and install Heroic Games Launcher. [Flatpak](https://flathub.org/en/apps/com.heroicgameslauncher.hgl) is recommended.
