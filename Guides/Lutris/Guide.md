@@ -108,7 +108,21 @@ At this point, you should be in the 🎮 Games section of Lutris where a blank r
 5. Click `Save`
 6. Press `Play` to launch the app
 
-At this point, you may wish to install other Affinity apps, fix scaling issues for high resolution screens, or enable a dark theme for Wine. If any of these apply to you, keep reading:
+At this point, you may wish to create desktop and application shortcuts, install other Affinity apps, fix scaling issues for high resolution screens, or enable a dark theme for Wine. If any of these apply to you, keep reading:
+
+## Creating Desktop and Application Menu Shortcuts
+
+After you install an Affinity app with Lutris, you may notice that application menu shortcuts for the Affinity app were created by Wine in your system. However, it is recommended to create desktop and application menu shortcuts for Affinity apps with Lutris instead to ensure the shortcuts will launch the apps as intended.
+
+To remove application menu shortcuts created by Wine, visit the following directories, and remove shortcuts for Affinity apps:
+- `/home/$USER/.local/share/applications`
+- `/home/$USER/.config/menus/applications-merged`
+
+To create desktop and application menu shortcuts for Affinity apps with Lutris, follow these steps:
+
+1. Launch Lutris.
+2. Right click an Affinity app you have installed, then select `Create desktop shortcut`.
+3. Right click an Affinity app you have installed, then select `Create application menu shortcut`.
 
 ## Installing other Affinity apps
 
