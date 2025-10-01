@@ -146,7 +146,7 @@ To enable the dark theme for Wine, follow these steps:
 
 1. Visit the [repository's `wine-dark-theme.reg` file page](/Auxillary/Other/wine-dark-theme.reg) to download the `.reg` file by clicking the download button on the top right just like we did for the `.yaml` file earlier.
 2. Save the file to your Downloads folder.
-3. Launch a terminal app to open the terminal, then type `cd Downloads` to change to your Downloads folder.
+3. Launch your terminal app, then type `cd Downloads` to change to your Downloads folder.
 4. Run the following command:
     ```shell
     wine regedit wine-dark-theme.reg
