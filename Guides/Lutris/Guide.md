@@ -110,7 +110,7 @@ At this point, you should be in the 🎮 Games section of Lutris where a blank r
 
 At this point, you may wish to install other Affinity apps, fix scaling issues for high resolution screens, or enable a dark theme for Wine. If any of these apply to you, keep reading:
 
-### Installing other Affinity apps
+## Installing other Affinity apps
 
 After installing one Affinity app using the steps above, you can install the others to the same Wine prefix as follows:
 
@@ -122,7 +122,7 @@ After installing one Affinity app using the steps above, you can install the oth
 5. Edit the `Name` and `Identifier` fields under the `Game Info` tab.
 6. Set the correct `.exe` under the `Game Options` tab.
 
-### Fixing Scaling on HiDPI Screens
+## Fixing Scaling on HiDPI Screens
 
 To adjust the scaling of Affinity apps' UI on high resolution monitors, follow these steps:
 
@@ -134,7 +134,7 @@ To adjust the scaling of Affinity apps' UI on high resolution monitors, follow t
 
 Note that these Wine configuration settings will apply to all Affinity apps you installed with Lutris, since they share the same Wine prefix.
 
-### Dark Theme for Wine
+## Dark Theme for Wine
 
 To enable the dark theme for Wine, follow these steps:
 
