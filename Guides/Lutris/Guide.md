@@ -52,7 +52,7 @@ Lutris' Wine-related folders can be found in a hidden directory within your `hom
 
 Create a folder called `wine` if one does not already exist, then copy and paste the folder you extracted in the previous step to this folder.
 
-This is also known as your "Wine runner."
+This is also known as your Wine runner.
 
 ## 5. Install Affinity with Lutris
 
@@ -61,19 +61,18 @@ This is also known as your "Wine runner."
     - [Wine-tkg-affinity](/Guides/Lutris/InstallScripts/Affinity-tkg.yaml) `Affinity-tkg.yaml`
 2. Open Lutris and click on the plus `+` icon on the top left corner of the window.
 3. Press "Install from a local install script".
-4. Press on the `⋮` three vertical dots button, then select the `.yaml` install script file you just downloaded for your Wine fork
-5. Press `Install`, then press `Install` again
-6. Select or create a filepath for where you would like everything to install, such as `/home/$USER/AffinityOnLinux`
-7. Check [✓] `Create desktop shortcut` and/or [✓] `Create application menu shortcut`, then press `Continue`
-8. Select Affinity's setup file by pressing on the `⋮` three vertical dots button then choosing the `.exe` for Affinity Photo, Affinity Designer, or Affinity Publisher
-9. Press `Install`.
+4. Press on the `⋮` three vertical dots button, then select the `.yaml` install script file you just downloaded for your Wine fork.
+5. Press `Install`, then press `Install` again.
+6. Select or create a file path for where you would like everything to install, such as `/home/$USER/AffinityOnLinux`
+7. Select Affinity's setup file by pressing on the `⋮` three vertical dots button then choosing the `.exe` for Affinity Photo, Affinity Designer, or Affinity Publisher
+8. Press `Install`.
 
 At this point, you may get a message saying "Wine could not find a wine-mono package...". Go ahead and click `Install`.
 
 You will see a bunch of code running in a terminal-like space. This may take several minutes.
 
-10. Once the terminal stuff is done, an Affinity window should pop up with a button to `Install`. Let it install, then once it's done click `Close`.
-11. Click `Launch` - you will now see an error message from Lutris that says 'This game has no executable set. The install process didn't finish properly.' Just click `OK` - we will address this in the next step.
+9. Once the terminal stuff is done, an Affinity window should pop up with a button to `Install`. Let it install, then once it's done click `Close`.
+10. Click `Launch` - you will now see an error message from Lutris that says 'This game has no executable set. The install process didn't finish properly.' Just click `OK` - we will address this in the next step.
 
 (Congrats on making it this far!) 🐧
 
@@ -81,9 +80,9 @@ You will see a bunch of code running in a terminal-like space. This may take sev
 
 At this point, you should be in the 🎮 Games section of Lutris where a blank rectangle labeled `Affinity Suite` should exist. Right click on it and select `Configure` (should be the third option down).
 
-2. Under the first tab, `Game info`, change the `Name` field from Affinity Suite to the name of the app you just installed (Affinity Photo, Affinity Designer, or Affinity Publisher)
+2. Under the first tab, `Game info`, change the `Name` field from Affinity Suite to the name of the app you just installed: Affinity Photo, Affinity Designer, or Affinity Publisher.
 
-3. Next to the the `Identifier` field (towards the bottom), press `Change` then type in the correlated app name in lowercase and dashes, then press `Apply` to apply the change: 
+3. Next to the `Identifier` field (towards the bottom), press `Change` then type in the correlated app name in lowercase and dashes, then press `Apply` to apply the change: 
     * `affinity-photo`
     * `affinity-designer`
     * `affinity-publisher`
