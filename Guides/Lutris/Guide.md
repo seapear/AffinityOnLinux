@@ -65,12 +65,7 @@ This is also known as your Wine runner.
 5. Press `Install`, then press `Install` again.
 6. Select or create a file path for where you would like everything to install, such as `/home/$USER/AffinityOnLinux`
 7. Select Affinity's setup file by pressing on the `⋮` three vertical dots button then choosing the `.exe` for Affinity Photo, Affinity Designer, or Affinity Publisher
-8. Press `Install`.
-
-At this point, you may get a message saying "Wine could not find a wine-mono package...". Go ahead and click `Install`.
-
-You will see a bunch of code running in a terminal-like space. This may take several minutes.
-
+8. Press `Install`. At this point, you may get a message saying "Wine could not find a wine-mono package...". Go ahead and click `Install`. You will see a bunch of code running in a terminal-like space. This may take several minutes.
 9. Once the terminal stuff is done, an Affinity window should pop up with a button to `Install`. Let it install, then once it's done click `Close`.
 10. Click `Launch` - you will now see an error message from Lutris that says 'This game has no executable set. The install process didn't finish properly.' Just click `OK` - we will address this in the next step.
 
