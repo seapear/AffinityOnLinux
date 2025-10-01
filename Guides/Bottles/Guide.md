@@ -2,6 +2,8 @@
 
 <img src="/Assets/NewLogos/AffinityBottles.png" width="400"/>
 
+Before doing anything, make sure you have a `.exe` version of Affinity Photo, Affinity Designer, and/or Affinity Publisher downloaded from the official Affinity website: https://store.serif.com/en-us/account/downloads
+
 ## 1. Install Bottles
 
 Visit the [download page of Bottles' official website](https://usebottles.com/download/), and follow the instructions to download and install Bottles. [Flatpak](https://flathub.org/apps/com.usebottles.bottles) is recommended, as it is the only officially supported install method for Bottles.

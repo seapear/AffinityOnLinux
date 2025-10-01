@@ -2,6 +2,8 @@
 
 <img src="/Assets/NewLogos/AffinityHGL.png" width="400"/>
 
+Before doing anything, make sure you have a `.exe` version of Affinity Photo, Affinity Designer, and/or Affinity Publisher downloaded from the official Affinity website: https://store.serif.com/en-us/account/downloads
+
 ## 1. Install Heroic Games Launcher
 
 Visit the [download page of Heroic Games Launcher's official website](https://heroicgameslauncher.com/downloads), and follow the instructions to download and install Heroic Games Launcher. [Flatpak](https://flathub.org/en/apps/com.heroicgameslauncher.hgl) is recommended.
@@ -84,14 +86,20 @@ Quote from **darkside99**:
 
 ### Dark Theme for Wine
 
-1. Visit the [wine-dark-theme registry file](/Auxillary/Other/wine-dark-theme.reg) from this repository, and download the file by clicking the download button on the top right.
-2. In the folder where you downloaded the registry file into, run the following command:
-   ```shell
-   wine regedit wine-dark-theme.reg
-   ```
-3. If you also want to enable dark theme for the Wine fork for your installed Affinity apps on Heroic Games Launcher, run the command:
+1. Visit the [repository's `wine-dark-theme.reg` file page](/Auxillary/Other/wine-dark-theme.reg) to download the `.reg` file by clicking the download button on the top right.
+2. Save the file to your Downloads folder.
+3. Launch a terminal app to open the terminal, then type `cd Downloads` to change to your Downloads folder.
+4. Run the following command:
+    ```shell
+    wine regedit wine-dark-theme.reg
+    ```
+5. Press `Enter`. You might get a message again saying "Wine could not find a wine-mono package...". Just click `Install`.
+
+If you also want to enable dark theme for the Wine fork for your installed Affinity apps on Heroic Games Launcher:
+
+1. Launch Heroic Games Launcher.
+2. Click an Affinity app you installed. Under the **INSTALL INFO** section, check the **WinePrefix folder** path.
+3. Run the following command, and replace `/path/to/wineprefix` with the WinePrefix folder path:
     ```shell
    WINEPREFIX="/path/to/wineprefix/folder" wine regedit wine-dark-theme.reg
    ```
-   - To check your Affinity app's Wine prefix, launch Heroic Games Launcher, then click an Affinity app. Under the **INSTALL INFO** section, check the **WinePrefix folder**.
-   - Replace `/path/to/wineprefix/folder` in the command above with the WinePrefix folder location of your installed Affinity app.
