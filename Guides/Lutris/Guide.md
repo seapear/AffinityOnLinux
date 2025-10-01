@@ -152,17 +152,20 @@ Note that these Wine configuration settings will apply to all Affinity apps you 
 
 To enable the dark theme for Wine, follow these steps:
 
-1. Click [here](/Auxillary/Other/wine-dark-theme.reg) to download a `.reg` file by clicking the download button on the top right just like we did for the `.yaml` file earlier
-2. Save the file to your Downloads folder
-3. Open Terminal, then type `cd Downloads` to change to your Downloads folder
+1. Visit the [repository's `wine-dark-theme.reg` file page](/Auxillary/Other/wine-dark-theme.reg) to download the `.reg` file by clicking the download button on the top right just like we did for the `.yaml` file earlier.
+2. Save the file to your Downloads folder.
+3. Launch a terminal app to open the terminal, then type `cd Downloads` to change to your Downloads folder.
 4. Run the following command:
     ```shell
     wine regedit wine-dark-theme.reg
     ```
 5. Press `Enter`. You might get a message again saying "Wine could not find a wine-mono package...". Just click `Install`.
-6. Launch Lutris, then right click on any Affinity app and select `Configure` from the menu
-7. Under the `Game options` tab, copy the filepath from the **`Wine prefix`** field
-8. Run the following command, replacing `/path/to/wineprefix` with the filepath you just copied
+
+If you also want to enable dark theme for the Wine fork for your installed Affinity apps on Lutris:
+
+1. Launch Lutris, then right click on any Affinity app and select `Configure` from the menu.
+2. Under the `Game options` tab, copy the file path from the **`Wine prefix`** field
+3. Run the following command, and replace `/path/to/wineprefix` with the file path you just copied:
    ```shell
    WINEPREFIX="/path/to/wineprefix" wine regedit wine-dark-theme.reg
    ```
