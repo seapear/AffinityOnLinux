@@ -14,7 +14,7 @@ Alternately, you may want to install Bottles using the [unofficial AppImage](htt
 
 Choose one of the following forks of Wine, and download and extract it: 
 
-- [**ElementalWarriorWine**](https://github.com/Twig6943/wine/releases) (Recommended) — After downloading the `ElementalWarriorWine-x86_64.tar.gz` archive file, right click and extract the archive into an `ElementalWarriorWine-x86_64` folder.
+- [**ElementalWarriorWine**](/Auxiliary/wine-affinity/ElementalWarriorWine-x86_64) (Recommended) — After downloading the `ElementalWarriorWine-x86_64.tar.gz` archive file, right click and extract the archive into an `ElementalWarriorWine-x86_64` folder.
 
 - [**Wine-TKG-affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) — Download the ` wine-tkg-affinity-archbuilt.tar.zst` archive file, then extract the `usr/` folder from the archive and rename the folder to `wine-tkg-affinity-x86_64`.
 
@@ -61,7 +61,7 @@ The Affinity apps installed with Bottles are located at the following location:
 - Bottles -> Settings -> # Compatibility | Windows 10 -> Windows 11 [*](https://discord.com/channels/1281706644073611358/1289640098589315174/1418124555406544956)
 ### Dark Theme for Wine
 
-1. Visit the [wine-dark-theme registry file](/Auxillary/Other/wine-dark-theme.reg) from this repository, and download the file by clicking the download button on the top right.
+1. Visit the [wine-dark-theme registry file](/Auxiliary/Other/wine-dark-theme.reg) from this repository, and download the file by clicking the download button on the top right.
 2. In the folder where you downloaded the registry file into, run the following command:
    ```shell
    wine regedit wine-dark-theme.reg

@@ -39,7 +39,7 @@ Alternately, you can visit the [download page of Lutris' official website](https
 
 Choose one of the following forks of Wine, and download and extract it: 
 
-- [**ElementalWarriorWine**](https://github.com/Twig6943/wine/releases) (Recommended) — Download `ElementalWarriorWine-x86_64.tar.gz`, then right click and extract it. You should have a folder now called `ElementalWarriorWine-x86_64` which we'll copy in the next step.
+- [**ElementalWarriorWine**](/Auxillary/wine-affinity/ElementalWarriorWine-x86_64) (Recommended) — Download `ElementalWarriorWine-x86_64.tar.gz`, then right click and extract it. You should have a folder now called `ElementalWarriorWine-x86_64` which we'll copy in the next step.
 
 - [**Wine-TKG-affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) — Download the ` wine-tkg-affinity-archbuilt.tar.zst` archive file, then extract the `usr/` folder from the archive and rename the folder to `wine-tkg-affinity-x86_64`.
 
@@ -144,7 +144,7 @@ Note that these Wine configuration settings will apply to all Affinity apps you 
 
 To enable the dark theme for Wine, follow these steps:
 
-1. Visit the [repository's `wine-dark-theme.reg` file page](/Auxillary/Other/wine-dark-theme.reg) to download the `.reg` file by clicking the download button on the top right just like we did for the `.yaml` file earlier.
+1. Visit the [repository's `wine-dark-theme.reg` file page](/Auxiliary/Other/wine-dark-theme.reg) to download the `.reg` file by clicking the download button on the top right just like we did for the `.yaml` file earlier.
 2. Save the file to your Downloads folder.
 3. Launch your terminal app, then type `cd Downloads` to change to your Downloads folder.
 4. Run the following command:

@@ -2,7 +2,7 @@
 
 Affinity apps sometimes tend not to save settings properly. There are two methods of fixing this. Given a `wineprefix` of `drive_c/users/$USERNAME/AppData/Roaming/Affinity/`:
 
-1. Clone this repository and copy the files from [./Auxillary/](../Auxillary/Settings) to their respective paths inside the `wineprefix`.
+1. Clone this repository and copy the files from [./Auxiliary/](../Auxiliary/Settings) to their respective paths inside the `wineprefix`.
 2. Locate the settings folders on a windows machine and paste them into the
    corresponding locations in the `wineprefix`.
 
@@ -13,7 +13,7 @@ This method is tested and working for the recommended [Lutris/EW](../Guides/Lutr
 Clone the repository and move into the source directory:
 ```sh
 git clone git@github.com:seapear/AffinityOnLinux.git
-cd AffinityOnLinux/Auxillary/Settings/
+cd AffinityOnLinux/Auxiliary/Settings/
 ```
 
 Execute the following code for each app, each time replacing `$APP` with the name of the

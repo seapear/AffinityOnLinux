@@ -10,7 +10,7 @@ Cover art and banners can be found on the repository's [`Assets/Covers`](/Assets
 
 ### Step 1: Download the Registry File
 
-- Visit the [wine-dark-theme.reg](/Auxillary/Other/wine-dark-theme.reg) file in this repository.  
+- Visit the [wine-dark-theme.reg](/Auxiliary/Other/wine-dark-theme.reg) file in this repository.
 - Click the Download button (top-right of the page) to save it to your machine.
 
 ---
@@ -47,8 +47,8 @@ Replace /path/to/wineprefix/folder with the exact Wine prefix of the app.
   ```
 
 #### _Lutris_
-  1. Open Lutris and right-click an Affinity app.  
-  2. Choose Configure → under the Game options tab check the Wine prefix field.  
+  1. Open Lutris and right-click an Affinity app.
+  2. Choose Configure → under the Game options tab check the Wine prefix field.
   Example:
   ```bash
   WINEPREFIX="$HOME/.var/app/net.lutris.Lutris/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
@@ -56,7 +56,7 @@ Replace /path/to/wineprefix/folder with the exact Wine prefix of the app.
 
 #### _Bottles_
   If you are using Bottles directly, just use the Wine prefix folder configured for your Affinity app:
-  Example:  
+  Example:
   ```bash
   WINEPREFIX="/path/to/your/bottle" wine regedit wine-dark-theme.reg
   ```

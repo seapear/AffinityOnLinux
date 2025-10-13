@@ -1,0 +1,167 @@
+/*
+ * Copyright 2021 Jactry Zeng for CodeWeavers
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
+ */
+
+#ifdef __WIDL__
+#pragma winrt ns_prefix
+#endif
+
+import "inspectable.idl";
+import "eventtoken.idl";
+import "windows.foundation.idl";
+
+namespace Windows.Storage.Streams {
+    interface IBuffer;
+    interface IBufferFactory;
+    interface IBufferStatics;
+    interface IContentTypeProvider;
+    interface IInputStream;
+    interface IInputStreamReference;
+    interface IOutputStream;
+    interface IRandomAccessStream;
+    interface IRandomAccessStreamReference;
+    interface IRandomAccessStreamReferenceStatics;
+    interface IRandomAccessStreamStatics;
+    interface IRandomAccessStreamWithContentType;
+    runtimeclass Buffer;
+    runtimeclass InMemoryRandomAccessStream;
+    runtimeclass RandomAccessStream;
+    runtimeclass RandomAccessStreamReference;
+
+    declare {
+        interface Windows.Foundation.Collections.IIterable<Windows.Storage.Streams.IRandomAccessStream *>;
+        interface Windows.Foundation.Collections.IIterator<Windows.Storage.Streams.IRandomAccessStream *>;
+        interface Windows.Foundation.Collections.IVectorView<Windows.Storage.Streams.IRandomAccessStream *>;
+        interface Windows.Foundation.Collections.IVector<Windows.Storage.Streams.IRandomAccessStream *>;
+        interface Windows.Foundation.AsyncOperationCompletedHandler<Windows.Storage.Streams.IBuffer *>;
+        interface Windows.Foundation.AsyncOperationCompletedHandler<Windows.Storage.Streams.IRandomAccessStream *>;
+        interface Windows.Foundation.IAsyncOperation<Windows.Storage.Streams.IBuffer *>;
+        interface Windows.Foundation.IAsyncOperation<Windows.Storage.Streams.IRandomAccessStream *>;
+    }
+
+    [
+        contract(Windows.Foundation.UniversalApiContract, 1.0),
+        uuid(905a0fe0-bc53-11df-8c49-001e4fc686da)
+    ]
+    interface IBuffer : IInspectable
+    {
+        [propget] HRESULT Capacity([out, retval] UINT32 *value);
+        [propget] HRESULT Length([out, retval] UINT32 *value);
+        [propput] HRESULT Length([in] UINT32 value);
+    }
+
+    [
+        contract(Windows.Foundation.UniversalApiContract, 1.0),
+        exclusiveto(Windows.Storage.Streams.Buffer),
+        uuid(71af914d-c10f-484b-bc50-14bc623b3a27)
+    ]
+    interface IBufferFactory : IInspectable
+    {
+        HRESULT Create([in, range(0x00000000, 0x7fffffff)] UINT32 capacity,
+                       [out, retval] Windows.Storage.Streams.Buffer **value);
+    }
+
+    [
+        contract(Windows.Foundation.UniversalApiContract, 1.0),
+        exclusiveto(Windows.Storage.Streams.Buffer),
+        uuid(e901e65b-d716-475a-a90a-af7229b1e741)
+    ]
+    interface IBufferStatics : IInspectable
+    {
+        HRESULT CreateCopyFromMemoryBuffer([in] Windows.Foundation.IMemoryBuffer *input,
+                                           [out, retval] Windows.Storage.Streams.Buffer **value);
+        HRESULT CreateMemoryBufferOverIBuffer([in] Windows.Storage.Streams.IBuffer *input,
+                                              [out, retval] Windows.Foundation.MemoryBuffer **value);
+    }
+
+    [
+        contract(Windows.Foundation.UniversalApiContract, 1.0),
+        uuid(905a0fe1-bc53-11df-8c49-001e4fc686da),
+    ]
+    interface IRandomAccessStream : IInspectable
+        requires Windows.Foundation.IClosable,
+                 Windows.Storage.Streams.IInputStream,
+                 Windows.Storage.Streams.IOutputStream
+    {
+        [propget] HRESULT Size([out, retval] UINT64 *value);
+        [propput] HRESULT Size([in] UINT64 value);
+        HRESULT GetInputStreamAt([in] UINT64 position, [out, retval] Windows.Storage.Streams.IInputStream **stream);
+        HRESULT GetOutputStreamAt([in] UINT64 position, [out, retval] Windows.Storage.Streams.IOutputStream **stream);
+        [propget] HRESULT Position([out, retval] UINT64 *value);
+        HRESULT Seek([in] UINT64 position);
+        HRESULT CloneStream([out, retval] Windows.Storage.Streams.IRandomAccessStream **stream);
+        [propget] HRESULT CanRead([out, retval] boolean *value);
+        [propget] HRESULT CanWrite([out, retval] boolean *value);
+    }
+
+    [
+        uuid(cc254827-4b3d-438f-9232-10c76bc7e038),
+    ]
+    interface IRandomAccessStreamWithContentType : IInspectable
+        requires
+            Windows.Storage.Streams.IRandomAccessStream,
+            Windows.Foundation.IClosable,
+            Windows.Storage.Streams.IInputStream,
+            Windows.Storage.Streams.IOutputStream,
+            Windows.Storage.Streams.IContentTypeProvider
+    {
+    }
+
+    [
+        contract(Windows.Foundation.UniversalApiContract, 1.0),
+        marshaling_behavior(agile),
+        static(Windows.Storage.Streams.IRandomAccessStreamStatics, Windows.Foundation.UniversalApiContract, 1.0)
+    ]
+    runtimeclass RandomAccessStream
+    {
+    }
+
+    [
+        activatable(Windows.Foundation.UniversalApiContract, 1.0),
+        contract(Windows.Foundation.UniversalApiContract, 1.0),
+        marshaling_behavior(agile)
+    ]
+    runtimeclass InMemoryRandomAccessStream
+    {
+        [default] interface Windows.Storage.Streams.IRandomAccessStream;
+        interface Windows.Storage.Streams.IOutputStream;
+        interface Windows.Foundation.IClosable;
+        interface Windows.Storage.Streams.IInputStream;
+    }
+
+    [
+        activatable(Windows.Storage.Streams.IBufferFactory, Windows.Foundation.UniversalApiContract, 1.0),
+        contract(Windows.Foundation.UniversalApiContract, 1.0),
+        marshaling_behavior(agile),
+        static(Windows.Storage.Streams.IBufferStatics, Windows.Foundation.UniversalApiContract, 1.0),
+        threading(both)
+    ]
+    runtimeclass Buffer
+    {
+        [default] interface Windows.Storage.Streams.IBuffer;
+    }
+
+    [
+        contract(Windows.Foundation.UniversalApiContract, 1.0),
+        marshaling_behavior(agile),
+        static(Windows.Storage.Streams.IRandomAccessStreamReferenceStatics, Windows.Foundation.UniversalApiContract, 1.0)
+    ]
+    runtimeclass RandomAccessStreamReference
+    {
+        [default] interface Windows.Storage.Streams.IRandomAccessStreamReference;
+    }
+}

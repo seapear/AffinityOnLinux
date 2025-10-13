@@ -1,0 +1,236 @@
+/*
+ * Copyright 2021 Rémi Bernon for CodeWeavers
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
+ */
+
+#ifdef __WIDL__
+#pragma winrt ns_prefix
+#endif
+
+#ifndef DO_NO_IMPORTS
+import "inspectable.idl";
+import "asyncinfo.idl";
+import "eventtoken.idl";
+import "windowscontracts.idl";
+import "windows.foundation.idl";
+#endif
+
+namespace Windows {
+    namespace Globalization {
+        typedef enum DayOfWeek DayOfWeek;
+        typedef enum LanguageLayoutDirection LanguageLayoutDirection;
+        interface ILanguage;
+        interface ILanguage2;
+        interface ILanguage3;
+        interface ILanguageExtensionSubtags;
+        interface ILanguageFactory;
+        interface ILanguageStatics;
+        interface ILanguageStatics2;
+        interface ILanguageStatics3;
+        interface IGeographicRegion;
+        interface IGeographicRegionFactory;
+        interface IGeographicRegionStatics;
+        runtimeclass Language;
+        runtimeclass GeographicRegion;
+    }
+}
+
+namespace Windows {
+    namespace Globalization {
+        declare{
+            interface Windows.Foundation.Collections.IIterable<Windows.Globalization.Language*>;
+            interface Windows.Foundation.Collections.IIterator<Windows.Globalization.Language*>;
+            interface Windows.Foundation.Collections.IVectorView<Windows.Globalization.Language*>;
+            interface Windows.Foundation.Collections.IVector<Windows.Globalization.Language*>;
+        }
+    }
+}
+
+
+namespace Windows {
+    namespace Globalization {
+        [contract(Windows.Foundation.UniversalApiContract, 1.0)]
+        enum DayOfWeek
+        {
+            Sunday    = 0,
+            Monday    = 1,
+            Tuesday   = 2,
+            Wednesday = 3,
+            Thursday  = 4,
+            Friday    = 5,
+            Saturday  = 6
+        };
+
+        [contract(Windows.Foundation.UniversalApiContract, 6.0)]
+        enum LanguageLayoutDirection
+        {
+            Ltr = 0,
+            Rtl = 1,
+            TtbLtr = 2,
+            TtbRtl = 3,
+        };
+
+        [
+            contract(Windows.Foundation.UniversalApiContract, 1.0),
+            exclusiveto(Windows.Globalization.Language),
+            uuid(ea79a752-f7c2-4265-b1bd-c4dec4e4f080)
+        ]
+        interface ILanguage : IInspectable
+        {
+            [propget] HRESULT LanguageTag([out, retval] HSTRING *value);
+            [propget] HRESULT DisplayName([out, retval] HSTRING *value);
+            [propget] HRESULT NativeName([out, retval] HSTRING *value);
+            [propget] HRESULT Script([out, retval] HSTRING *value);
+        }
+
+        [
+            contract(Windows.Foundation.UniversalApiContract, 6.0),
+            exclusiveto(Windows.Globalization.Language),
+            uuid(6a47e5b5-d94d-4886-a404-a5a5b9d5b494)
+        ]
+        interface ILanguage2 : IInspectable
+        {
+            [propget] HRESULT LayoutDirection([out, retval] Windows.Globalization.LanguageLayoutDirection *value);
+        }
+
+        [
+            contract(Windows.Foundation.UniversalApiContract, 10.0),
+            exclusiveto(Windows.Globalization.Language),
+            uuid(c6af3d10-641a-5ba4-bb43-5e12aed75954)
+        ]
+        interface ILanguage3 : IInspectable
+        {
+            [propget] HRESULT AbbreviatedName([out, retval] HSTRING *value);
+        }
+
+        [
+            contract(Windows.Foundation.UniversalApiContract, 1.0),
+            exclusiveto(Windows.Globalization.Language),
+            uuid(7d7daf45-368d-4364-852b-dec927037b85)
+        ]
+        interface ILanguageExtensionSubtags : IInspectable
+        {
+            HRESULT GetExtensionSubtags([in] HSTRING tag, [out, retval] Windows.Foundation.Collections.IVectorView<HSTRING> **value);
+        }
+
+        [
+            contract(Windows.Foundation.UniversalApiContract, 1.0),
+            exclusiveto(Windows.Globalization.Language),
+            uuid(9b0252ac-0c27-44f8-b792-9793fb66c63e)
+        ]
+        interface ILanguageFactory : IInspectable
+        {
+            HRESULT CreateLanguage([in] HSTRING tag, [out, retval] Windows.Globalization.Language **value);
+        }
+
+        [
+            contract(Windows.Foundation.UniversalApiContract, 1.0),
+            exclusiveto(Windows.Globalization.Language),
+            uuid(b23cd557-0865-46d4-89b8-d59be8990f0d)
+        ]
+        interface ILanguageStatics : IInspectable
+        {
+            HRESULT IsWellFormed([in] HSTRING tag, [out, retval] BOOLEAN *result);
+            [propget] HRESULT CurrentInputMethodLanguageTag([out, retval] HSTRING *value);
+        }
+
+        [
+            contract(Windows.Foundation.UniversalApiContract, 1.0),
+            exclusiveto(Windows.Globalization.Language),
+            uuid(30199f6e-914b-4b2a-9d6e-e3b0e27dbe4f)
+        ]
+        interface ILanguageStatics2 : IInspectable
+        {
+            HRESULT TrySetInputMethodLanguageTag([in] HSTRING tag, [out, retval] BOOLEAN *result);
+        }
+
+        [
+            contract(Windows.Foundation.UniversalApiContract, 10.0),
+            exclusiveto(Windows.Globalization.Language),
+            uuid(d15ecb5a-71de-5752-9542-fac5b4f27261)
+        ]
+        interface ILanguageStatics3 : IInspectable
+        {
+            HRESULT GetMuiCompatibleLanguageListFromLanguageTags([in] Windows.Foundation.Collections.IIterable<HSTRING> *tags, [out, retval] Windows.Foundation.Collections.IVector<HSTRING> **result);
+        }
+
+        [
+            contract(Windows.Foundation.UniversalApiContract, 1.0),
+            exclusiveto(Windows.Globalization.GeographicRegion),
+            uuid(01e9a621-4a64-4ed9-954f-9edeb07bd903)
+        ]
+        interface IGeographicRegion : IInspectable
+        {
+            [propget] HRESULT Code([out, retval] HSTRING *value);
+            [propget] HRESULT CodeTwoLetter([out, retval] HSTRING *value);
+            [propget] HRESULT CodeThreeLetter([out, retval] HSTRING *value);
+            [propget] HRESULT CodeThreeDigit([out, retval] HSTRING *value);
+            [propget] HRESULT DisplayName([out, retval] HSTRING *value);
+            [propget] HRESULT NativeName([out, retval] HSTRING *value);
+            [propget] HRESULT CurrenciesInUse([out, retval] Windows.Foundation.Collections.IVectorView<HSTRING> **value);
+        }
+
+        [
+            contract(Windows.Foundation.UniversalApiContract, 1.0),
+            exclusiveto(Windows.Globalization.GeographicRegion),
+            uuid(53425270-77b4-426b-859f-81e19d512546)
+        ]
+        interface IGeographicRegionFactory : IInspectable
+        {
+            HRESULT CreateGeographicRegion([in] HSTRING region_code, [out, retval] Windows.Globalization.GeographicRegion **result);
+        }
+
+        [
+            contract(Windows.Foundation.UniversalApiContract, 1.0),
+            exclusiveto(Windows.Globalization.GeographicRegion),
+            uuid(29e28974-7ad9-4ef4-8799-b3b44fadec08)
+        ]
+        interface IGeographicRegionStatics : IInspectable
+        {
+            HRESULT IsSupported([in] HSTRING region_code, [out, retval] boolean *result);
+        }
+
+        [
+            activatable(Windows.Globalization.ILanguageFactory, Windows.Foundation.UniversalApiContract, 1.0),
+            contract(Windows.Foundation.UniversalApiContract, 1.0),
+            marshaling_behavior(agile),
+            static(Windows.Globalization.ILanguageStatics, Windows.Foundation.UniversalApiContract, 1.0),
+            static(Windows.Globalization.ILanguageStatics2, Windows.Foundation.UniversalApiContract, 1.0),
+            static(Windows.Globalization.ILanguageStatics3, Windows.Foundation.UniversalApiContract, 10.0),
+            threading(both)
+        ]
+        runtimeclass Language
+        {
+            [contract(Windows.Foundation.UniversalApiContract, 1.0), default] interface Windows.Globalization.ILanguage;
+            [contract(Windows.Foundation.UniversalApiContract, 1.0)] interface Windows.Globalization.ILanguageExtensionSubtags;
+            [contract(Windows.Foundation.UniversalApiContract, 6.0)] interface Windows.Globalization.ILanguage2;
+            [contract(Windows.Foundation.UniversalApiContract, 10.0)] interface Windows.Globalization.ILanguage3;
+        }
+
+        [
+            activatable(Windows.Foundation.UniversalApiContract, 1.0),
+            activatable(Windows.Globalization.IGeographicRegionFactory, Windows.Foundation.UniversalApiContract, 1.0),
+            contract(Windows.Foundation.UniversalApiContract, 1.0),
+            marshaling_behavior(agile),
+            static(Windows.Globalization.IGeographicRegionStatics, Windows.Foundation.UniversalApiContract, 1.0),
+            threading(both)
+        ]
+        runtimeclass GeographicRegion
+        {
+            [contract(Windows.Foundation.UniversalApiContract, 1.0), default] interface Windows.Globalization.IGeographicRegion;
+        }
+    }
+}

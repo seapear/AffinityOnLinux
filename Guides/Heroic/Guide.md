@@ -12,7 +12,7 @@ Visit the [download page of Heroic Games Launcher's official website](https://he
 
 Choose one of the following forks of Wine, and download and extract it: 
 
-- [**ElementalWarriorWine**](https://github.com/Twig6943/wine/releases) (Recommended) — After downloading the `ElementalWarriorWine-x86_64.tar.gz` archive file, right click and extract the archive into an `ElementalWarriorWine-x86_64` folder.
+- [**ElementalWarriorWine**](/Auxiliary/wine-affinity/ElementalWarriorWine-x86_64) (Recommended) — After downloading the `ElementalWarriorWine-x86_64.tar.gz` archive file, right click and extract the archive into an `ElementalWarriorWine-x86_64` folder.
 
 - [**Wine-TKG-affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) — Download the ` wine-tkg-affinity-archbuilt.tar.zst` archive file, then extract the `usr/` folder from the archive and rename the folder to `wine-tkg-affinity-x86_64`.
 
@@ -86,7 +86,7 @@ Quote from **darkside99**:
 
 ### Dark Theme for Wine
 
-1. Visit the [repository's `wine-dark-theme.reg` file page](/Auxillary/Other/wine-dark-theme.reg) to download the `.reg` file by clicking the download button on the top right.
+1. Visit the [repository's `wine-dark-theme.reg` file page](/Auxiliary/Other/wine-dark-theme.reg) to download the `.reg` file by clicking the download button on the top right.
 2. Save the file to your Downloads folder.
 3. Launch a terminal app to open the terminal, then type `cd Downloads` to change to your Downloads folder.
 4. Run the following command:

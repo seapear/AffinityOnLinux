@@ -2,7 +2,7 @@
 
 ## Preface
 
-This guide aims to provide a way to manage wine that does not make use of launchers like Lutris or Bottles.  
+This guide aims to provide a way to manage wine that does not make use of launchers like Lutris or Bottles.
 We will instead use `rum`, a small shell script that will help us manage multiple wine runners.
 
 ## Dependencies
@@ -41,7 +41,7 @@ mkdir -p ~/.local/share/wine/prefixes
 Then we'll download a build of ElementalWarrior's wine fork and `unzip` it.
 
 > [!NOTE]
-> You can check [Twig6943's GitHub releases](https://github.com/Twig6943/wine/releases) page for newer builds of ElementalWarrior's wine fork.
+> You can check [GitHub Auxiliary](/Auxiliary/wine-affinity/ElementalWarriorWine-x86_64) page for newer builds of ElementalWarrior's wine fork.
 
 ```bash
 pushd ~/.local/share/wine/runners &&
@@ -98,14 +98,14 @@ ElementalWarriorWine-x86_64
 Notice how `rum` correctly found our `ElementalWarriorWine`.
 
 ## Alias Setup
-We'll register an alias so that we don't need to always give `rum` the full path to the affinity wine prefix.  
+We'll register an alias so that we don't need to always give `rum` the full path to the affinity wine prefix.
 Open either your `.bashrc` or dedicated `.bash_aliases` file, and add the following alias:
 
 ```bash
 alias wine-ew-affinity='rum ElementalWarriorWine-x86_64 $HOME/.local/share/wine/prefixes/affinity/'
 ```
 
-I gave mine a pretty verbose name, but feel free to name it how you like.  
+I gave mine a pretty verbose name, but feel free to name it how you like.
 Also remember to `source` the file you just modified for the changes to take effect, e.g:
 ```bash
 source ~/.bash_aliases
