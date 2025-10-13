@@ -32,7 +32,6 @@ _A repository containing information on how to get Affinity software working on 
 ### Information
 
 [FAQ ❓](/FAQ.md)
-  - [Backup Mirrors](https://github.com/seapear/AffinityOnLinux/blob/main/FAQ.md#use-these-if-the-main-mirrors-are-down)
   - UI settings sometimes do not save. There is a [workaround](Guides/Settings.md).
   - Affinity v1 - [purchased via windows store issue](https://github.com/seapear/AffinityOnLinux/blob/main/FAQ.md#which-affinity-versions-are-supported)
 
