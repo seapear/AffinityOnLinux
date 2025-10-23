@@ -39,7 +39,7 @@ Alternately, you can visit the [download page of Lutris' official website](https
 
 Choose one of the following forks of Wine, and download and extract it: 
 
-- [**ElementalWarriorWine**](/Auxillary/wine-affinity/ElementalWarriorWine-x86_64) (Recommended) — Download `ElementalWarriorWine-x86_64.tar.gz`, then right click and extract it. You should have a folder now called `ElementalWarriorWine-x86_64` which we'll copy in the next step.
+- [**ElementalWarrior-x86_64**](https://github.com/seapear/AffinityOnLinux/releases/download/Legacy/ElementalWarriorWine-x86_64.tar.gz) (Recommended) — Download `ElementalWarriorWine-x86_64.tar.gz`, then right click and extract it. You should have a folder now called `ElementalWarriorWine-x86_64` which we'll copy in the next step.
 
 - [**Wine-TKG-affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) — Download the ` wine-tkg-affinity-archbuilt.tar.zst` archive file, then extract the `usr/` folder from the archive and rename the folder to `wine-tkg-affinity-x86_64`.
 
