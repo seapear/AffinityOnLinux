@@ -41,7 +41,7 @@ mkdir -p ~/.local/share/wine/prefixes
 Then we'll download a build of ElementalWarrior's wine fork and `unzip` it.
 
 > [!NOTE]
-> You can check [GitHub Auxiliary](/Auxiliary/wine-affinity/ElementalWarriorWine-x86_64) page for newer builds of ElementalWarrior's wine fork.
+> You can check [ElementalWarrior-x86_64](https://github.com/seapear/AffinityOnLinux/releases/download/Legacy/ElementalWarriorWine-x86_64.tar.gz) page for newer builds of ElementalWarrior's wine fork.
 
 ```bash
 pushd ~/.local/share/wine/runners &&
