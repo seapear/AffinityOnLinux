@@ -1,4 +1,5 @@
-# AffinityOnLinux
+# AffinityOnLinux 
+<img src="./Assets/NewLogos/AffinityOnLinux-TightCrop.png" width="100" alt="Logo of Affinity Photo">
 
 _A repository containing information on how to get Affinity software working on GNU/Linux with WINE, a compatibility layer for running Windows programs 🐧_
 
