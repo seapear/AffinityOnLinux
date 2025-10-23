@@ -1,5 +1,7 @@
 # 🗺️ Roadmap
 
+[ ✅ ] Host a local download for ElementalWarriors and TKG Wine Builds
+
 [ ✅ ] Get the whole winmetadata thing sorted out. ( [Issue #6](https://github.com/Twig6943/AffinityOnLinux/issues/6) )
 
 [ ✅ ] Fix crashes upon saving/exporting
@@ -7,6 +9,8 @@
 [ ✅ ] Get the font issue fixed (related to flatpak)
 
 [ ✅ ] Settings workaround
+
+[ ❌ ] Create an updated Wine build utilizing latest version of wine.
 
 [ ❌ ] Get canva login fixed (thanks XDan for reporting)
 
