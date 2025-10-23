@@ -39,7 +39,7 @@ _A repository containing information on how to get Affinity software working on 
 
 [📜 Credits](/Credits.md)
 
-[💬 Discord](https://discord.gg/t5V9ecpJWZ)
+[💬 Discord](https://join.affinityonlinux.com)
 
 ## Disclamer
 
