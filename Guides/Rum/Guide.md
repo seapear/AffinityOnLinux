@@ -45,7 +45,7 @@ Then we'll download a build of ElementalWarrior's wine fork and `unzip` it.
 
 ```bash
 pushd ~/.local/share/wine/runners &&
-wget https://github.com/Twig6943/wine/releases/download/9.13/ElementalWarriorWine-x86_64.tar.gz &&
+wget https://github.com/seapear/AffinityOnLinux/releases/download/Legacy/ElementalWarriorWine-x86_64.tar.gz &&
 tar xvzf ElementalWarriorWine-x86_64.tar.gz &&
 rm ElementalWarriorWine-x86_64.tar.gz &&
 popd
