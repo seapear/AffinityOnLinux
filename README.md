@@ -35,6 +35,7 @@ _A repository containing information on how to get Affinity software working on 
 [FAQ ❓](/FAQ.md)
   - UI settings sometimes do not save. There is a [workaround](Guides/Settings.md).
   - Affinity v1 - [purchased via windows store issue](https://github.com/seapear/AffinityOnLinux/blob/main/FAQ.md#which-affinity-versions-are-supported)
+  - V3 Sign in is not working atm. Looking for solutions.
 
 [🗺️ Roadmap & ⚠️ Known issues](/Roadmap.md)
 
