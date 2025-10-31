@@ -9,13 +9,13 @@ _A repository containing information on how to get Affinity software working on 
   <a href="https://www.affinity.studio/">
     <img src="./Assets/Icons/Affinity-V3.svg" width="100" alt="Logo of Affinity Photo">
   </a>
-  <a href="https://store.serif.com/en-us/update/windows/photo/2/">
+  <a href="https://store.serif.com/update/windows/photo/2/">
     <img src="./Assets/Icons/Photo.svg" width="100" alt="Logo of Affinity Photo">
   </a>
-  <a href="https://store.serif.com/en-us/update/windows/designer/2/">
+  <a href="https://store.serif.com/update/windows/designer/2/">
     <img src="./Assets/Icons/Designer.svg" width="100" alt="Logo of Affinity Designer">
   </a>
-  <a href="https://store.serif.com/en-us/update/windows/publisher/2/">
+  <a href="https://store.serif.com/update/windows/publisher/2/">
     <img src="./Assets/Icons/Publisher.svg" width="100" alt="Logo of Affinity Publisher">
   </a>
 </div>

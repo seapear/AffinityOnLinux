@@ -169,13 +169,16 @@ We're finally ready to actually run the installer.
 >
 > | Program | URL |
 > |---------|-----|
-> |V2 (all)     |https://store.serif.com/en-us/account/licences/         |
-> |Photo V1     | https://store.serif.com/it/update/windows/photo/1/     |
-> |Designer V1  | https://store.serif.com/it/update/windows/designer/1/  |
-> |Publisher V1 | https://store.serif.com/it/update/windows/publisher/1/ |
+> |V3           | https://www.affinity.studio/get-affinity            |
+> |Phoro V2     | https://store.serif.com/update/windows/photo/2/     |
+> |Designer V2  | https://store.serif.com/update/windows/designer/2/  |
+> |Publisher V2 | https://store.serif.com/update/windows/publisher/2/ |
+> |Photo V1     | https://store.serif.com/update/windows/photo/1/     |
+> |Designer V1  | https://store.serif.com/update/windows/designer/1/  |
+> |Publisher V1 | https://store.serif.com/update/windows/publisher/1/ |
 
 
-I'll use the installer for Affinity Photo V1 as an example.
+We'll use the installer for Affinity Photo V1 as an example.
 
 ```bash
 wine-ew-affinity wine ~/Downloads/affinity-photo-1.10.6.exe
