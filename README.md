@@ -7,6 +7,9 @@ _A repository containing information on how to get Affinity software working on 
 
 <div style="display: flex; gap: 10px; align-items: center;">
   <a href="https://affinity.serif.com/photo/">
+    <img src="./Assets/Icons/Affinity-V3.svg" width="100" alt="Logo of Affinity Photo">
+  </a>
+  <a href="https://affinity.serif.com/photo/">
     <img src="./Assets/Icons/Photo.svg" width="100" alt="Logo of Affinity Photo">
   </a>
   <a href="https://affinity.serif.com/designer/">
