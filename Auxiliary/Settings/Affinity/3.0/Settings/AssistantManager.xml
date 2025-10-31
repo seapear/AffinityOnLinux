@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.AssistantSettings">
+	<DevelopGlobalEnable>True</DevelopGlobalEnable>
+	<DevelopOutputLinear>False</DevelopOutputLinear>
+	<PaintOnNoSelectionAction>Create</PaintOnNoSelectionAction>
+	<EraseFromVectorSelectionAction>Create</EraseFromVectorSelectionAction>
+	<OtherBrushOnVectorSelectionAction>Rasterise</OtherBrushOnVectorSelectionAction>
+	<BrushTipSharingAction>Smart</BrushTipSharingAction>
+	<EffectOnVectorSelectionAction>Rasterise</EffectOnVectorSelectionAction>
+	<AddAdjustmentToSelectionAction>None</AddAdjustmentToSelectionAction>
+	<AddMaskToSelectionAction>Create</AddMaskToSelectionAction>
+	<AddFilterToSelectionAction>Create</AddFilterToSelectionAction>
+	<DeleteSelectionFromImageNodeAction>Create</DeleteSelectionFromImageNodeAction>
+	<DuplicateSelectionFromImageNodeAction>Rasterise</DuplicateSelectionFromImageNodeAction>
+	<Alert>True</Alert>
+	<Enabled>True</Enabled>
+	<DevelopAlertOnActions>True</DevelopAlertOnActions>
+	<AutoUndoRedoAssistantActions>True</AutoUndoRedoAssistantActions>
+	<DevelopLensProfileSelectionMode>AutoSelect</DevelopLensProfileSelectionMode>
+	<DevelopAutoNoiseReduction>AutoReduceChromaNoise</DevelopAutoNoiseReduction>
+	<DevelopApplyToneCurve>ApplyToneCurve</DevelopApplyToneCurve>
+	<DevelopApplyToneCurveToLinear>DontApplyToneCurve</DevelopApplyToneCurveToLinear>
+	<DevelopExposureBias>DontBias</DevelopExposureBias>
+	<DevelopMapDefault>Europe</DevelopMapDefault>
+</Settings>

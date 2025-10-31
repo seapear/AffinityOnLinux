@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.PerformanceSettings">
+	<RAMUsageLimit>
+		<UnitType>Megabyte</UnitType>
+		<Value>24582</Value>
+	</RAMUsageLimit>
+	<DiskWarningLimit>
+		<UnitType>Megabyte</UnitType>
+		<Value>32768</Value>
+	</DiskWarningLimit>
+	<UndoLimit>1024</UndoLimit>
+	<ViewQuality>0</ViewQuality>
+	<AutoSaveInterval>
+		<UnitType>Number</UnitType>
+		<Value>300</Value>
+	</AutoSaveInterval>
+	<UsePerfectClipping>False</UsePerfectClipping>
+	<UseDithering>False</UseDithering>
+	<RetinaPassIndex>0</RetinaPassIndex>
+	<UseHardwareAcceleration2 xsi:nil="true" />
+</Settings>

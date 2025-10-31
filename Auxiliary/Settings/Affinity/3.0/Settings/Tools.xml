@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.ToolSettings">
+	<IsShowing>True</IsShowing>
+	<IsSubToolShowing>True</IsSubToolShowing>
+	<IsDocked>True</IsDocked>
+	<UseRichToolTips>True</UseRichToolTips>
+	<FloatingLeft xsi:nil="true" />
+	<FloatingTop xsi:nil="true" />
+	<SubToolsFloatingLeft xsi:nil="true" />
+	<SubToolsFloatingTop xsi:nil="true" />
+	<SubToolsPinningTarget>4</SubToolsPinningTarget>
+	<SubToolsOrientation>1</SubToolsOrientation>
+	<PenToolUsesLine>True</PenToolUsesLine>
+	<PenToolUsesFill>False</PenToolUsesFill>
+	<PencilToolUsesLine>True</PencilToolUsesLine>
+	<PencilToolUsesFill>False</PencilToolUsesFill>
+	<ToolPaneColumns>1</ToolPaneColumns>
+</Settings>

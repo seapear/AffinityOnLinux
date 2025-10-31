@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.AssetSettings">
+	<SortCategories>True</SortCategories>
+	<ListMode>False</ListMode>
+	<State />
+	<Category>0</Category>
+	<Background>0</Background>
+	<Checkerboard>False</Checkerboard>
+</Settings>

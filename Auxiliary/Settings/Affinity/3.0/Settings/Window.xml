@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Affinity.Settings.WindowSettings">
+	<Dialogs>
+		<Windows>
+			<X>104</X>
+			<Y>104</Y>
+			<Width>1440</Width>
+			<Height>740</Height>
+			<Display>0</Display>
+		</Windows>
+		<HomeScreenDialog>
+			<X>271</X>
+			<Y>75</Y>
+			<Width>1440</Width>
+			<Height>740</Height>
+			<Display>0</Display>
+		</HomeScreenDialog>
+	</Dialogs>
+	<Windows>
+		<SubToolPanel>
+			<X>0</X>
+			<Y>0</Y>
+			<Width>0</Width>
+			<Height>0</Height>
+			<Display>0</Display>
+			<State>0</State>
+		</SubToolPanel>
+	</Windows>
+</Settings>

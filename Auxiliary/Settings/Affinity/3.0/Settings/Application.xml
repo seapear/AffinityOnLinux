@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.ApplicationSettings">
+	<ShowRulers>False</ShowRulers>
+	<ShowWordCount>False</ShowWordCount>
+	<WordCountType>0</WordCountType>
+	<ApplyShortcutsToAll>True</ApplyShortcutsToAll>
+	<ShowNewDocumentDialog>True</ShowNewDocumentDialog>
+	<ShowAdvancedHistogram>True</ShowAdvancedHistogram>
+	<ShowAdvancedColourPage>False</ShowAdvancedColourPage>
+	<ShowAdvancedHistory>False</ShowAdvancedHistory>
+	<CheckSpellingWhileTyping>True</CheckSpellingWhileTyping>
+	<ClipToCanvas>True</ClipToCanvas>
+	<PreferFilledWireframeMode>False</PreferFilledWireframeMode>
+	<LockGridColours>True</LockGridColours>
+	<ShowObjectType>True</ShowObjectType>
+	<LayerThumbnailSize>32</LayerThumbnailSize>
+	<LayerCheckerboardBackground>False</LayerCheckerboardBackground>
+	<LayerBackgroundType>0</LayerBackgroundType>
+	<LayerGroupThumbnails>True</LayerGroupThumbnails>
+	<AutoScrollLayers>True</AutoScrollLayers>
+	<AutoExpandLayers>True</AutoExpandLayers>
+	<SwatchListMode>False</SwatchListMode>
+	<SelectedPaletteType>0</SelectedPaletteType>
+	<SwatchCellWidth>0</SwatchCellWidth>
+	<SelectedPaletteName>Colors</SelectedPaletteName>
+	<SelectedPaletteUID>24</SelectedPaletteUID>
+	<PrimaryGridColour>
+		<R>204</R>
+		<G>204</G>
+		<B>204</B>
+		<A>89</A>
+	</PrimaryGridColour>
+	<SecondaryGridColour>
+		<R>204</R>
+		<G>204</G>
+		<B>204</B>
+		<A>45</A>
+	</SecondaryGridColour>
+	<PixelGridColour>
+		<R>204</R>
+		<G>204</G>
+		<B>204</B>
+		<A>45</A>
+	</PixelGridColour>
+	<HorizontalAlignTo>0</HorizontalAlignTo>
+	<VerticalAlignTo>0</VerticalAlignTo>
+	<ShowTableFormatNames>False</ShowTableFormatNames>
+	<TableFormatPreviewSize>0</TableFormatPreviewSize>
+	<PagesPageAutoScroll>True</PagesPageAutoScroll>
+	<PagesPageCellSize>2</PagesPageCellSize>
+	<RecentHyperlinkEmails />
+	<RecentHyperlinkFiles />
+	<RecentHyperlinkURLs />
+	<PreferredAuthor xsi:nil="true" />
+	<FindMatchCase>False</FindMatchCase>
+	<FindMatchWholeWord>False</FindMatchWholeWord>
+	<FindUseRegEx>False</FindUseRegEx>
+	<FindUseRegExLocale>False</FindUseRegExLocale>
+	<FindRegExMatchSingleLine>False</FindRegExMatchSingleLine>
+	<FindRegExDotMatchesNewline>False</FindRegExDotMatchesNewline>
+	<FillColumnGuides>True</FillColumnGuides>
+	<ColumnGuideFillColour>
+		<R>192</R>
+		<G>192</G>
+		<B>192</B>
+		<A>48</A>
+	</ColumnGuideFillColour>
+	<ColumnGuideLineColumnColour>
+		<R>192</R>
+		<G>192</G>
+		<B>192</B>
+		<A>192</A>
+	</ColumnGuideLineColumnColour>
+	<ColumnGuideLineRowColour>
+		<R>192</R>
+		<G>192</G>
+		<B>192</B>
+		<A>192</A>
+	</ColumnGuideLineRowColour>
+	<MonitorReferenceWhiteInNits>80</MonitorReferenceWhiteInNits>
+	<MergeDocumentMergeAll>True</MergeDocumentMergeAll>
+	<MergeDocumentMergeSection>False</MergeDocumentMergeSection>
+	<MergeDocumentMergeMode>1</MergeDocumentMergeMode>
+	<MergeDocumentTargetPages>False</MergeDocumentTargetPages>
+	<ResourceManagerSortOrder>1</ResourceManagerSortOrder>
+	<MergeDocumentIgnoreInitialSection>True</MergeDocumentIgnoreInitialSection>
+	<MergeDocumentIgnoreUnusedTextStyles>True</MergeDocumentIgnoreUnusedTextStyles>
+	<PackageFolder />
+	<FeedbackAttachmentsFolder xsi:nil="true" />
+	<FeedbackAttachCurrentDoc>False</FeedbackAttachCurrentDoc>
+	<FeedbackAttachDeviceData>True</FeedbackAttachDeviceData>
+	<AcceptedMediaLicence>False</AcceptedMediaLicence>
+	<BookUpdateNumbersBeforeOutput>True</BookUpdateNumbersBeforeOutput>
+	<BookUpdateTocsBeforeOutput>True</BookUpdateTocsBeforeOutput>
+	<BookUpdateIndexBeforeOutput>True</BookUpdateIndexBeforeOutput>
+	<BookUpdateEndnotesBeforeOutput>True</BookUpdateEndnotesBeforeOutput>
+	<BookUpdateCrossReferencesBeforeOutput>True</BookUpdateCrossReferencesBeforeOutput>
+	<BookUpdatePageNumbersAutomatically>True</BookUpdatePageNumbersAutomatically>
+	<NewDocRecentsListMode>False</NewDocRecentsListMode>
+	<PanelState />
+</Settings>

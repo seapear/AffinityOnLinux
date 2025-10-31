@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.DocumentSettings">
+	<FileTypePersonaSetter>True</FileTypePersonaSetter>
+	<DefaultDocumentSize xsi:nil="true" />
+	<NewDocType xsi:nil="true" />
+	<NewDocColourFormat xsi:nil="true" />
+	<NewDocColourProfile xsi:nil="true" />
+	<NewDocPreset xsi:nil="true" />
+	<NewDocUnitType xsi:nil="true" />
+	<NewDocDPI xsi:nil="true" />
+	<NewDocViewDPI xsi:nil="true" />
+	<NewDocWidth xsi:nil="true" />
+	<NewDocHeight xsi:nil="true" />
+	<NewDocMarginLeft xsi:nil="true" />
+	<NewDocMarginTop xsi:nil="true" />
+	<NewDocMarginRight xsi:nil="true" />
+	<NewDocMarginBottom xsi:nil="true" />
+	<NewDocHasMargins>True</NewDocHasMargins>
+	<NewDocTransparent xsi:nil="true" />
+	<NewDocLock xsi:nil="true" />
+	<NewDocAnchor xsi:nil="true" />
+	<NewDocRescale xsi:nil="true" />
+	<NewDocResample xsi:nil="true" />
+	<NewDocFacingPages xsi:nil="true" />
+	<NewDocStartOnDoubleSpread xsi:nil="true" />
+	<NewDocVerticalPageStack xsi:nil="true" />
+</Settings>

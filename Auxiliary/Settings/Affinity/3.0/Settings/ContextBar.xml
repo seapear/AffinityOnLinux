@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.ContextBarSettings">
+	<IsShowing>True</IsShowing>
+	<IsDocked>True</IsDocked>
+	<FloatingLeft xsi:nil="true" />
+	<FloatingTop xsi:nil="true" />
+	<PinningTarget>2</PinningTarget>
+</Settings>

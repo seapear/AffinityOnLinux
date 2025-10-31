@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.UserInterfaceSettings">
+	<AutoCommitFilters>True</AutoCommitFilters>
+	<MonochromaticIconography>True</MonochromaticIconography>
+	<AutoShowSelectionInLayersPanel>True</AutoShowSelectionInLayersPanel>
+	<StudioVisible>True</StudioVisible>
+	<LeftStudioVisible>True</LeftStudioVisible>
+	<RightStudioVisible>True</RightStudioVisible>
+	<StatusBarVisible>True</StatusBarVisible>
+	<AlwaysShowBrushCrosshair>False</AlwaysShowBrushCrosshair>
+	<AskForNameOnGroupCreation>False</AskForNameOnGroupCreation>
+	<AutoLockBackground>False</AutoLockBackground>
+	<LoadImagesInPixelViewMode>True</LoadImagesInPixelViewMode>
+	<TooltipDelay>400</TooltipDelay>
+	<ActiveScheme>Dark</ActiveScheme>
+	<ShowBrushPreviews>True</ShowBrushPreviews>
+	<ShowLinesInPoints>True</ShowLinesInPoints>
+	<ShowTextInPoints>True</ShowTextInPoints>
+	<PixelPrecision>1</PixelPrecision>
+	<PointPrecision>1</PointPrecision>
+	<PicaPrecision>1</PicaPrecision>
+	<DegreePrecision>1</DegreePrecision>
+	<InchPrecision>3</InchPrecision>
+	<FootPrecision>3</FootPrecision>
+	<YardPrecision>3</YardPrecision>
+	<MilePrecision>3</MilePrecision>
+	<MillimetrePrecision>1</MillimetrePrecision>
+	<CentimetrePrecision>2</CentimetrePrecision>
+	<MetrePrecision>3</MetrePrecision>
+	<KilometrePrecision>3</KilometrePrecision>
+	<FillFlyoutDefaultTypeModel>Wheel</FillFlyoutDefaultTypeModel>
+	<FillPickerFlyoutDefaultTypeModel>0</FillPickerFlyoutDefaultTypeModel>
+	<ColourSpace>RGB</ColourSpace>
+	<ColourDepths>
+		<ColourDepth>EightBit</ColourDepth>
+		<ColourDepth>EightBit</ColourDepth>
+		<ColourDepth>EightBit</ColourDepth>
+		<ColourDepth>Percentage</ColourDepth>
+		<ColourDepth>EightBit</ColourDepth>
+		<ColourDepth>Percentage</ColourDepth>
+		<ColourDepth>Percentage</ColourDepth>
+	</ColourDepths>
+	<ColourGeometry>Triangle</ColourGeometry>
+	<EnablePointerSupport>False</EnablePointerSupport>
+	<ShowTextStyleSamples>False</ShowTextStyleSamples>
+	<ShowTextStyleHierarchical>False</ShowTextStyleHierarchical>
+	<ShowTextStyleLongDescription>False</ShowTextStyleLongDescription>
+	<SortTextStyleByType>True</SortTextStyleByType>
+	<FontUIAlwaysLight>True</FontUIAlwaysLight>
+	<StockProviders />
+</Settings>

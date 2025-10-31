@@ -1,0 +1,302 @@
+{
+    "categories":
+    [
+        {
+            "name": "Welcome to Affinity",
+            "previewUrl": "samples",
+            "previewColour": "#4C221A",
+            "items":
+            [
+                {
+                    "name": "Items",
+                    "items":
+                    [
+                        {
+                            "name": "Intro to Affinity",
+                            "description": "A quick overview of Affinity.",
+                            "size": "56.1 MB",
+                            "contentUrl": "https://affinity-lessons.s3.amazonaws.com/quickstart/quickstart.af",
+                            "previewUrl": "https://affinity-lessons.s3.amazonaws.com/quickstart/quickstart_thumbnail.jpg",
+                            "previewColour": "#FFE7BE",
+                            "stages":
+                            [
+                                {
+                                    "html": "<h3>Studios</h3><p>Studios in Affinity equip you with the right tools for your task. They are dedicated spaces that allow you to harness advanced pixel, layout and vector tools all within a single app.</p><ul><li>The <b>Vector Studio</b> is great for creating precise curves, editing nodes and combining complex shapes.</li><li>The <b>Pixel Studio</b> allows you to edit RAW images, add non-destructive adjustments and filters and create digital art using raster brushes.</li><li>Use the <b>Layout Studio</b> to place images, edit text using advanced typography tools and create beautiful layouts.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/quickstart/00_intro.mp4"
+                                },
+                                {
+                                    "html": "<h3>Customising Studios</h3><p>Vector, Pixel, Layout, or all three&mdash;mix and match your favourite tools to build your very own creative studio for a streamlined workflow.</p><ul><li>To supercharge your creative workflow, combine your tools and panels.</li><li>Alter existing Studios or choose to create new ones.</li><li>Toggle Studios on and off in the <b>Studio Manager</b>.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/quickstart/01_custom_studio.mp4"
+                                },
+                                {
+                                    "html": "<h3>Layers &amp; Clipping Masks</h3><p>Layers in Affinity are very powerful: they allow you to create complex effects effortlessly.</p><ul><li>Any layer can be a mask, parent or child.</li><li>Simply drag and drop a layer onto another layer's name to place it inside, or onto a layer's thumbnail to create a clipping mask.</li><li>Each layer can have its own blend mode, allowing you to control how it interacts with other layers.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/quickstart/02_layers_clipping.mp4"
+                                },
+                                {
+                                    "html": "<h3>Live Filters &amp; Adjustments</h3><p>Live Filters and Adjustments are non-destructive tools that let you experiment, refine, and perfect your designs in real time.</p><ul><li>Live filter layers allow you to apply effects to your designs such as blurring, sharpening and distortion.</li><li>Adjustment layers allow you to adjust color balance, brightness, contrast, hue, saturation and tonal range.</li><li>By dragging a filter or adjustment layer, you can choose where its effect is applied.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/quickstart/03_adjustments_filters.mp4"
+                                },
+                                {
+                                    "html": "<h3>Exporting your document</h3><p>Affinity's export options give you full control over how your work leaves the app, whether it's by selection, slice, or the whole document.</p><ul><li>Export any element, selection or document at any time in one click with <b>Quick Export</b>.</li><li>Use the <b>Export</b> dialog to choose from a wide range of formats and even export to Canva.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/quickstart/04_export.mp4"
+                                },
+                                {
+                                    "html": "<h3>In App Learn</h3><p>Looking for more learning? Click the Affinity icon and explore the Learn tab.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/generic/gen_learning.mp4"
+                                }
+                            ]
+                        },
+
+                        {
+                            "name": "Importing",
+                            "description": "How to import into Affinity.",
+                            "size": "6.2 MB",
+                            "contentUrl": "https://affinity-lessons.s3.amazonaws.com/importing/importing.af",
+                            "previewUrl": "https://affinity-lessons.s3.amazonaws.com/importing/importing_thumbnail.jpg",
+                            "previewColour": "#C88A78",
+                            "stages":
+                            [
+                                {
+                                    "html": "<h3>Import your files into Affinity </h3><p>Affinity makes it simple to import and continue editing your existing files in just a few clicks.</p><ul><li>Import <b>IDML</b>, <b>PSD</b>, <b>PDF</b>, <b>AI</b>, <b>EPS</b>, <b>SVG</b> and <b>DWG</b> files directly into Affinity.</li><li>All imported files become editable Affinity (.af) documents.</li></ul><br /><p>As you follow this topic, try each step using your own files.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/importing/01.mp4"
+                                },
+                                {
+                                    "html": "<h3>Importing IDML Files</h3><p>Import IDML files to Affinity in just three simple steps:</p><ul><li>Go to <b>File > Open</b>.</li><li>Choose your <b>IDML</b> file.</li><li>Locate any missing resources or fonts if prompted.</li></ul><br /><p>Affinity will handle everything else. Your design becomes a new document, ready to edit and save as an Affinity file.</p><p><b>Quick Tip: Managing document resources</b><br />Linked and Embedded resources are a core part of design documents, such as IDML files. At any time, you can go to the <b>Resource Manager</b> under the <b>Document</b> menu to manage your document resources.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/importing/02.mp4"
+                                },
+                                {
+                                    "html": "<h3>Importing PSD and AI Files</h3><ul><li>Open <b>AI</b>, <b>PSD</b> and <b>PSB</b> files directly in Affinity.</li><li>Layers and artboards stay in-tact and editable.</li><li><b>Adjustment layers</b> are automatically mapped to Affinity adjustments and remain non-destructive where possible.</li><li>Opening <b>AI</b> files will display options for artboards or pages, as well as DPI and colour space.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/importing/03.mp4"
+                                },
+                                {
+                                    "html": "<h3>Importing PDF Documents</h3><p>Edit PDFs just like any other design.</p><ul><li>Go to <b>File > Open</b>.</li><li>Choose the page range, DPI and colour space.</li><li>You can choose to make text editable, group lines of text into frames and substitute missing fonts if needed.</li><li>Choose to import as pages or artboards.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/importing/04.mp4"
+                                },
+                                {
+                                    "html": "<h3>Placing Resources</h3><p>You can place InDesign (IDML), Illustrator, Photoshop and PDF files into any existing Affinity document by simply dragging files into Affinity.</p><ul><li>Hold <b>Option (Mac)</b> / <b>Alt (Windows)</b> when dragging and dropping a file. You can choose which pages to place.</li><li>Alternatively, go to <b>File > Place</b>, choose your file and click <b>Open</b>.</li><li>Click on the document to place the content at its native size.</li><li>If you have placed a multi page document, you can toggle between the document pages from the options on your <b>Context Toolbar</b>.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/importing/05.mp4"
+                                },
+                                {
+                                    "html": "<h3>In App Learn</h3><p>Looking for more learning? Click the Affinity icon and explore the Learn tab.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/generic/gen_learning.mp4"
+                                }
+                            ]
+                        },
+
+                        {
+                            "name": "Exporting",
+                            "description": "How to export from Affinity.",
+                            "size": "56.4 MB",
+                            "contentUrl": "https://affinity-lessons.s3.amazonaws.com/exporting/exporting.af",
+                            "previewUrl": "https://affinity-lessons.s3.amazonaws.com/exporting/exporting_thumbnail.jpg",
+                            "previewColour": "#FFE7BE",
+                            "stages":
+                            [
+                                {
+                                    "html": "<h3>Exporting made easy</h3><p>Export your designs in the right format for your workflow using any of three different methods:</p><ul><li><b>Quick Export Panel</b>: Export your whole document or a selection to your favourite file format. Just pick a preset and go.</li><li><b>Export Dialog</b>: Choose from a range of industry-standard file formats and a comprehensive selection of advanced export settings.</li><li><b>Slice Studio</b>: Open the Studio Manager to select the Slice Studio. Create multiple slices in a single document, with their own file formats and settings.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/exporting/01.mp4"
+                                },
+                                {
+                                    "html": "<h3>Quick Export Panel</h3><p>Perfect for sharing or saving your work fast.</p><ul><li>Select the elements you want to export. Your selection can be multiple elements or even an entire artboard.</li><li>At the top right of the app, click the arrow next to <b>Export</b> to show the <b>Quick Export</b> dialog.</li><li>Choose your export settings. In this example, we are using <b>PNG</b>.</li><li>Click <b>Export</b>, set a filename and location, then click <b>Save</b>.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/exporting/02.mp4"
+                                },
+                                {
+                                    "html": "<h3>Export Dialog</h3><p>Use the Export dialog when you want full control over how your document is exported.</p><ul><li>Go to <b>File > Export > Export</b>.</li><li>On the dialog that appears, select a file format and preset on the left.</li><li>Fine-tune and make adjustments to your export by interacting with the settings on the right.</li><li>Choose a <b>Location</b> from the drop-down menu at the bottom right. We've chosen <b>Ask for Location</b>.</li><li>Click <b>Export</b>, set a filename and location, then click <b>Save</b>.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/exporting/03.mp4"
+                                },
+                                {
+                                    "html": "<h3>Export for Professional Printing</h3><p>When exporting to PDF, the presets beginning with PDF/X are designed for professional printing.</p><ul><li>On the <b>Export</b> dialog, select the <b>PDF/X4</b> preset to output in CMYK with spot colors.</li><li>Make sure you enable bleed and printer's marks in the settings on the right.</li><li>Export a file as you learned earlier. Open the PDF to see it includes bleed and printer's marks.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/exporting/04.mp4"
+                                },
+                                {
+                                    "html": "<h3>Slice Studio</h3><p>Export multiple parts of your design at once. You can export artboards, layers, groups, objects, or even custom slices to different file formats and image sizes, all in one go.</p><ul><li>Use the <b>Slice Selection Tool</b> to select objects. Ctrl-click (macOS) / Right-click (Windows) on the selection and choose <b>Create Slice</b> to create a slice from the objects.</li><li>Use the <b>Slice Tool</b> to draw a slice. Any area captured in the slice will be included in the export.</li><li>On the <b>Slices Panel</b>, set each slice's outputs. You can apply custom settings on the <b>Export Options</b> panel.</li><li>Click <b>Export Slices</b> and choose where to save the output files.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/exporting/05.mp4"
+                                },
+                                {
+                                    "html": "<h3>In App Learn</h3><p>Looking for more learning? Click the Affinity icon and explore the Learn tab.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/generic/gen_learning.mp4"
+                                }
+                            ]
+                        },
+
+                        {
+                            "name": "Layers",
+                            "description": "Learn how to work with layers.",
+                            "size": "66 MB",
+                            "contentUrl": "https://affinity-lessons.s3.amazonaws.com/layers/layers.af",
+                            "previewUrl": "https://affinity-lessons.s3.amazonaws.com/layers/layers_thumbnail.jpg",
+                            "previewColour": "#939290",
+                            "stages":
+                            [
+                                {
+                                    "html": "<h3>Layers in Affinity</h3><p>Layers are essential in digital design. Think of them as transparent sheets stacked together, each holding parts of your design such as text, shapes, or effects. They let you edit elements freely and non-destructively, so changes don't affect the rest of your design.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/layers/01.mp4"
+                                },
+                                {
+                                    "html": "<h3>Organising Layers</h3><p>Managing layers is similar to organising your workspace.</p><ul><li>Click on a layer to select it, and move it up or down to control what appears in front or behind.</li><li>Select multiple layers, right-click and select <b>Group</b> to keep related elements together.</li><li>To prevent changes, hover over the right side of a layer and click the lock icon when it appears.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/layers/02.mp4"
+                                },
+                                {
+                                    "html": "<h3>Creating Clipping Masks</h3><p><b>Clipping Masks</b> let you use one shape to reveal only parts of another.</p><ul><li>On the <b>Layers</b> panel, reveal the <b>Polka Dots</b> layer and locate the <b>Jacket</b> layer above.</li><li>Drag the <b>Jacket</b> layer onto the thumbnail of the <b>Polka Dots</b> layer. Alternatively, right-click on the <b>Jacket</b> layer and select <b>Create Clipping Mask</b>.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/layers/03.mp4"
+                                },
+                                {
+                                    "html": "<h3>Applying Blend Modes</h3><p>A layer's <b>Blend Mode</b> controls how a layer interacts with other layers. <b>Blend Modes</b> can darken or highlight layers, add texture or even cause the layer to appear as an overlay, all without altering the original layer.</p><ul><li>Select the <b>Polka Dots</b> layer on the <b>Layers Panel</b>.</li><li>Go to the <b>Blend Mode</b> options at the top of the <b>Layers Panel</b>. As you scroll through the options, you will see a live preview showing how each blend mode affects the layer.</li><li>Select the blend mode <b>Difference</b> to reverse the effects of the Polka Dots.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/layers/04.mp4"
+                                },
+                                {
+                                    "html": "<h3>Live Filters and Adjustments</h3><p>Live Filters and Live Adjustments apply real-time non-destructive effects you can apply, edit or remove at any time without harming the original layer.</p><ul><li>At the bottom of the <b>Layers</b> panel, click <b>Adjustments</b> and select <b>HSL</b>.</li><li>Move the <b>Hue Shift</b> slider and observe the effect taking place in real time.</li><li>Select the <b>HSL Shift Adjustment</b> layer and drag it over the layer named <b>Objects</b> to place the layer inside.</li><li>Open the <b>Objects</b> group layer and click on the thumbnail of the <b>HSL Shift Adjustment</b> layer.</li><li>To edit the <b>HSL Shift</b> adjustment, open the <b>Objects</b> group and click on the <b>HSL Shift</b> thumbnail.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/layers/05.mp4"
+                                },
+                                {
+                                    "html": "<h3>Masking</h3><p>Masking with raster brushes hides or reveals parts of a layer non-destructively. Black conceals, white reveals, and grey adds transparency, letting you refine or restore any area at any time.</p><ul><li>Select the <b>Objects</b> group layer and go to the <b>Live Filters</b> icon.</li><li>Choose the <b>Motion Blur </b>filter and increase the radius to <b>30px</b>.</li><li>Select the <b>Pixel Studio</b> and choose the <b>Paint Brush Tool</b>. Select a brush from the brushes panel and set your brush colour to black.</li><li>With the <b>Motion Blur</b> layer selected, paint over the shoulder sleeve, cap, and feet to mask out the effect.</li></ul><br /><p><b>Quick Tip</b>: Filters and Adjustments include built-in masks, so there's no need to create them manually. This saves time, especially in complex workflows.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/layers/06.mp4"
+                                },
+                                {
+                                    "html": "<h3>In App Learn</h3><p>Looking for more learning? Click the Affinity icon and explore the Learn tab.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/generic/gen_learning.mp4"
+                                }
+                            ]
+                        },
+
+                        {
+                            "name": "Live Adjustments and Filters",
+                            "description": "Use adjustments and filters in Affinity.",
+                            "size": "29.9 MB",
+                            "contentUrl": "https://affinity-lessons.s3.amazonaws.com/pixel_filters_adjustments/pixel_filters_adjustments.af",
+                            "previewUrl": "https://affinity-lessons.s3.amazonaws.com/pixel_filters_adjustments/pixel_filters_adjustments_thumbnail.jpg",
+                            "previewColour": "#FFE7BE",
+                            "stages":
+                            [
+                                {
+                                    "html": "<h3>Live Filters and Adjustments</h3><p>In this topic, we will practice adding live filter layers and adjustment layers to improve the colour, contrast and overall look of your designs.</p><p>We will use some of the most commonly applied adjustments and filters, such as Levels and Colour Balance adjustments, as well as Depth of Field Blur and Lighting filters.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/pixel_filters_adjustments/01.mp4"
+                                },
+                                {
+                                    "html": "<h3>Adding Adjustments</h3><p>An <b>Adjustment Layer</b> is a non-destructive way to change the colour, tone or brightness of your image without permanently altering the original.</p><ul><li>Add a <b>Levels</b> adjustment layer from the icon on the <b>Layers Panel</b>.</li><li>Set <b>Black Level</b> to <b>3%</b> and the <b>White Level</b> to <b>73%</b> to increase the contrast.</li><li>Add a <b>Colour Balance</b> adjustment and increase <b>Red</b> to <b>35%</b> and <b>Blue</b> to <b>20%</b> to warm the image.</li><li>Working non-destructively, you can always return to an adjustment if you feel the change is too strong. Return to <b>Levels</b> by clicking on the layer thumbnail and change the <b>White Level</b> setting to <b>95%</b>.</li>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/pixel_filters_adjustments/02.mp4"
+                                },
+                                {
+                                    "html": "<h3>Live Lighting Filter</h3><p>A <b>Live Filter Layer</b> is a layer that lets you apply effects such as blurring, sharpening or distortion non-destructively.</p><ul><li>Select the <b>Portrait</b> layer and add a <b>Lighting</b> filter from the filters icon on the <b>Layers Panel</b>. This will apply your live filter as a child layer to your image.</li><li>Explore using the filter control handles and sliders to move the light source around the image.</li><li>Here are the parameters shown in the video:<ul><li><b>Diffuse</b>: 100%, <b>Specular</b>: 50%, <b>Shininess</b>: 80%, <b>Ambient</b>: 54%</li><li>Set <b>Colour</b> to a pale yellow</li><li><b>Distance</b>: 33%, <b>Outer Cone</b>: 37%, <b>Inner Cone</b>: 55%</li></ul></li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/pixel_filters_adjustments/03.mp4"
+                                },
+                                {
+                                    "html": "<h3>Live Depth of Field Blur</h3><p>We can apply a non-destructive depth-of-field blur to gently soften the edges of the image, drawing more focus to the model's face and subtly separating the model from the background.</p><ul><li>Select the <b>Portrait</b> layer and add a <b>Depth of Field</b> live filter. Move the control handles to centre it on the face.</li><li>Increase <b>Radius</b> to 24px to increase the strength of the blur.</li><li>Increase <b>Clarity</b> to 5px to sharpen the centre of the ellipse.</li><li>Enable <b>Preserve Alpha</b> to confine the effect to the edge of the image.</li><li>If closed, expand the <b>Portrait</b> parent layer, then use the visibility icon to toggle the filter on and off.</li></ul><br /><p>Quick Tip: You can also use <b>Portrait Blur</b> in the Canva AI studio to achieve this effect. Using Canva AI will incur the use of credits.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/pixel_filters_adjustments/04.mp4"
+                                },
+                                {
+                                    "html": "<h3>In App Learn</h3><p>Looking for more learning? Click the Affinity icon and explore the Learn tab.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/generic/gen_learning.mp4"
+                                }
+                            ]
+                        },
+
+                        {
+                            "name": "Text",
+                            "description": "Work with text in Affinity.",
+                            "size": "52.7 MB",
+                            "contentUrl": "https://affinity-lessons.s3.amazonaws.com/text/text.af",
+                            "previewUrl": "https://affinity-lessons.s3.amazonaws.com/text/text_thumbnail.jpg",
+                            "previewColour": "#939290",
+                            "stages":
+                            [
+                                {
+                                    "html": "<h3>Text in Affinity</h3><p>Lay out your images, graphics, and text. Make edits directly in your document. Watch it all update live. Fast and feature-packed, Affinity keeps everything in line.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/text/01.mp4"
+                                },
+                                {
+                                    "html": "<h3>Artistic Text</h3><p>In the <b>Layout Studio</b>, Affinity provides two main text tools. We will start with artistic text, which is ideal for decorative type treatments.</p><ul><li>Go to page 4, select the <b>Artistic Text Tool</b> and drag on the page below 'Make A' to create some artistic text. Use the 'A' Symbol to gauge the size of your <b>Artistic Text</b>.</li><li>Type the word 'Splash'. To resize the text, drag any edge or corner handle.</li><li>Select the text inside the layer and choose a font from the options on the <b>Context Toolbar</b>. Hovering over a font shows you a preview.</li><li>Select the Case Options and choose <b>Uppercase</b>.</li><li>Select the <b>Move Tool</b> to reposition the text on the page. Drag the <b>SPLASH</b> text layer below the <b>Kingfisher</b> layer.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/text/02.mp4"
+                                },
+                                {
+                                    "html": "<h3>Frame Text</h3><p>Text frames are containers that text flows through, line by line. It's ideal for body copy, captions, and sidebars.</p><ul><li>Go to page 6. Select the <b>Frame Text Tool</b>, then drag on the page to create a text frame.</li><li>To add placeholder text, Ctrl-click (macOS) / Right-click (Windows) in the frame and choose <b>Insert Filler Text</b>.</li><li>Try resizing the text frame. Notice how the text matches the size of the frame.</li><li>Using the context toolbar, you can flow the text across multiple columns.</li><li>To turn filler text into editable text, Ctrl-click (macOS) / Right-click (Windows), then select <b>Expand Field</b>.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/text/03.mp4"
+                                },
+                                {
+                                    "html": "<h3>Linking Frames</h3><p>You can link multiple text frames so text flows between them. The frames can have different dimensions and be on different pages. Edited text reflows automatically.</p><ul><li>Go to pages 8 and 9, then disable <b>View > Preview Mode</b>.</li><li>Using the <b>Move Tool</b>, select the first text frame, then click the red <b>Text Flow</b> button in the lower right corner.</li><li>Click inside the second text frame. The text now flows between them.</li><li>Repeat the process to link the other frames from left to right.</li><li>Click the <b>Text Flow</b> button on the last frame, then drag in the empty space to create and link a new frame.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/text/04.mp4"
+                                },
+                                {
+                                    "html": "<h3>Paragraph Styles</h3><p>Paragraph styles control text appearance such as font, size and colour. They also control paragraph settings such as alignment, spacing, and indents.</p><ul><li>Use the <b>Frame Text Tool</b> to select a range of text that includes at least two paragraphs.</li><li>Select a font from the context tool bar and adjust your fonts size.</li><li>On the context toolbar, select the <b>Paragraph Style</b> menu and choose <b>New Style</b>.</li><li>On the <b>Create Paragraph Style</b> dialog, name your style.</li><li>Next, select the <b>Position & Transform</b> category to increase the <b>Leading</b>.</li><li>To increase the space after the paragraph, go to <b>Spacing > Space After</b>.</li><li>Making sure <b>Apply style to selection</b> is enabled, choose <b>OK</b> to apply your style.</li><li>You can now apply your style throughout your document by simply selecting text and applying the text style.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/text/05.mp4"
+                                },
+                                {
+                                    "html": "<h3>Drop Caps and Initial Words</h3><p>You can apply drop caps or initial word formatting from the <b>Paragraph</b> panel.</p><ul><li>Place your cursor at the start of the first paragraph. Go to the <b>Paragraph</b> panel and expand the <b>Drop Caps</b> section, then choose <b>Enabled</b>.</li><li>Change the <b>Height in lines</b> to enlarge the first letter.</li><li>Select another paragraph, expand the <b>Initial Words</b> section and choose <b>Enabled</b>.</li><li>Apply the <b>Strong</b> character text Style. Increase the <b>Max word count</b> for the initial words in the paragraph to appear in bold.</li><li>You could also choose to save and apply these settings as part of a <b>Paragraph Text Style</b>.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/text/06.mp4"
+                                },
+                                {
+                                    "html": "<h3>Text Wrapping</h3><p>You can flow text around objects using the Text Wrap settings:</p><ul><li>Go to page 12. Using the <b>Move Tool</b>, select the image of the red lizard from the left hand side. Notice that the text currently overlaps the image.</li><li>Go to <b>Text > Text Wrap > Show Text Wrap Settings</b>.</li><li>On the dialog that appears, set the <b>Wrap Style</b> to <b>Tight</b>.</li><li>Adjust the <b>Distance from Text</b> to fine-tune the spacing between the image and text. It may be useful to link the distance from spacing, making the distance between the text and image equal from all directions.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/text/07.mp4"
+                                },
+                                {
+                                    "html": "<h3>In App Learn</h3><p>Looking for more learning? Click the Affinity icon and explore the Learn tab.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/generic/gen_learning.mp4"
+                                }
+                            ]
+                        },
+
+                        {
+                            "name": "Vector Trace",
+                            "description": "Trace bitmaps to vectors.",
+                            "size": "430 KB",
+                            "contentUrl": "https://affinity-lessons.s3.amazonaws.com/vectortrace/vectortrace.af",
+                            "previewUrl": "https://affinity-lessons.s3.amazonaws.com/vectortrace/vectortrace_thumbnail.jpg",
+                            "previewColour": "#FF5915",
+                            "stages":
+                            [
+                                {
+                                    "html": "<h3>Image Trace</h3><p>The <b>Image Trace</b> feature converts a raster image to a vector design. It analyses the edges in the image and uses in-dialog settings to trace around these edges, creating vector curves and shapes.</p><p>Some typical scenarios for using the feature include recreating company logos, old assets where the original app is no longer available and scanned copyright-permissible real world designs (e.g., tattoo art, magazine).</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/vectortrace/01.mp4"
+                                },
+                                {
+                                    "html": "<h3>Using Image Trace</h3><p>Converting pixel images to vector.</p><ul><li>Select the image and go to <b>Vector > Image Trace</b>. This will open the <b>Image Trace</b> dialog.</li><li>Use the <b>Split</b> and <b>Mirror View Modes</b> to compare the pixel to vector conversion. You can drag the split-view slider left and right over areas of interest.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/vectortrace/02.mp4"
+                                },
+                                {
+                                    "html": "<h3>Fine Tuning Image Trace Results</h3><p>Modify the settings as required to control the output.</p><ul><li>The <b>Edge Threshold</b> controls what are considered to be the edges in the image, affecting what vector objects are created.</li><li>Adjust <b>Curve-fitting Tolerance</b> to smooth or sharpen the vector outlines.</li><li>Click Apply to commit the conversion.</li><li>You can now select nodes to make further enhancements or changes to the artwork.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/vectortrace/03.mp4"
+                                },
+                                {
+                                    "html": "<h3>In App Learn</h3><p>Looking for more learning? Click the Affinity icon and explore the Learn tab.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/generic/gen_learning.mp4"
+                                }
+                            ]
+                        },
+
+                        {
+                            "name": "Embedded Document Editing",
+                            "description": "Edit embedded documents in Affinity.",
+                            "size": "5 MB",
+                            "contentUrl": "https://affinity-lessons.s3.amazonaws.com/embedded/embedded.af",
+                            "previewUrl": "https://affinity-lessons.s3.amazonaws.com/embedded/embedded_thumbnail.jpg",
+                            "previewColour": "#939290",
+                            "stages":
+                            [
+                                {
+                                    "html": "<h3>Embedded Documents and Non-Destructive Editing</h3><p>In this topic, we will create a mockup with a placed Affinity file, using shapes, the <b>Perspective Tool</b> and <b>Adjustments</b>.</p><p>Your project file includes a placed Affinity file. It has been added as shown in the video and hidden for us to use later.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/embedded/01.mp4"
+                                },
+                                {
+                                    "html": "<h3>Adding Shapes</h3><p>Let's create a boundary to contain the placed file.</p><ul><li>Select the <b>Rectangle Tool</b> and drag a rectangle over the screen.</li><li>On the <b>Context Toolbar</b>, click the stroke colour well and remove the colour on the stroke.</li><li>Switch to the <b>Move Tool (V)</b> and select the <b>Perspective Tool</b> from the <b>Sub Tools</b> group.</li><li>Align the corners of the rectangle with the corners of the screen.</li><li>When you are happy, close the <b>Live Perspective</b> dialog. This will bring you back to the <b>Move Tool</b>.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/embedded/02.mp4"
+                                },
+                                {
+                                    "html": "<h3>Place Inside</h3><ul><li>Make visible the <b>Placed Affinity File</b> layer on the <b>Layers Panel</b>.</li><li>Drag the <b>Placed Affinity File</b> layer and drop it onto the name of the Rectangle layer. Move and Resize the placed file as required.</li><li>To edit your placed file, double-click the <b>Placed Affinity File</b> on the document. This will open the file in a separate tab.</li><li>Double click on the word <b>Don't</b> and change it to <b>That</b> to edit the document.</li><li>Close the tab and return to your original project file to see the changes applied.</li></ul><br /><p><b>Quick Tip</b>: You can place a new Affinity file, PDF and other file types to swap out your screenshot without recreating the perspective transform.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/embedded/03.mp4"
+                                },
+                                {
+                                    "html": "<h3>Apply an HSL Adjustment</h3><ul><li>Deselect all layers by pressing CMD+D (Mac) / Ctrl+D (Windows)</li><li>Add the <b>HSL</b> adjustment from either <b>Adjustments</b> at the bottom of the layers panel or by going to <b>Pixel > New Adjustment Layer > HSL</b>.</li><li>This will apply the <b>HSL</b> adjustment to the top of the layer stack. The HSL dialog will open.</li><li>Edit the HSL parameters as required. This will affect the entire image.</li><li>Close the HSL panel and drag the <b>HSL Shift Adjustment</b> layer onto the name of the <b>Rectangle</b> layer to <i>place inside</i>.</li><li>Further changes to the HSL adjustment can be made by opening the layer stack and clicking on the <b>HSL Shift Adjustment</b> <i>thumbnail</i>.</li></ul>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/embedded/04.mp4"
+                                },
+                                {
+                                    "html": "<h3>In App Learn</h3><p>Looking for more learning? Click the Affinity icon and explore the Learn tab.</p>",
+                                    "videoUrl": "https://affinity-lessons.s3.amazonaws.com/generic/gen_learning.mp4"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

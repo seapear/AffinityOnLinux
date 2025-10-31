@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.GeneralSettings">
+	<ReopenDocumentOnStartup>False</ReopenDocumentOnStartup>
+	<CopyItemsAsSVG>False</CopyItemsAsSVG>
+	<PreserveUnicodeBreaksOnPlainTextCopy>False</PreserveUnicodeBreaksOnPlainTextCopy>
+	<LastDocuments />
+	<CultureName />
+	<SaveOverPSD>False</SaveOverPSD>
+	<LoadPSDSmartObjects>True</LoadPSDSmartObjects>
+	<KeepSelectionsAfterDelete>True</KeepSelectionsAfterDelete>
+	<ImportPSDTextAsText2>True</ImportPSDTextAsText2>
+	<RefineHEICDepthMaps>False</RefineHEICDepthMaps>
+	<ApplyGainMaps>False</ApplyGainMaps>
+	<SaveThumbnailsWithDocuments>True</SaveThumbnailsWithDocuments>
+	<InsertFillerTextAsText>False</InsertFillerTextAsText>
+	<LoadXmpSidecarMetadata>True</LoadXmpSidecarMetadata>
+	<PreferEMFPaste>True</PreferEMFPaste>
+	<AutoUpdateLinkedResources>False</AutoUpdateLinkedResources>
+	<FloatNewDocuments>False</FloatNewDocuments>
+	<DocumentsOpenInActiveGroup>True</DocumentsOpenInActiveGroup>
+	<LimitInitialZoomTo100Percent>False</LimitInitialZoomTo100Percent>
+	<LinkNewContentCategories>False</LinkNewContentCategories>
+	<WarnAboutV1Docs>True</WarnAboutV1Docs>
+	<ShowHiddenFontAxes>False</ShowHiddenFontAxes>
+	<SafeStockSearchResultsOnly>True</SafeStockSearchResultsOnly>
+	<InferenceMode>1</InferenceMode>
+</Settings>

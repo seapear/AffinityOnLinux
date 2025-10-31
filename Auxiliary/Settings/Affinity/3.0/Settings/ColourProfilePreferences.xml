@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.ColourProfileSettings">
+	<AutoConvertWarnProfile>True</AutoConvertWarnProfile>
+	<AssignProfileWarn>True</AssignProfileWarn>
+	<DefaultHDR>False</DefaultHDR>
+	<OcioConfigPath />
+	<OcioConvertOnLoad>True</OcioConvertOnLoad>
+	<OcioWarnAfterConvert>True</OcioWarnAfterConvert>
+	<AssociateOpenEXRAlphaChannels>False</AssociateOpenEXRAlphaChannels>
+	<PostDivideOpenEXRByAlpha>False</PostDivideOpenEXRByAlpha>
+	<PerturbZeroEXRAlpha>False</PerturbZeroEXRAlpha>
+	<BlackPointCompensation>True</BlackPointCompensation>
+	<ShouldAutoConvertProfiles>False</ShouldAutoConvertProfiles>
+	<RGBProfile>sRGB IEC61966-2.1</RGBProfile>
+	<RGBUProfile>sRGB IEC61966-2.1 (Linear)</RGBUProfile>
+	<CMYKProfile>U.S. Web Coated (SWOP) v2</CMYKProfile>
+	<GreyProfile>Greyscale D50</GreyProfile>
+	<LABProfile>CIELAB D50</LABProfile>
+	<RenderingIntent>1</RenderingIntent>
+</Settings>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Serif.Interop.Persona.Settings.ToolsSettings">
+	<SynchronizeBetweenDocs>True</SynchronizeBetweenDocs>
+	<MouseWheelZoom>False</MouseWheelZoom>
+	<ScrubbyZoom>True</ScrubbyZoom>
+	<AdditionalDictionaryDirectory>C:\ProgramData\Affinity\Common\3.0\Dictionaries</AdditionalDictionaryDirectory>
+	<ConstraintMode>0</ConstraintMode>
+	<MarqueeMode>0</MarqueeMode>
+	<SelectDigIntoContainers>False</SelectDigIntoContainers>
+	<SelectSameSelectsHiddenObjects>True</SelectSameSelectsHiddenObjects>
+	<SelectObjectSelectsHiddenObjects>True</SelectObjectSelectsHiddenObjects>
+	<UseShiftKeyForToolSwitch>False</UseShiftKeyForToolSwitch>
+	<UseAltScrollWheelToRotate>False</UseAltScrollWheelToRotate>
+	<ToolSizeDelta>2</ToolSizeDelta>
+	<NudgeUnits>Pixel</NudgeUnits>
+	<NudgeDistance>
+		<UnitType>Pixel</UnitType>
+		<Value>1</Value>
+	</NudgeDistance>
+	<ModifierNudgeDistance>
+		<UnitType>Pixel</UnitType>
+		<Value>10</Value>
+	</ModifierNudgeDistance>
+	<TextBlendGamma>1.45</TextBlendGamma>
+	<TouchForGesturesOnly>False</TouchForGesturesOnly>
+	<TabletPolicy>0</TabletPolicy>
+</Settings>

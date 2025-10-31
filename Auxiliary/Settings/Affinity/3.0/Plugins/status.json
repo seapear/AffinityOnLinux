@@ -1,0 +1,55 @@
+﻿[
+	{
+		"categoryName": "Nik Collection",
+		"name": "Analog Efex Pro 2",
+		"status": "Working"
+	},
+
+	{
+		"categoryName": "Nik Collection",
+		"name": "Color Efex Pro 4",
+		"status": "Working"
+	},
+
+	{
+		"categoryName": "Nik Collection",
+		"name": "Dfine 2",
+		"status": "Working"
+	},
+
+	{
+		"categoryName": "Nik Collection",
+		"name": "HDR Efex Pro 2",
+		"status": "Working"
+	},
+
+	{
+		"categoryName": "Nik Collection",
+		"name": "Sharpener Pro 3: (2) Output Sharpener",
+		"status": "Working"
+	},
+
+	{
+		"categoryName": "Nik Collection",
+		"name": "Sharpener Pro 3: (1) RAW Presharpener",
+		"status": "Working"
+	},
+
+	{
+		"categoryName": "Nik Collection",
+		"name": "Silver Efex Pro 2",
+		"status": "Working"
+	},
+
+	{
+		"categoryName": "Nik Collection",
+		"name": "Viveza 2",
+		"status": "Working"
+	},
+
+	{
+		"categoryName": "Filter Forge",
+		"name": "Filter Forge 11...",
+		"status": "Working"
+	}
+]
