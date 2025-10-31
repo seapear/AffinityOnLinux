@@ -51,7 +51,7 @@ Choose one of the following forks of Wine, and download and extract it:
 ## 4. Copy and paste Wine fork to Lutris' system directory
 
 > [!NOTE]
-> Make sure to launch Lutris after the installation at least once to generate the folder structure.
+> After you installed Lutris, make sure to launch Lutris at least once to generate the folder structure.
 
 Lutris' Wine-related folders can be found in a hidden directory within your `home` folder. If you can't see hidden folders in your file browser, you can usually enable them by pressing `Ctrl + H`
 
