@@ -6,16 +6,16 @@ _A repository containing information on how to get Affinity software working on 
 [📢 Affinity Apps](https://affinity.serif.com)
 
 <div style="display: flex; gap: 10px; align-items: center;">
-  <a href="https://affinity.serif.com/photo/">
+  <a href="https://www.affinity.studio/">
     <img src="./Assets/Icons/Affinity-V3.svg" width="100" alt="Logo of Affinity Photo">
   </a>
-  <a href="https://affinity.serif.com/photo/">
+  <a href="https://store.serif.com/en-us/update/windows/photo/2/">
     <img src="./Assets/Icons/Photo.svg" width="100" alt="Logo of Affinity Photo">
   </a>
-  <a href="https://affinity.serif.com/designer/">
+  <a href="https://store.serif.com/en-us/update/windows/designer/2/">
     <img src="./Assets/Icons/Designer.svg" width="100" alt="Logo of Affinity Designer">
   </a>
-  <a href="https://affinity.serif.com/publisher/">
+  <a href="https://store.serif.com/en-us/update/windows/publisher/2/">
     <img src="./Assets/Icons/Publisher.svg" width="100" alt="Logo of Affinity Publisher">
   </a>
 </div>
