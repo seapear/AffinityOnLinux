@@ -46,4 +46,6 @@ Some users get these errors with the script but are able to get it working with 
 - Affinity v3: Vector Pen preview line is not accurate. [Reported](https://discord.com/channels/1281706644073611358/1433830414954397736)
 - Designer V2: Deselecting SVG nested in Group while snapping is enabled. [Jacopo Faust](https://discord.com/channels/1281706644073611358/1431672689843634377)
 
+- V2 Users getting their 40x font pack as a "gift" [Youtube - Affinity](https://www.youtube.com/watch?v=UP_TBaKODlw&t=1300s)
+
 
