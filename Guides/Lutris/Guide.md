@@ -4,7 +4,15 @@ Currently, Lutris is the best method for Nvidia GPU users.
 
 <img src="/Assets/NewLogos/AffinityLutris.png" width="400"/>
 
-Before doing anything, make sure you have a `.exe` version of Affinity Photo, Affinity Designer, and/or Affinity Publisher downloaded from the official Affinity website: https://store.serif.com/en-us/account/downloads
+Before doing anything, make sure you have a `.exe` version of Affinity apps. You can download Affinity apps from the official Affinity websites:
+
+- [Affinity V3](https://www.affinity.studio/get-affinity) (requires a Canva account to download) 
+- [Affinity Photo V2](https://store.serif.com/update/windows/photo/2/) 
+- [Affinity Designer V2](https://store.serif.com/update/windows/designer/2/)
+- [Affinity Publisher V2](https://store.serif.com/update/windows/publisher/2/) 
+- [Affinity Photo V1](https://store.serif.com/update/windows/photo/1/)
+- [Affinity Designer V1](https://store.serif.com/update/windows/designer/1/)
+- [Affinity Publisher V1](https://store.serif.com/update/windows/publisher/1/)
 
 ## 1. Install winetricks
 
@@ -46,7 +54,7 @@ Choose one of the following forks of Wine, and download and extract it:
 ## 4. Copy and paste Wine fork to Lutris' system directory
 
 > [!NOTE]
-> Make sure to launch Lutris after the installation at least once to generate the folder structure.
+> After you installed Lutris, make sure to launch Lutris at least once to generate the folder structure.
 
 Lutris' Wine-related folders can be found in a hidden directory within your `home` folder. If you can't see hidden folders in your file browser, you can usually enable them by pressing `Ctrl + H`
 
@@ -80,24 +88,41 @@ At this point, you should be in the 🎮 Games section of Lutris where a blank r
 
 1. Under the first tab, `Game info`, change the `Name` field from Affinity Suite to the name of the app you just installed: Affinity Photo, Affinity Designer, or Affinity Publisher.
 2. Next to the `Identifier` field (towards the bottom), press `Change` then type in the correlated app name in lowercase and dashes, then press `Apply` to apply the change: 
-    * `affinity-photo`
-    * `affinity-designer`
-    * `affinity-publisher`
+   * `affinity` (for V3)
+   * `affinity-photo`
+   * `affinity-designer`
+   * `affinity-publisher`
 
 3. You can find icons, cover art and banners for Affinity apps in AffinityOnLinux's [`Icons`](/Assets/Icons) and [`Covers`](/Assets/Covers) folders.
 4. Switch to the `Game options` tab. 
 5. In the **`Executable`** field, copy and paste one of the following:
-   Affinity Photo:
+   Affinity V3:
+      ```shell
+      drive_c/Program Files/Affinity/Affinity/Affinity.exe
+      ```
+   Affinity Photo V2:
       ```shell
       drive_c/Program Files/Affinity/Photo 2/Photo.exe
       ```
-   Affinity Designer:
+   Affinity Designer V2:
       ```shell
       drive_c/Program Files/Affinity/Designer 2/Designer.exe
       ```
-   Affinity Publisher:
+   Affinity Publisher V2:
       ```shell
       drive_c/Program Files/Affinity/Publisher 2/Publisher.exe
+      ```
+   Affinity Photo V1:
+      ```shell
+      drive_c/Program Files/Affinity/Photo/Photo.exe
+      ```
+   Affinity Designer V1:
+      ```shell
+      drive_c/Program Files/Affinity/Designer/Designer.exe
+      ```
+   Affinity Publisher V1:
+      ```shell
+      drive_c/Program Files/Affinity/Publisher/Publisher.exe
       ```
 
 6. Click `Save`.

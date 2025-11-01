@@ -2,7 +2,15 @@
 
 <img src="/Assets/NewLogos/AffinityBottles.png" width="400"/>
 
-Before doing anything, make sure you have a `.exe` version of Affinity Photo, Affinity Designer, and/or Affinity Publisher downloaded from the official Affinity website: https://store.serif.com/en-us/account/downloads
+Before doing anything, make sure you have a `.exe` version of Affinity apps. You can download Affinity apps from the official Affinity websites:
+
+- [Affinity V3](https://www.affinity.studio/get-affinity) (requires a Canva account to download) 
+- [Affinity Photo V2](https://store.serif.com/update/windows/photo/2/) 
+- [Affinity Designer V2](https://store.serif.com/update/windows/designer/2/)
+- [Affinity Publisher V2](https://store.serif.com/update/windows/publisher/2/) 
+- [Affinity Photo V1](https://store.serif.com/update/windows/photo/1/)
+- [Affinity Designer V1](https://store.serif.com/update/windows/designer/1/)
+- [Affinity Publisher V1](https://store.serif.com/update/windows/publisher/1/)
 
 ## 1. Install Bottles
 
@@ -29,7 +37,7 @@ Copy and paste the extracted Wine fork folder from the previous step to Bottles'
 
 1. Open Bottles and click on the plus icon.
 2. Name it "Affinity" or "Serif".
-3. Set the enviroment to Custom.
+3. Set the environment to Custom.
 4. Keep Architecture -> `64bit`
 5. Set the runner to **ElementalWarriorWine** or **wine-tkg-affinity**, depending on your choice of Wine fork.
 6. Download the install script file for your Wine fork — Visit one of the following links based on your choice of Wine fork, then click the download button located on the top right of the file content to download the install script file, which is in YAML format.

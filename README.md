@@ -3,26 +3,26 @@
 
 _A repository containing information on how to get Affinity software working on GNU/Linux with WINE, a compatibility layer for running Windows programs 🐧_
 
-[📢 Affinity Apps](https://affinity.serif.com)
+📢 Affinity apps official websites: [Version 3 (Affinity by Canva)](https://www.affinity.studio/) | [Version 2](https://affinity.serif.com/v2/)
 
 <div style="display: flex; gap: 10px; align-items: center;">
   <a href="https://www.affinity.studio/">
     <img src="./Assets/Icons/Affinity-V3.svg" width="100" alt="Logo of Affinity Photo">
   </a>
-  <a href="https://store.serif.com/en-us/update/windows/photo/2/">
+  <a href="https://store.serif.com/update/windows/photo/2/">
     <img src="./Assets/Icons/Photo.svg" width="100" alt="Logo of Affinity Photo">
   </a>
-  <a href="https://store.serif.com/en-us/update/windows/designer/2/">
+  <a href="https://store.serif.com/update/windows/designer/2/">
     <img src="./Assets/Icons/Designer.svg" width="100" alt="Logo of Affinity Designer">
   </a>
-  <a href="https://store.serif.com/en-us/update/windows/publisher/2/">
+  <a href="https://store.serif.com/update/windows/publisher/2/">
     <img src="./Assets/Icons/Publisher.svg" width="100" alt="Logo of Affinity Publisher">
   </a>
 </div>
 
 ## How to Use This Guide:
 
-1. Check if your Linux distributon is compatable in [FAQ ❓](/FAQ.md#tested-methods).
+1. Check if your Linux distribution is compatible in [FAQ ❓](/FAQ.md#tested-methods).
 2. Choose a Wine manager: [Lutris](https://lutris.net/) (recommended), [Heroic Games Launcher](https://heroicgameslauncher.com/), [Bottles](https://usebottles.com/) or [Rum](https://gitlab.com/xkero/rum) (terminal).
 3. Choose a guide based on your Wine manager of choice: 
     - [Guide for Lutris](./Guides/Lutris/Guide.md) (Recommended)
@@ -38,7 +38,7 @@ _A repository containing information on how to get Affinity software working on 
 [FAQ ❓](/FAQ.md)
   - UI settings sometimes do not save. There is a [workaround](Guides/Settings.md).
   - Affinity v1 - [purchased via windows store issue](https://github.com/seapear/AffinityOnLinux/blob/main/FAQ.md#which-affinity-versions-are-supported)
-  - V3 Sign in is not working atm. Looking for solutions.
+  - Affinity V3 - Sign in is not working at the moment. Looking for solutions.
 
 [🗺️ Roadmap & ⚠️ Known issues](/Roadmap.md)
 
@@ -46,6 +46,6 @@ _A repository containing information on how to get Affinity software working on 
 
 [💬 Discord](https://join.affinityonlinux.com)
 
-## Disclamer
+## Disclaimer
 
 We are not affiliated with Serif or Canva.

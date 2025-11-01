@@ -15,7 +15,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 
 ## How to Use This Guide:
 
-1. Check if your Linux distribution is compatable: [Tested distros](#tested-methods)
+1. Check if your Linux distribution is compatible: [Tested distros](#tested-methods)
 2. Choose a Wine manager: [Lutris](https://lutris.net/), [Heroic Games Launcher](https://heroicgameslauncher.com/), [Bottles](https://usebottles.com/) or [Rum](https://gitlab.com/xkero/rum).
 3. Choose a guide based on your Wine manager of choice: 
   - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
