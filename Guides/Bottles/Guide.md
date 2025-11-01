@@ -8,6 +8,9 @@ Before doing anything, make sure you have a `.exe` version of Affinity apps. You
 - [Affinity Photo V2](https://store.serif.com/update/windows/photo/2/) 
 - [Affinity Designer V2](https://store.serif.com/update/windows/designer/2/)
 - [Affinity Publisher V2](https://store.serif.com/update/windows/publisher/2/) 
+- [Affinity Photo V1](https://store.serif.com/update/windows/photo/1/)
+- [Affinity Designer V1](https://store.serif.com/update/windows/designer/1/)
+- [Affinity Publisher V1](https://store.serif.com/update/windows/publisher/1/)
 
 ## 1. Install Bottles
 
