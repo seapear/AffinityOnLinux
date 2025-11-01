@@ -100,17 +100,29 @@ At this point, you should be in the 🎮 Games section of Lutris where a blank r
       ```shell
       drive_c/Program Files/Affinity/Affinity/Affinity.exe
       ```
-   Affinity Photo:
+   Affinity Photo V2:
       ```shell
       drive_c/Program Files/Affinity/Photo 2/Photo.exe
       ```
-   Affinity Designer:
+   Affinity Designer V2:
       ```shell
       drive_c/Program Files/Affinity/Designer 2/Designer.exe
       ```
-   Affinity Publisher:
+   Affinity Publisher V2:
       ```shell
       drive_c/Program Files/Affinity/Publisher 2/Publisher.exe
+      ```
+   Affinity Photo V1:
+      ```shell
+      drive_c/Program Files/Affinity/Photo/Photo.exe
+      ```
+   Affinity Designer V1:
+      ```shell
+      drive_c/Program Files/Affinity/Designer/Designer.exe
+      ```
+   Affinity Publisher V1:
+      ```shell
+      drive_c/Program Files/Affinity/Publisher/Publisher.exe
       ```
 
 6. Click `Save`.
