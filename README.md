@@ -3,7 +3,7 @@
 
 _A repository containing information on how to get Affinity software working on GNU/Linux with WINE, a compatibility layer for running Windows programs 🐧_
 
-📢 Affinity apps official websites: [Version 3 (Affinity by Canva)](https://www.affinity.studio/) | [Version 2](https://affinity.serif.com/v2/)
+📢 Affinity apps official websites: [Affinity by Canva](https://www.affinity.studio/) | [Version 2](https://affinity.serif.com/v2/)
 
 <div style="display: flex; gap: 10px; align-items: center;">
   <a href="https://www.affinity.studio/">
@@ -37,8 +37,8 @@ _A repository containing information on how to get Affinity software working on 
 
 [FAQ ❓](/FAQ.md)
   - UI settings sometimes do not save. There is a [workaround](Guides/Settings.md).
-  - Affinity v1 - [purchased via windows store issue](https://github.com/seapear/AffinityOnLinux/blob/main/FAQ.md#which-affinity-versions-are-supported)
-  - Affinity V3 - Sign in is not working at the moment. Looking for solutions.
+  - Affinity V1 - [purchased via windows store issue](https://github.com/seapear/AffinityOnLinux/blob/main/FAQ.md#which-affinity-versions-are-supported)
+  - Affinity by Canva - Sign in is not working at the moment. Looking for solutions.
 
 [🗺️ Roadmap & ⚠️ Known issues](/Roadmap.md)
 
