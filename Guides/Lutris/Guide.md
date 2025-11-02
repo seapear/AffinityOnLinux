@@ -88,7 +88,7 @@ At this point, you should be in the 🎮 Games section of Lutris where a blank r
 
 1. Under the first tab, `Game info`, change the `Name` field from Affinity Suite to the name of the app you just installed: Affinity Photo, Affinity Designer, or Affinity Publisher.
 2. Next to the `Identifier` field (towards the bottom), press `Change` then type in the correlated app name in lowercase and dashes, then press `Apply` to apply the change: 
-   * `affinity` (for V3)
+   * `affinity-canva`
    * `affinity-photo`
    * `affinity-designer`
    * `affinity-publisher`
@@ -96,7 +96,8 @@ At this point, you should be in the 🎮 Games section of Lutris where a blank r
 3. You can find icons, cover art and banners for Affinity apps in AffinityOnLinux's [`Icons`](/Assets/Icons) and [`Covers`](/Assets/Covers) folders.
 4. Switch to the `Game options` tab. 
 5. In the **`Executable`** field, copy and paste one of the following:
-   Affinity V3:
+
+   Affinity by Canva:
       ```shell
       drive_c/Program Files/Affinity/Affinity/Affinity.exe
       ```
