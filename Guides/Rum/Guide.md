@@ -169,14 +169,13 @@ We're finally ready to actually run the installer.
 >
 > | Program | URL |
 > |---------|-----|
-> |Affinity by Canva    | https://www.affinity.studio/download                |
+> |Affinity by Canva | https://www.affinity.studio/download           |
 > |Photo V2     | https://store.serif.com/update/windows/photo/2/     |
 > |Designer V2  | https://store.serif.com/update/windows/designer/2/  |
 > |Publisher V2 | https://store.serif.com/update/windows/publisher/2/ |
 > |Photo V1     | https://store.serif.com/update/windows/photo/1/     |
 > |Designer V1  | https://store.serif.com/update/windows/designer/1/  |
 > |Publisher V1 | https://store.serif.com/update/windows/publisher/1/ |
-
 
 We'll use the installer for Affinity Photo V1 as an example.
 
