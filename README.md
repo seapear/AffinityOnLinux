@@ -6,7 +6,7 @@ _A repository containing information on how to get Affinity software working on 
 📢 Affinity apps official websites: [Affinity by Canva](https://www.affinity.studio/) | [Version 2](https://affinity.serif.com/v2/)
 
 <div style="display: flex; gap: 10px; align-items: center;">
-  <a href="https://www.affinity.studio/">
+  <a href="https://www.affinity.studio/download">
     <img src="./Assets/Icons/Affinity-Canva.svg" width="100" alt="Logo of Affinity Photo">
   </a>
   <a href="https://store.serif.com/update/windows/photo/2/">
