@@ -31,15 +31,19 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 
 ### Which Affinity versions are supported?
 *Affinity v1 and v2 both work in most cases using this tutorial.*
+
 > [!TIP]
-> Official Affinity installers download links:
+> Official installers download links:
 >
 > | Program | URL |
 > |---------|-----|
-> |V2 (all)     |https://store.serif.com/en-us/account/licences/         |
-> |Photo V1     | https://store.serif.com/it/update/windows/photo/1/     |
-> |Designer V1  | https://store.serif.com/it/update/windows/designer/1/  |
-> |Publisher V1 | https://store.serif.com/it/update/windows/publisher/1/ |
+> |Affinity by Canva | https://www.affinity.studio/download           |
+> |Photo V2     | https://store.serif.com/update/windows/photo/2/     |
+> |Designer V2  | https://store.serif.com/update/windows/designer/2/  |
+> |Publisher V2 | https://store.serif.com/update/windows/publisher/2/ |
+> |Photo V1     | https://store.serif.com/update/windows/photo/1/     |
+> |Designer V1  | https://store.serif.com/update/windows/designer/1/  |
+> |Publisher V1 | https://store.serif.com/update/windows/publisher/1/ |
 
 > [!WARNING]
 > Be advised that, if you purchased the old **1.X version** of the Affinity applications through the [**Windows Store**](https://apps.microsoft.com/), you will **not** be able to activate your old licence on another operating systems other than Windows.  

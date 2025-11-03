@@ -6,7 +6,7 @@ Currently, Lutris is the best method for Nvidia GPU users.
 
 Before doing anything, make sure you have a `.exe` version of Affinity apps. You can download Affinity apps from the official Affinity websites:
 
-- [Affinity V3](https://www.affinity.studio/get-affinity) (requires a Canva account to download) 
+- [Affinity by Canva](https://www.affinity.studio/download)
 - [Affinity Photo V2](https://store.serif.com/update/windows/photo/2/) 
 - [Affinity Designer V2](https://store.serif.com/update/windows/designer/2/)
 - [Affinity Publisher V2](https://store.serif.com/update/windows/publisher/2/) 
@@ -88,7 +88,7 @@ At this point, you should be in the 🎮 Games section of Lutris where a blank r
 
 1. Under the first tab, `Game info`, change the `Name` field from Affinity Suite to the name of the app you just installed: Affinity Photo, Affinity Designer, or Affinity Publisher.
 2. Next to the `Identifier` field (towards the bottom), press `Change` then type in the correlated app name in lowercase and dashes, then press `Apply` to apply the change: 
-   * `affinity` (for V3)
+   * `affinity-canva`
    * `affinity-photo`
    * `affinity-designer`
    * `affinity-publisher`
@@ -96,7 +96,8 @@ At this point, you should be in the 🎮 Games section of Lutris where a blank r
 3. You can find icons, cover art and banners for Affinity apps in AffinityOnLinux's [`Icons`](/Assets/Icons) and [`Covers`](/Assets/Covers) folders.
 4. Switch to the `Game options` tab. 
 5. In the **`Executable`** field, copy and paste one of the following:
-   Affinity V3:
+
+   Affinity by Canva:
       ```shell
       drive_c/Program Files/Affinity/Affinity/Affinity.exe
       ```
