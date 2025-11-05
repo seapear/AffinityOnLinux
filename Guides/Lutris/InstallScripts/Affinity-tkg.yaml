@@ -42,7 +42,7 @@ script:
     - task:
         name: winetricks
         description: Installing winetricks packages...
-        app: --unattended --force vcrun2022 dotnet48 renderer=vulkan corefonts win11
+        app: --unattended --force vcrun2022 dotnet48 renderer=vulkan corefonts tahoma win11
     - task:
         name: wineexec
         description: Installing Affinity...
