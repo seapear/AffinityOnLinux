@@ -1,11 +1,9 @@
 # Affinity On Linux Guide Wine 10.17+
 
 ## Why this Guide?
-*Affinity applications rely on Windows Runtime (WinRT) APIs like
-`Windows.Services.Store.StoreContract`, which older Wine releases didn’t support.
-As of **Wine 10.17**, mainline Wine gained functional WinRT type resolution.
-With a small helper DLL and metadata file, you can now launch Affinity cleanly across distributions.* 
-Thank you @Wanesty for being the first one to discover this update!
+*Affinity apps need Windows Runtime (WinRT) APIs, which older Wine versions lacked. 
+Wine 10.17 introduced a critical stub, enabling the installer to work. Full functionality is achieved by combining this Wine update with a helper DLL and metadata file. 
+Thank you @[Wanesty](https://codeberg.org/wanesty) for being the first one to discover this update!*
 
 ---
 
@@ -210,4 +208,14 @@ After doing this, **Affinity** will appear alongside your native apps with its c
 - ✅ Arch 2025.03
     - ✅ [Linux 6.17.7-arch1-1](https://discord.com/channels/1281706644073611358/1281706644715208809/1435848291681304687)
 - ✅ Ubuntu
-    - ✅ [25.04 x86_64](https://discord.com/channels/1281706644073611358/1281706644715208809/1436016587533586623) 
+    - ✅ [25.04 x86_64](https://discord.com/channels/1281706644073611358/1281706644715208809/1436016587533586623)
+ 
+
+## 🧾 Credits
+- **ElementalWarrior** – creator of [wine‑wintypes.dll‑for‑affinity](https://github.com/ElementalWarrior/wine-wintypes.dll-for-affinity)  
+- **WineHQ Team** – added WinRT metadata support (MR [#8367](https://gitlab.winehq.org/wine/wine/-/merge_requests/8367))
+- **Microsoft** – provider of [Windows.winmd](https://github.com/microsoft/windows-rs) metadata  
+- **Guide revision & testing**
+    - [Wanesty](https://codeberg.org/wanesty) for finding this [update](https://discord.com/channels/1281706644073611358/1281706644715208809/1434097819547074652)
+    – [GameDirection/InterfaceAS](https://join.gamedirection.net) for testing & sumbitting the [guide](https://discord.com/channels/1281706644073611358/1281706644715208809/1435846007295316171)
+    - And of course the [AffinityOnLinux](https://join.affinityonlinux.com) community
