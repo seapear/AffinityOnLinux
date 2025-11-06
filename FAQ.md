@@ -51,18 +51,19 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 
 ### 🧪 Tested Methods
 
-| Distro/Method | [Lutris](https://lutris.net/) | [Heroic](https://heroicgameslauncher.com/) | [Bottles](https://usebottles.com/) | [Rum](https://gitlab.com/xkero/rum) |
-|---------------|--------|--------|---------|-----|
-| [Debian](https://www.debian.org/)    | ✔️     | ✔️     | ✔️     | ✔️  |
-| [Fedora Linux](https://fedoraproject.org/)    | ✔️     | ✔️     | ✔️     | ✔️  |
-| [Arch Linux](https://archlinux.org/)      | ✔️     | ✔️     | [✔️](https://github.com/seapear/AffinityOnLinux/issues/64)     | ✔️  |
-| [Ubuntu](https://ubuntu.com/)    | ✔️     | ✔️     | ✔️     | ✔️  |
-| [Zorin OS](https://zorin.com/os/)     | [✔️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [⚠️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [⚠️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [❌](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305386111)  | 
-| [CachyOS](https://cachyos.org/)     | ✔️     | ✔️     | ❓     | ✔️  |
-| [EndeavourOS](https://endeavouros.com/)   | ✔️     | ✔️     | ❓     | ✔️  |
-| [Nobara Linux](https://nobaraproject.org/)   | ✔️     | ✔️     | ❓     | ✔️  |
-| [SteamOS](https://store.steampowered.com/steamos)   | ✔️     | ✔️     | ❓     | ❓  |
-| [Pop!_OS](https://system76.com/pop/)   | ❓     | ❓     | ❓     | [✔️](https://discord.com/channels/1281706644073611358/1281706644715208809/1419434351019687948)  |
+| Distro/Method | [Wine 10.17+](https://www.winehq.org/) | [Lutris](https://lutris.net/) | [Heroic](https://heroicgameslauncher.com/) | [Bottles](https://usebottles.com/) | [Rum](https://gitlab.com/xkero/rum) |
+|---------------|--------|--------|---------|-----|-----|
+| [Debian](https://www.debian.org/)    | ✔️     | ✔️     | ✔️     | ✔️     | ✔️  |
+| [Fedora Linux](https://fedoraproject.org/)    | ✔️     | ✔️     | ✔️     | ✔️     | ✔️  |
+| [Arch Linux](https://archlinux.org/)      | ✔️     | ✔️     | ✔️     | [✔️](https://github.com/seapear/AffinityOnLinux/issues/64)     | ✔️  |
+| [Ubuntu](https://ubuntu.com/)    | ✔️     | ✔️     | ✔️     | ✔️     | ✔️  |
+| [Zorin OS](https://zorin.com/os/)     | ✔️     | [✔️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [⚠️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [⚠️](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305525078)     | [❌](https://github.com/seapear/AffinityOnLinux/issues/53#issuecomment-3305386111)  | 
+| [CachyOS](https://cachyos.org/)     | ✔️     | ✔️     | ✔️     | ❓     | ✔️  |
+| [EndeavourOS](https://endeavouros.com/)   | ✔️     | ✔️     | ✔️     | ❓     | ✔️  |
+| [Nobara Linux](https://nobaraproject.org/)   | ✔️     | ✔️     | ✔️     | ❓     | ✔️  |
+| [SteamOS](https://store.steampowered.com/steamos)   | ✔️     | ✔️     | ✔️     | ❓     | ❓  |
+| [Pop!_OS](https://system76.com/pop/)   | ✔️     | ❓     | ❓     | ❓     | [✔️](https://discord.com/channels/1281706644073611358/1281706644715208809/1419434351019687948)  |
+| [NixOS](https://nixos.org/)   | [✔️](https://discord.com/channels/1281706644073611358/1281706644715208809/1436009152660115536)     | [✔️](https://discord.com/channels/1281706644073611358/1281706644715208809/1436017076350488801)     | ❓     | ❓     | ❓   |
 
 Click on icon for more context if available:
 ❓ Untested
