@@ -41,7 +41,7 @@ _A repository containing information on how to get Affinity software working on 
   - Affinity by Canva - Sign in is not working at the moment. Looking for solutions.
   - UI settings does not save. There is a [workaround](Guides/Settings.md).
   - Affinity V1 - [purchased via windows store issue](https://github.com/seapear/AffinityOnLinux/blob/main/FAQ.md#which-affinity-versions-are-supported)
-  - [NixOS method](https://discord.com/channels/1281706644073611358/1435159473579884635/1435159473579884635)
+  - [unofficial NixOS method](https://discord.com/channels/1281706644073611358/1435159473579884635/1435159473579884635)
 
 [🗺️ Roadmap & ⚠️ Known issues](/Roadmap.md)
 
