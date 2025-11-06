@@ -115,11 +115,15 @@ mv /tmp/wintypes.dll.so /tmp/wintypes.dll 2>/dev/null || true
 ---
 
 ### 5. Install Affinity
+> Affinity apps found here: [Affinity by Canva](https://www.affinity.studio/) | [Version 2](https://affinity.serif.com/v2/) | [Archived](https://archive.org/details/affinity_20251030)
+> Make sure you have your installion file in `~/Downloads`.
+
 ```bash
 WINEPREFIX="$HOME/.affinity" wine "$HOME/Downloads/Affinity x64.exe"
 ```
-Follow normal installation prompts.
+> Adujust *.exe in the path above for V2 Photo/Designer/Publisher, and run 3 times for each installer.
 
+Follow normal installation prompts.
 ---
 
 ### 6. Copy metadata + shim files
