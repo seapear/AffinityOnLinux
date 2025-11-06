@@ -148,6 +148,9 @@ In **Libraries** tab:
 2. Click **Add**, then **Edit**, choose **Native (Windows)**.
 3. Click **Apply**, then **OK**.
 
+<img width="409" height="482" alt="image" src="https://github.com/user-attachments/assets/756320cf-5c19-4eb6-a093-7938e0e40aec" />
+
+
 ---
 
 ### 8. Launch Affinity
