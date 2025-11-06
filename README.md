@@ -1,7 +1,7 @@
 # AffinityOnLinux 
 <img src="./Assets/NewLogos/AffinityOnLinux-TightCrop.png" width="100" alt="Logo of Affinity Photo">
 
-_A repository containing information on how to get Affinity software working on GNU/Linux with WINE, a compatibility layer for running Windows programs 🐧_
+_A repository containing information on how to get Affinity software working on GNU/Linux with WINE, a compatibility layer for running Windows programs_ 🐧
 
 📢 Affinity apps official websites: [Affinity by Canva](https://www.affinity.studio/) | [Version 2](https://affinity.serif.com/v2/) | [Archived](https://archive.org/details/affinity_20251030)
 
