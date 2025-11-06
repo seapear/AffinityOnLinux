@@ -210,4 +210,4 @@ After doing this, **Affinity** will appear alongside your native apps with its c
 - ✅ Arch 2025.03
     - ✅ [Linux 6.17.7-arch1-1](https://discord.com/channels/1281706644073611358/1281706644715208809/1435848291681304687)
 - ✅ Ubuntu
-    - ✅ 25.04 x86_64 
+    - ✅ [25.04 x86_64](https://discord.com/channels/1281706644073611358/1281706644715208809/1436016587533586623) 
