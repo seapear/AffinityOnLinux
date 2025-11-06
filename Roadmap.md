@@ -10,7 +10,7 @@
 
 [ ✅ ] Settings workaround
 
-[ ❌ ] Create an updated Wine build utilizing latest version of wine.
+[ ✅ ] Create an updated Wine build utilizing latest version of wine. ([Thanks to Wanesty](https://discord.com/channels/1281706644073611358/1281706644715208809/1434097819547074652))
 
 [ ❌ ] Get Canva login fixed (thanks XDan for reporting)
 
@@ -21,6 +21,7 @@
 [ ❌ ] OpenCL for Amd/Intel gpus (waiting ElementalWarrior)
 
 [ ❌ ] Video walkthrough tutorials.
+ - [ ❌ ] Wine 10.17+ Method.
  - [ ❌ ] Lutris Method.
  - [ ❌ ] Heroic Method.
  - [ ❌ ] Bottles Method.
