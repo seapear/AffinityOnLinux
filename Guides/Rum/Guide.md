@@ -2,8 +2,8 @@
 
 ## Preface
 
-This guide aims to provide a way to manage wine that does not make use of launchers like Lutris or Bottles.
-We will instead use `rum`, a small shell script that will help us manage multiple wine runners.
+This guide aims to provide a way to manage Wine that does not make use of GUI launchers like Lutris or Bottles.
+We will instead use [`rum`](https://gitlab.com/xkero/rum), a small shell script that will help us manage multiple Wine runners.
 
 ## Dependencies
 Install the following programs (or the equivalent for your distro) before proceeding. 
