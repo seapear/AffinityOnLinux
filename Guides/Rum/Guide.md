@@ -196,6 +196,42 @@ wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Fil
 
 ![Affinity on Linux Rules](./Screenshots/aolrules.png)
 
+## Commands to launch Affinity software
+
+Affinity by Canva:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Affinity/Affinity.exe
+```
+
+Affinity Photo V2:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Photo 2/Photo.exe
+```
+
+Affinity Designer V2:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Designer 2/Designer.exe
+```
+
+Affinity Publisher V2:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Publisher 2/Publisher.exe
+```
+
+Affinity Photo V1:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Photo/Photo.exe
+```
+
+Affinity Designer V1:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Designer/Designer.exe
+```
+
+Affinity Publisher V1:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Publisher/Publisher.exe
+```
 
 ## Additional Tips & Tricks
 
