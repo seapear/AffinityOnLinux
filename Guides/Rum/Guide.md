@@ -191,7 +191,7 @@ Once it completes, close the installer.
 Finally, launch the software!
 
 ```bash
-wine-ew-affinity wine ~/.local/share/wine/prefixes/test/drive_c/Program\ Files/Affinity/Photo/Photo.exe
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Photo/Photo.exe
 ```
 
 ![Affinity on Linux Rules](./Screenshots/aolrules.png)
