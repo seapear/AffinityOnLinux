@@ -276,7 +276,7 @@ If you also want to enable dark theme for the Wine prefix for Affinity, run the 
 > When running `wine regedit` to install an `.reg` file, the `WINEPREFIX` environment variable only accepts an absolute path as its value, so including another environment variable in the value, such as `$HOME/.local/share/wine/prefixes/affinity` would not work.
 
 ## Creating a .desktop launcher
-Create a .desktop launcher by following this [Desktop Launcher Guide](https://github.com/seapear/AffinityOnLinux/blob/main/Guides/Rum/Guide-DesktopLauncher.md) so you can open Affinity from your desktop.
+Create a .desktop launcher by following this [Desktop Launcher Guide](/Guides/Rum/Guide-DesktopLauncher.md) so you can open Affinity from your desktop.
 
 ## Credits
 Thanks to:
