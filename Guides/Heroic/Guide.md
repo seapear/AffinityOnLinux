@@ -22,7 +22,7 @@ Choose one of the following forks of Wine, and download and extract it:
 
 - [ElementalWarrior-x86_64](https://github.com/seapear/AffinityOnLinux/releases/download/Legacy/ElementalWarriorWine-x86_64.tar.gz) (Recommended) — After downloading the `ElementalWarriorWine-x86_64.tar.gz` archive file, right click and extract the archive into an `ElementalWarriorWine-x86_64` folder.
 
-- [**Wine-TKG-affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) — Download the ` wine-tkg-affinity-archbuilt.tar.zst` archive file, then extract the `usr/` folder from the archive and rename the folder to `wine-tkg-affinity-x86_64`.
+- [**Wine-TKG-affinity**](https://github.com/daegalus/wine-tkg-affinity/releases) — Download the ` wine-tkg-affinity-archbuilt.tar.zst` archive file, then extract to the `usr/` folder from the archive and rename the folder to `wine-tkg-affinity-x86_64`.
 
 ## 3. Copy and Paste Wine Fork Binaries to Heroic Games Launcher
 
