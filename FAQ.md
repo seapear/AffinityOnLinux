@@ -2,7 +2,7 @@
 
 ### What is this project about?
 As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool is. Our goal is to:
-- Maintain reliability and ease-of-use to install Serifs program Affinity Sutie, Photo, Designer & Publisher on Linux.
+- Maintain reliability and ease-of-use to install Serifs program Affinity Suite, Photo, Designer & Publisher on Linux.
 - Provide clear and friendly help for new users of Affinity and Linux, especially for artists who may not be programmers or system admins
 - Streamline the onboarding process so creativity can stay the main focus
 
