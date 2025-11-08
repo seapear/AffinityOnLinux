@@ -35,7 +35,13 @@ wine-ew-affinity wine "$HOME/.local/share/wine/prefixes/affinity/drive_c/Program
 
 ---
 
-## Step 2: Install your icons in the correct theme path
+## Step 2: Download Affinity software icons
+
+You can find and download the icons for Affinity software from this repository's [`Assets/Icons`](/Assets/Icons) folder.
+
+---
+
+## Step 3: Install your icons in the correct theme path
 
 KDE & GNOME both follow the freedesktop.org icon spec.
 
@@ -45,16 +51,44 @@ mkdir -p ~/.local/share/icons/hicolor/256x256/apps/
 
 Copy your SVG files & rename consistently:
 
+For Affinity by Canva's default icon:
 ```bash
+cp /home/$USER/Downloads/Affinity-Canva.svg ~/.local/share/icons/hicolor/256x256/apps/affinity-canva.svg
+```
 
-cp /home/$USER/Downloads/AffinityOnLinux/Assets/Icons/Designer.svg   ~/.local/share/icons/hicolor/256x256/apps/affinity-designer.svg
-cp /home/$USER/Downloads/AffinityOnLinux/Assets/Icons/Photo.svg      ~/.local/share/icons/hicolor/256x256/apps/affinity-photo.svg
-cp /home/$USER/Downloads/AffinityOnLinux/Assets/Icons/Publisher.svg  ~/.local/share/icons/hicolor/256x256/apps/affinity-publisher.svg
+For Affinity by Canva's square circle icon:
+```bash
+cp /home/$USER/Downloads/Affinity-Canva-Squircle.svg ~/.local/share/icons/hicolor/256x256/apps/affinity-canva.svg
+```
+
+For Affinity V1 and V2:
+```bash
+cp /home/$USER/Downloads/Designer.svg   ~/.local/share/icons/hicolor/256x256/apps/affinity-designer.svg
+cp /home/$USER/Downloads/Photo.svg      ~/.local/share/icons/hicolor/256x256/apps/affinity-photo.svg
+cp /home/$USER/Downloads/Publisher.svg  ~/.local/share/icons/hicolor/256x256/apps/affinity-publisher.svg
 ```
 
 ---
 
-## Step 3: Create `.desktop` launchers
+## Step 4: Create `.desktop` launchers
+
+### Affinity by Canva
+```bash
+nano ~/.local/share/applications/affinity-canva.desktop
+```
+```ini
+[Desktop Entry]
+Name=Affinity by Canva
+Exec=wine-ew-affinity wine "C:/Program Files/Affinity/Affinity/Affinity.exe"
+Type=Application
+StartupNotify=true
+Icon=affinity-canva
+Categories=Graphics;Deisgn;Publishing;
+```
+Alternative exec=
+```ini
+Exec=env 'WINEPREFIX=$HOME/.local/share/wine/prefixes/affinity' wine-ew-affinity '$HOME/.local/share/wine/prefixes/affinity/drive_c/Program Files/Affinity/Affinity/Affinity.exe'
+```
 
 ### Affinity Designer 2
 ```bash
@@ -74,8 +108,6 @@ Alternative exec=
 Exec=env 'WINEPREFIX=$HOME/.local/share/wine/prefixes/affinity' wine-ew-affinity '$HOME/.local/share/wine/prefixes/affinity/drive_c/Program Files/Affinity/Designer 2/Designer.exe'
 ```
 
----
-
 ### Affinity Photo 2
 ```bash
 nano ~/.local/share/applications/affinity-photo.desktop
@@ -93,7 +125,6 @@ Alternative exec=
 ```ini
 Exec=env 'WINEPREFIX=$HOME/.local/share/wine/prefixes/affinity' wine-ew-affinity '$HOME/.local/share/wine/prefixes/affinity/drive_c/Program Files/Affinity/Photo 2/Photo.exe'
 ```
----
 
 ### Affinity Publisher 2
 ```bash
@@ -115,7 +146,7 @@ Exec=env 'WINEPREFIX=$HOME/.local/share/wine/prefixes/affinity' wine-ew-affinity
 
 ---
 
-## Step 4: Make them executable & update caches
+## Step 5: Make them executable & update caches
 
 ```bash
 chmod +x ~/.local/share/applications/affinity-*.desktop
@@ -128,16 +159,19 @@ update-desktop-database ~/.local/share/applications/
 
 **KDE Plasma menu & icon cache:**
 ```bash
-kbuildsycoca5
+kbuildsycoca6
 gtk-update-icon-cache ~/.local/share/icons/hicolor
 ```
 
+> [!NOTE]
+> If you are on KDE Plasma 5, replace `kbuildsycoca6` in the above command with `kbuildsycoca5`.
+
 ---
 
-## Step 5: Pin & Use
+## Step 6: Pin & Use
 
 - **KDE Plasma**
-  - Open App Menu → search *Affinity Designer 2* / *Publisher 2* / *Photo 2*
+  - Open App Menu → search *Affinity by Canva* / *Affinity Designer 2* / *Publisher 2* / *Photo 2*
   - Right‑click → **Pin to Task Manager** or **Add to Desktop**
 
 - **GNOME**

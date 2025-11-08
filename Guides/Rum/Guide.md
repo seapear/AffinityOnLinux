@@ -2,8 +2,8 @@
 
 ## Preface
 
-This guide aims to provide a way to manage wine that does not make use of launchers like Lutris or Bottles.
-We will instead use `rum`, a small shell script that will help us manage multiple wine runners.
+This guide aims to provide a way to manage Wine that does not make use of GUI launchers like Lutris or Bottles.
+We will instead use [`rum`](https://gitlab.com/xkero/rum), a small shell script that will help us manage multiple Wine runners.
 
 ## Dependencies
 Install the following programs (or the equivalent for your distro) before proceeding. 
@@ -191,11 +191,49 @@ Once it completes, close the installer.
 Finally, launch the software!
 
 ```bash
-wine-ew-affinity wine ~/.local/share/wine/prefixes/test/drive_c/Program\ Files/Affinity/Photo/Photo.exe
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Photo/Photo.exe
 ```
 
 ![Affinity on Linux Rules](./Screenshots/aolrules.png)
 
+## Commands to launch Affinity software
+
+You can launch the various Affinity apps by running the following commands:
+
+Affinity by Canva:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Affinity/Affinity.exe
+```
+
+Affinity Photo V2:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Photo 2/Photo.exe
+```
+
+Affinity Designer V2:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Designer 2/Designer.exe
+```
+
+Affinity Publisher V2:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Publisher 2/Publisher.exe
+```
+
+Affinity Photo V1:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Photo/Photo.exe
+```
+
+Affinity Designer V1:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Designer/Designer.exe
+```
+
+Affinity Publisher V1:
+```bash
+wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Publisher/Publisher.exe
+```
 
 ## Additional Tips & Tricks
 
@@ -213,13 +251,34 @@ wine-ew-affinity winecfg
 - Increase the `dpi` to your preference
 
 > [!NOTE]
-> As I understand it, the `dpi` value is a percentage applied to the currently set `Desktop Size`.  
+> As we understand it, the `dpi` value is a percentage applied to the currently set `Desktop Size`.  
 > So, for a 4k monitor, setting the desktop size to `1920 x 1080` and scaling it by 200% works quite well.
 
 ![DPI Fix](./Screenshots/dpifix.png)
 
+### Dark Theme for Wine
+
+To enable the dark theme for Wine, follow these steps:
+
+1. Visit the [repository's `wine-dark-theme.reg` file page](/Auxiliary/Other/wine-dark-theme.reg) to download the `.reg` file by clicking the download button on the top right just like we did for the `.yaml` file earlier.
+2. Save the file to your Downloads folder.
+3. Launch your terminal app, then type `cd Downloads` to change to your Downloads folder.
+4. Run the following command:
+    ```shell
+    wine regedit wine-dark-theme.reg
+    ```
+5. Press `Enter`. You might get a message again saying "Wine could not find a wine-mono package...". Just click `Install`.
+
+If you also want to enable dark theme for the Wine prefix for Affinity, run the following command, and replace `username` with your local user name:
+   ```shell
+   WINEPREFIX="/home/username/.local/share/wine/prefixes/affinity" wine regedit wine-dark-theme.reg
+   ```
+
+> [!NOTE]
+> When running `wine regedit` to install an `.reg` file, the `WINEPREFIX` environment variable only accepts an absolute path as its value, so including another environment variable in the value, such as `$HOME/.local/share/wine/prefixes/affinity` would not work.
+
 ## Creating a .desktop launcher
-Create a .desktop launcher by following this [Desktop Launcher Guide](https://github.com/seapear/AffinityOnLinux/blob/main/Guides/Rum/Guide-DesktopLauncher.md) so you can open affinity from your desktop.
+Create a .desktop launcher by following this [Desktop Launcher Guide](/Guides/Rum/Guide-DesktopLauncher.md) so you can open Affinity from your desktop.
 
 ## Credits
 Thanks to:
