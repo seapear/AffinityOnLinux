@@ -198,6 +198,8 @@ wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Fil
 
 ## Commands to launch Affinity software
 
+You can launch the various Affinity apps by running the following commands:
+
 Affinity by Canva:
 ```bash
 wine-ew-affinity wine ~/.local/share/wine/prefixes/affinity/drive_c/Program\ Files/Affinity/Affinity/Affinity.exe
