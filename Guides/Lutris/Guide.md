@@ -56,7 +56,7 @@ Choose one of the following forks of Wine, and download and extract it:
 > [!NOTE]
 > After you installed Lutris, make sure to launch Lutris at least once to generate the folder structure.
 
-Lutris' Wine-related folders can be found in a hidden directory within your `home` folder. If you can't see hidden folders in your file browser, you can usually enable them by pressing `Ctrl + H`
+Lutris' Wine-related folders can be found in a hidden directory within your `home` folder. If you can't see hidden folders in your file browser, you can usually enable them by pressing `Ctrl + H`.
 
 - If you installed Lutris via **Flatpak**, navigate to `/home/$USER/.var/app/net.lutris.Lutris/data/lutris/runners/`
 - If you installed Lutris via **AppImage** or other methods, navigate to `/home/$USER/.local/share/lutris/runners/`
