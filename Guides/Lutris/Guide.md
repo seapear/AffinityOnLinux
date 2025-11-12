@@ -61,7 +61,7 @@ Lutris' Wine-related folders can be found in a hidden directory within your `hom
 - If you installed Lutris via **Flatpak**, navigate to `/home/$USER/.var/app/net.lutris.Lutris/data/lutris/runners/`
 - If you installed Lutris via **AppImage** or other methods, navigate to `/home/$USER/.local/share/lutris/runners/`
 
-Create a folder called `wine` if one does not already exist, then copy and paste the folder you extracted in the previous step to this folder.
+Create a folder called `wine` if one does not already exist, then copy and paste the Wine fork folder you extracted in the previous step to this folder.
 
 This is also known as your Wine runner.
 

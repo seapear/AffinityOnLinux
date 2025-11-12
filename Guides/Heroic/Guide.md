@@ -26,10 +26,12 @@ Choose one of the following forks of Wine, and download and extract it:
 
 ## 3. Copy and Paste Wine Fork Binaries to Heroic Games Launcher
 
-Copy and paste the extracted Wine fork folder from the previous step to Heroic Games Launcher’s Wine directory:
+Heroic Games Launcher's Wine-related folders can be found in a hidden directory within your `home` folder. If you can't see hidden folders in your file browser, you can usually enable them by pressing `Ctrl + H`.
 
-- **Flatpak:** `~/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/wine`
-- **Other Install Methods:** `~/.config/heroic/tools/wine`
+- If you installed Heroic Games Launcher via **Flatpak**, navigate to `/home/$USER/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/wine/`
+- If you installed Heroic Games Launcher via other methods, navigate to `/home/$USER/.config/heroic/tools/wine/`
+
+Copy and paste the Wine fork folder you extracted in the previous step to this folder.
 
 ## 4. Add Game in Heroic Games Launcher
 
