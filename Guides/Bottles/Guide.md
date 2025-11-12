@@ -28,10 +28,14 @@ Choose one of the following forks of Wine, and download and extract it:
 
 ## 3. Copy and Paste Wine Fork Binaries to Bottles 
 
-Copy and paste the extracted Wine fork folder from the previous step to Bottles' runners directory:
+Bottles' Wine-related folders can be found in a hidden directory within your `home` folder. If you can't see hidden folders in your file browser, you can usually enable them by pressing `Ctrl + H`.
 
-- **Flatpak:** `~/.var/app/com.usebottles.bottles/data/bottles/runners`
-- **AppImage:** `~/.local/share/bottles/runners`
+- If you installed Bottles via **Flatpak**, navigate to `/home/$USER/.var/app/com.usebottles.bottles/data/bottles/runners/`
+- If you installed Bottles via **AppImage**, navigate to `/home/$USER/.local/share/bottles/runners/`
+
+Copy and paste the Wine fork folder you extracted in the previous step to this folder.
+
+This is also known as your Wine runner.
 
 ## 4. Add Bottle in Bottles
 
