@@ -185,19 +185,19 @@ sudo mv ~/winetricks /usr/local/bin/winetricks
 
 ## After Installation (Optional Enhancements)
 
-### Install Affinity Plugin Loader + WineFix  
+### Install Affinity Plugin Loader + WineFix  
 > **Author:** [Noah C3](https://github.com/noahc3)  
 > **Project:** [AffinityPluginLoader + WineFix](https://github.com/noahc3/AffinityPluginLoader/)  
 > *This patch is community‑made and **not official**, but it greatly improves runtime stability and fixes the “Preferences not saving” issue on Linux.*
 
-#### Purpose
+### Purpose
 - Provides plugin loading and dynamic patch injection via **Harmony**  
 - Restores **on‑the‑fly settings saving** under Wine  
 - Temporarily skips the Canva sign‑in dialog (until the browser redirect fix is ready)
 
 ---
 
-### Quick Install (Recommended Method)
+### Quick Install (Recommended Method)
 Replace paths dynamically as these commands adapt automatically to your prefix and Affinity directory:
 
 ```bash
