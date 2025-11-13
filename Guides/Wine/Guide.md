@@ -38,7 +38,7 @@ sudo dnf makecache
 sudo dnf install winehq-devel -y
 ```
 
-If installing `winetricks` via `dnf` fails or tries to downgrade Wine, use the **manual script** (safe for any distro including Nobara — see [Manual Winetricks Install](#manual-winetricks-install)).
+If installing `winetricks` via `dnf` fails or tries to downgrade Wine, use the **manual script** (safe for any distro including Nobara, please see [Manual Winetricks Install](#manual-winetricks-install)).
 
 ---
 
@@ -183,6 +183,60 @@ sudo mv ~/winetricks /usr/local/bin/winetricks
 
 ---
 
+## After Installation (Optional Enhancements)
+
+### Install Affinity Plugin Loader + WineFix  
+> **Author:** [Noah C3](https://github.com/noahc3)  
+> **Project:** [AffinityPluginLoader + WineFix](https://github.com/noahc3/AffinityPluginLoader/)  
+> *This patch is community‑made and **not official**, but it greatly improves runtime stability and fixes the “Preferences not saving” issue on Linux.*
+
+#### Purpose
+- Provides plugin loading and dynamic patch injection via **Harmony**  
+- Restores **on‑the‑fly settings saving** under Wine  
+- Temporarily skips the Canva sign‑in dialog (until the browser redirect fix is ready)
+
+---
+
+### Quick Install (Recommended Method)
+Replace paths dynamically as these commands adapt automatically to your prefix and Affinity directory:
+
+```bash
+# Define Wine prefix
+export WINEPREFIX="$HOME/.affinity"
+cd "$WINEPREFIX/drive_c/Program Files/Affinity/Affinity/"
+
+# 1.) Download & extract AffinityPluginLoader + WineFix bundle
+curl -L -o /tmp/affinitypluginloader-plus-winefix.tar.xz \
+  https://github.com/noahc3/AffinityPluginLoader/releases/latest/download/affinitypluginloader-plus-winefix.tar.xz
+
+tar -xf /tmp/affinitypluginloader-plus-winefix.tar.xz -C .
+
+# 2.) Replace launcher for compatibility
+mv "Affinity.exe" "Affinity.real.exe"
+mv "AffinityHook.exe" "Affinity.exe"
+```
+
+> *Now your existing launchers still work, `wine .../Affinity.exe` automatically loads AffinityPluginLoader & WineFix.*
+
+
+
+### 🧪 Verify
+Run Affinity as before:
+```bash
+WINEPREFIX="$HOME/.affinity" wine "$WINEPREFIX/drive_c/Program Files/Affinity/Affinity/Affinity.exe"
+```
+- You should now see **Affinity Plugin Loader** output in your terminal log on startup.  
+- Preferences and settings should now save correctly on Linux.
+
+
+> [!NOTE]
+> - Updates to Affinity may overwrite `Affinity.exe`.  
+>   - If that happens, re‑extract the `affinitypluginloader-plus-winefix.tar.xz` bundle.
+> - *WineFix currently disables Canva sign‑in.* It will be restored in a future patch once the redirect handler is stable.
+> - Always download from [Noah C3’s official GitHub releases](https://github.com/noahc3/AffinityPluginLoader/releases).
+
+---
+
 ### Add Icon to Dock or Panel
 - **GNOME / Fedora / Pop OS / Ubuntu default:** open Activities → search *Affinity* → right‑click → **Add to Favorites**.
 - **KDE Plasma / Manjaro / Arch:** right‑click the menu entry → **Add to Panel / Pin to Task Manager**.
@@ -194,7 +248,7 @@ After doing this, **Affinity** will appear alongside your native apps with its c
 
 ---
 
-*(If you also install Photo 2, Designer 2, and Publisher 2, you can duplicate and rename the `.desktop` file — just change the `Name`, `Exec`, and `Icon` fields accordingly.)*
+*(If you also install Photo 2, Designer 2, and Publisher 2, you can duplicate and rename the `.desktop` file and just change the `Name`, `Exec`, and `Icon` fields accordingly.)*
 
 
 ---
@@ -219,3 +273,5 @@ After doing this, **Affinity** will appear alongside your native apps with its c
     - [Wanesty](https://codeberg.org/wanesty) for finding this [update](https://discord.com/channels/1281706644073611358/1281706644715208809/1434097819547074652)
     – [GameDirection/InterfaceAS](https://join.gamedirection.net) for testing & sumbitting the [guide](https://discord.com/channels/1281706644073611358/1281706644715208809/1435846007295316171)
     - And of course the [AffinityOnLinux](https://join.affinityonlinux.com) community
+- **Noah C3** – Creator of [AffinityPluginLoader](https://github.com/noahc3/AffinityPluginLoader) and WineFix  
+- **Harmony** library by [Pardeike](https://github.com/pardeike/Harmony)  
