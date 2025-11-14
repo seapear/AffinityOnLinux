@@ -3,7 +3,7 @@
 ## Why this Guide?
 *Affinity apps need Windows Runtime (WinRT) APIs, which older Wine versions lacked. 
 You need Wine 10.17 or newer to fix a missing file that previously blocked the installer. The actual WinRT functionality is then provided by adding a separate helper DLL and metadata file.*
-Thank you @[Wanesty](https://codeberg.org/wanesty) for being the first one to discover this update!*
+Thank you @[Wanesty](https://codeberg.org/wanesty) for being the first one to discover this update!* also if you'd like to follow their approach to the install [here](https://affinity.liz.pet/).
 
 ---
 
