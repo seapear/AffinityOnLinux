@@ -1,4 +1,4 @@
-# Complete Wine Uninstallation Guide
+# Complete Wine Uninstallation/Purge Guide
 
 ## Overview
 This guide provides a comprehensive method for removing Wine and all associated components from your Linux system.
