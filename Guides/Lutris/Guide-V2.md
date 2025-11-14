@@ -97,8 +97,7 @@ Helper files installed automatically after setup:
 
 ---
 
-## 🧪 Testing and Feedback
-This new method is still **in pre‑release testing** so feedback or logs are welcome!  
+## 🧪 Issues and Feedback
 Please open issues or pull requests here:
 👉 [https://github.com/seapear/AffinityOnLinux/issues](https://github.com/seapear/AffinityOnLinux/issues)
 
