@@ -12,10 +12,11 @@
 	<ViewQuality>0</ViewQuality>
 	<AutoSaveInterval>
 		<UnitType>Number</UnitType>
-		<Value>300</Value>
+		<Value>50</Value>
 	</AutoSaveInterval>
 	<UsePerfectClipping>False</UsePerfectClipping>
 	<UseDithering>False</UseDithering>
 	<RetinaPassIndex>0</RetinaPassIndex>
 	<UseHardwareAcceleration2 xsi:nil="true" />
+
 </Settings>
