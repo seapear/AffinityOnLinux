@@ -39,7 +39,7 @@ rm -rf ~/.config/wine
 rm -rf ~/.affinity
 ```
 
-**Note:** The `.affinity` directory removal is specific to Affinity software installations through Wine and may not be present on all systems.
+**Note:** The `.affinity` directory removal is specific to Affinity software installations through Wine and may not be present on all setups.
 
 ### 6. Remove Winetricks (if installed manually)
 ```bash
