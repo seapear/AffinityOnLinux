@@ -63,5 +63,5 @@ Replace /path/to/wineprefix/folder with the exact Wine prefix of the app.
 >   ```
 
 > [!Important]
-> Increase your recovery time, things will probably break and crash. This isn't perfect.
+> Decrease your File Recovery Time. AffinityOnLinux isn't native and is prone to being unstable.
 > <img width="1411" height="757" alt="image" src="https://github.com/user-attachments/assets/0adeb6ee-42d8-4c14-b244-73ba9bb3095a" />
