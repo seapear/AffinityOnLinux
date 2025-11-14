@@ -35,28 +35,33 @@ Replace /path/to/wineprefix/folder with the exact Wine prefix of the app.
 
 ---
 
-### TIP: Finding Your Wine Prefix Location
+> [!TIP]
+> ### Finding Your Wine Prefix Location
+> 
+> #### _Heroic Games Launcher_
+>   1. Launch Heroic.
+>   2. Select an Affinity app.
+>   3. Under INSTALL INFO, look at the WinePrefix folder path.
+>   Example:
+>   ```bash
+>   WINEPREFIX="$HOME/.var/app/com.usebottles.bottles/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
+>   ```
+> 
+> #### _Lutris_
+>   1. Open Lutris and right-click an Affinity app.
+>   2. Choose Configure → under the Game options tab check the Wine prefix field.
+>   Example:
+>   ```bash
+>   WINEPREFIX="$HOME/.var/app/net.lutris.Lutris/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
+>   ```
+>
+> #### _Bottles_
+>   If you are using Bottles directly, just use the Wine prefix folder configured for your Affinity app:
+>   Example:
+>   ```bash
+>   WINEPREFIX="/path/to/your/bottle" wine regedit wine-dark-theme.reg
+>   ```
 
-#### _Heroic Games Launcher_
-  1. Launch Heroic.
-  2. Select an Affinity app.
-  3. Under INSTALL INFO, look at the WinePrefix folder path.
-  Example:
-  ```bash
-  WINEPREFIX="$HOME/.var/app/com.usebottles.bottles/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
-  ```
-
-#### _Lutris_
-  1. Open Lutris and right-click an Affinity app.
-  2. Choose Configure → under the Game options tab check the Wine prefix field.
-  Example:
-  ```bash
-  WINEPREFIX="$HOME/.var/app/net.lutris.Lutris/data/bottles/bottles/Affinity" wine regedit wine-dark-theme.reg
-  ```
-
-#### _Bottles_
-  If you are using Bottles directly, just use the Wine prefix folder configured for your Affinity app:
-  Example:
-  ```bash
-  WINEPREFIX="/path/to/your/bottle" wine regedit wine-dark-theme.reg
-  ```
+> [!Important]
+> Increase your recovery time, things will probably break and crash. This isn't perfect.
+> <img width="1411" height="757" alt="image" src="https://github.com/user-attachments/assets/0adeb6ee-42d8-4c14-b244-73ba9bb3095a" />
