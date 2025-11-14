@@ -26,7 +26,7 @@ _A repository containing information on how to get Affinity software working on 
 2. Choose a Wine manager: [Wine 10.17+](./Guides/Wine/Guide.md) (recommended) [Lutris](https://lutris.net/), [Heroic Games Launcher](https://heroicgameslauncher.com/), [Bottles](https://usebottles.com/) or [Rum](https://gitlab.com/xkero/rum).
 3. Choose a guide based on your Wine manager of choice:
     - [Guide for Wine 10.17+](./Guides/Wine/Guide.md) (Recommended if you are comfortable with using the terminal)
-    - [Guide for Lutris](./Guides/Lutris/Guide.md) (Recommended if you want a GUI)
+    - [Guide for Lutris](./Guides/Lutris/Guide-V2.md) (Recommended if you want a GUI)
     - [Guide for Heroic Games Launcher](./Guides/Heroic/Guide.md)
     - [Guide for Bottles](./Guides/Bottles/Guide.md)
     - [Guide for Rum](./Guides/Rum/Guide.md) (terminal)
