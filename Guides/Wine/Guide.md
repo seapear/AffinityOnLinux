@@ -80,6 +80,9 @@ export WINEPREFIX="$HOME/.affinity"
 wineboot --init
 ```
 
+> [!WARNING]
+> You might need to change "$HOME/" to your full home folder path like "/home/YourUsername/" so it points to the [absolute](https://www.redhat.com/sysadmin/linux-path-absolute-relative) location. This is a common problem if you're using a shell that doesn't follow standard POSIX rules.
+
 ---
 
 ### 3. Install runtime dependencies
