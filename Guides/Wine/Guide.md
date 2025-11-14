@@ -122,7 +122,7 @@ mv /tmp/wintypes.dll.so /tmp/wintypes.dll 2>/dev/null || true
 > - "$HOME" you may not work and you may need to put in your full path depending on your distro.
 
 ```bash
-WINEPREFIX="$HOME/.affinity" wine "$HOME/Downloads/Affinity x64.exe"
+WINEPREFIX="$HOME/.affinity" wine "$HOME/Downloads/Affinity x64.exe"
 ```
 > Adujust *.exe in the path above for V2 Photo/Designer/Publisher, and run 3 times for each installer.
 
@@ -133,7 +133,7 @@ Follow normal installation prompts.
 ```bash
 mkdir -p "$WINEPREFIX/drive_c/windows/system32/winmetadata"
 cp /tmp/Windows.winmd "$WINEPREFIX/drive_c/windows/system32/winmetadata/"
-cp /tmp/wintypes.dll "$WINEPREFIX/drive_c/Program Files/Affinity/Affinity/"
+cp /tmp/wintypes.dll "$WINEPREFIX/drive_c/Program Files/Affinity/Affinity/"
 ```
 
 *(If you installed Photo 2, Designer 2, or Publisher 2 separately, copy into each of their directories.)*
@@ -156,7 +156,7 @@ In **Libraries** tab:
 
 ### 8. Launch Affinity
 ```bash
-WINEPREFIX="$HOME/.affinity" wine "$WINEPREFIX/drive_c/Program Files/Affinity/Affinity/Affinity.exe"
+WINEPREFIX="$HOME/.affinity" wine "$WINEPREFIX/drive_c/Program Files/Affinity/Affinity/Affinity.exe"
 ```
 Adjust for Photo 2, Designer 2, or Publisher 2 paths if needed.
 
