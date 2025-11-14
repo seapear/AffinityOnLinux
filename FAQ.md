@@ -72,7 +72,7 @@ Click on icon for more context if available:
 ❌ Not Working
 
 ### 📚 Guides
-
+- [Wine 10.17+](https://github.com/seapear/AffinityOnLinux/blob/main/Guides/Wine/Guide.md) (Minimal & Recommended)
 - [Lutris](./Guides/Lutris/Guide.md) (Recommended)
 - [Heroic Games Launcher](./Guides/Heroic/Guide.md)
 - [Bottles](./Guides/Bottles/Guide.md)
