@@ -8,13 +8,13 @@
 ## 🚀 Overview
 Affinity On Linux now includes a **new Lutris‑based installer** that automates nearly everything: prefix setup, Wine 10.18 runner configuration, dependencies, paths, and helper files.
 
-This guide covers how to install and test the updated method using the **Wine 10.18 (Staged Portable Runner)**.
+This guide covers how to install and test the updated method using the **[Wine 10.18](https://github.com/seapear/AffinityOnLinux/releases/tag/v10.18-staged) (Staged Portable Runner)**.
 
 ---
 
 ## 🧱 Requirements
 Before starting, you should have:
-- A `.exe` installer for your Affinity app (Photo, Designer, Publisher, or **Affinity by Canva**).  
+- A `.exe` installer for your Affinity app (Photo, Designer, Publisher). (v3, or Affinity By Canva will auto install.)  
 - The **Lutris client** will install via [Flathub](https://flathub.org/apps/net.lutris.Lutris) or your distro package manager.  
 - **winetricks** (needed for dependencies).  
   ```
@@ -26,7 +26,6 @@ Before starting, you should have:
 ---
 
 ## 🧩 New Lutris Install Method
-A new, automated YAML installer is in development!
 
 ### 1️⃣ Install the Recommended Runner
 Download the Wine 10.18 (Staged Portable Runner):  
@@ -55,7 +54,7 @@ In Lutris:
 1. Open **Lutris** → click ➕ → **Install from a local install script**  
 2. Select `Affinity-gd.yaml`  
 3. Press **Install** → confirm the install path (e.g. `/home/$USER/Games/affinity-suite`)  
-4. When prompted, browse for your Affinity `.exe`  
+4. When prompted, set to "download" to get the latest version of the installer or browse for your Affinity `.exe`
 5. Let the setup finish and it will extract metadata, install dependencies, and run the installer automatically.
 
 The script automatically sets the game executable to:  
@@ -69,7 +68,7 @@ If you’d rather test via the public listing:
 
 Click **Install**, select your local Affinity installer when prompted, and Lutris will perform a standard setup.
 
-*(Note: the official listing may not yet include the latest Wine 10.18 runner features as it’s being updated.)*
+*(Note: the official listing may not yet include the latest Wine 10.18 runner features as it's reliant on [Official Lutris Runner List](https://lutris.net/api/runners).)*
 
 ---
 
@@ -107,7 +106,7 @@ Please open issues or pull requests here:
 
 ## 📜 Legacy Guide
 The original detailed setup (manual runner install, ElementalWarrior & Wine‑TKG forks, etc.) is archived under:  
-[`Guides/Lutris/OLD.md`](https://github.com/seapear/AffinityOnLinux/blob/main/Guides/Lutris/OLD.md)
+[`Guides/Lutris/Guide.md`](./Guide.md)
 
 ---
 
