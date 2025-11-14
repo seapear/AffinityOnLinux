@@ -1,0 +1,73 @@
+name: Affinity Suite
+slug: affinity-suite
+game_slug: affinity-suite
+year: 2025
+arch: win64
+runner: wine
+version: GameDirectionWine-x86_64
+description: Affinity Suite via Wine (GameDirectionWine-x86_64 Portable Runner)
+
+script:
+  wine:
+    version: GameDirectionWine-x86_64
+    battleye: false
+    d3d_extras: false
+    dxvk: false
+    vkd3d: false
+    dxvk_nvapi: false
+    eac: false
+    fsr: false
+
+  game:
+    prefix: $GAMEDIR
+    exe: "$GAMEDIR/drive_c/Program Files/Affinity/Affinity/Affinity.exe"
+
+  system:
+    gamescope: false
+    xephyr_fullscreen: false
+
+  installer:
+    - task:
+        name: create_prefix
+        description: Creating Wine prefix...
+    - merge:
+        description: Copying WinMetadata package
+        src: WinMetadata
+        dst: $GAMEDIR
+    - extract:
+        filename: WinMetadata.zip
+        description: Extracting WinMetadata...
+        file: $GAMEDIR/WinMetadata.zip
+        dst: $GAMEDIR/drive_c/windows/system32/WinMetadata
+    - execute:
+        description: Preparing directories for helper files...
+        command: mkdir -p "$GAMEDIR/drive_c/windows/system32/winmetadata" "$GAMEDIR/drive_c/Program Files/Affinity/Affinity"
+    - task:
+        name: winetricks
+        description: Installing necessary Winetricks packages...
+        app: --unattended --force vcrun2022 dotnet48 renderer=vulkan corefonts tahoma win11
+    - task:
+        name: wineexec
+        description: Running Affinity installer...
+        executable: setup
+        prefix: $GAMEDIR
+    - move:
+        description: Placing Windows.winmd helper file (if provided)...
+        src: Windows.winmd
+        dst: "$GAMEDIR/drive_c/windows/system32/winmetadata/Windows.winmd"
+    - move:
+        description: Placing Wintypes_Shim.dll.so helper file (if provided)...
+        src: Wintypes_Shim.dll.so
+        dst: "$GAMEDIR/drive_c/Program Files/Affinity/Affinity/Wintypes_Shim.dll.so"
+
+  files:
+    - setup: https://downloads.affinity.studio/Affinity%20x64.exe
+    - WinMetadata: https://archive.org/download/win-metadata/WinMetadata.zip
+    - Windows.winmd: "https://github.com/microsoft/windows-rs/raw/master/crates/libs/bindgen/default/Windows.winmd"
+    - Wintypes_Shim.dll.so: "https://github.com/ElementalWarrior/wine-wintypes.dll-for-affinity/raw/refs/heads/master/wintypes_shim.dll.so"
+
+  metadata:
+    year: 2025
+    cover_url: https://github.com/seapear/AffinityOnLinux/blob/main/Assets/Covers/Affinity-Canva-Cover.png
+    banner_url: https://github.com/seapear/AffinityOnLinux/blob/main/Assets/Covers/Affinity-Canva-Banner.png
+    icon_url: https://github.com/seapear/AffinityOnLinux/blob/main/Assets/Icons/Affinity-Canva.svg
