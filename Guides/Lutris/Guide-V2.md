@@ -3,6 +3,10 @@
 > ⚠️ New Experimental Installer is currently in development.  
 > You can already **try it out**, give feedback, and help refine the release.
 
+## 📜 Legacy Guide
+The original detailed setup (manual runner install, ElementalWarrior & Wine‑TKG forks, etc.) is archived under:  
+[`Guides/Lutris/Guide.md`](./Guide.md)
+
 ---
 
 ## 🚀 Overview
@@ -100,12 +104,6 @@ Helper files installed automatically after setup:
 ## 🧪 Issues and Feedback
 Please open issues or pull requests here:
 👉 [https://github.com/seapear/AffinityOnLinux/issues](https://github.com/seapear/AffinityOnLinux/issues)
-
----
-
-## 📜 Legacy Guide
-The original detailed setup (manual runner install, ElementalWarrior & Wine‑TKG forks, etc.) is archived under:  
-[`Guides/Lutris/Guide.md`](./Guide.md)
 
 ---
 
