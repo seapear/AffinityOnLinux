@@ -1,4 +1,4 @@
-1. Open up winecfg inside your wineprefix.
+1. Open up winecfg inside your wineprefix. `wine winecfg`
 
 2. Go to the "Graphics" tab and disable everything besides `Allow the window manager to decorate the windows` 
 
