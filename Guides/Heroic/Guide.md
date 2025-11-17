@@ -45,6 +45,7 @@ Copy and paste the Wine fork folder you extracted in the previous step to this f
 
 1. Run the setup file from Heroic to initialize the prefix.
    - It may crash. If it somehow runs successfully, close it manually.
+   - Default location is: `/home/$USER/Games/Heroic/Prefixes/default/Affinity`.
 
 ## 6. Configure Dependencies with Winetricks
 
