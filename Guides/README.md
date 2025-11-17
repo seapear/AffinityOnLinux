@@ -44,7 +44,7 @@ Replace /path/to/wineprefix/folder with the exact Wine prefix of the app.
 >   3. Under INSTALL INFO, look at the WinePrefix folder path.
 >   Example:
 >   ```bash
->   WINEPREFIX="Need to find correct location later." wine regedit wine-dark-theme.reg
+>   WINEPREFIX="/home/$USER/Games/Heroic/Prefixes/default/Affinity" wine regedit wine-dark-theme.reg
 >   ```
 > 
 > #### _Lutris_
