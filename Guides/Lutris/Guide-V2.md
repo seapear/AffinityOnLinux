@@ -10,9 +10,9 @@ The original detailed setup (manual runner install, ElementalWarrior & Wine‑
 ---
 
 ## 🚀 Overview
-Affinity On Linux now includes a **new Lutris‑based installer** that automates nearly everything: prefix setup, Wine 10.18 runner configuration, dependencies, paths, and helper files.
+Affinity On Linux now includes a **new Lutris‑based installer** that automates nearly everything: prefix setup, Wine 10.19 runner configuration, dependencies, paths, and helper files.
 
-This guide covers how to install and test the updated method using the **[Wine 10.18](https://github.com/seapear/AffinityOnLinux/releases/tag/v10.18-staged) (Staged Portable Runner)**.
+This guide covers how to install and test the updated method using the **[Wine 10.19](https://github.com/seapear/AffinityOnLinux/releases/tag/v10.19-staged) (Staged Portable Runner)**.
 
 ---
 
@@ -32,8 +32,8 @@ Before starting, you should have:
 ## 🧩 New Lutris Install Method
 
 ### 1️⃣ Install the Recommended Runner
-Download the Wine 10.18 (Staged Portable Runner):  
-**https://github.com/seapear/AffinityOnLinux/releases/tag/v10.18-staged**
+Download the Wine 10.19 (Staged Portable Runner):  
+**https://github.com/seapear/AffinityOnLinux/releases/tag/v10.19-staged**
 
 Extract it to:
 ```
@@ -72,7 +72,7 @@ If you’d rather test via the public listing:
 
 Click **Install**, select your local Affinity installer when prompted, and Lutris will perform a standard setup.
 
-*(Note: the official listing may not yet include the latest Wine 10.18 runner features as it's reliant on [Official Lutris Runner List](https://lutris.net/api/runners).)*
+*(Note: the official listing may not yet include the latest Wine 10.19 runner features as it's reliant on [Official Lutris Runner List](https://lutris.net/api/runners).)*
 
 ---
 
@@ -90,7 +90,7 @@ In Lutris → right‑click your Affinity entry → **Configure → Game inf
 ---
 
 ## 🧩 Technical Notes
-- **Runner:** `GameDirectionWine-x86_64` (based on Wine 10.18 Staged)  
+- **Runner:** `GameDirectionWine-x86_64` (based on Wine 10.19 Staged)  
 - **Prefix:** `$GAMEDIR` (`~/<Games>/affinity-suite/`)  
 - **Architecture:** win64 (default)  
 - **Dependencies:** vcrun2022, dotnet48, corefonts, tahoma, and renderer = Vulkan  
@@ -110,7 +110,7 @@ Please open issues or pull requests here:
 ### ✅ Quick Summary
 | Component | New Version |
 |------------|-------------|
-| **Wine runner** | `Wine 10.18 (Staged Portable)` |
+| **Wine runner** | `Wine 10.19 (Staged Portable)` |
 | **Installer script** | `Affinity-gd.yaml` |
 | **Prefix path** | `~/Games/affinity-suite/` |
 | **Executable** | `Affinity.exe` |
