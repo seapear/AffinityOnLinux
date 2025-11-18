@@ -41,11 +41,11 @@ Extract it to:
 ```
 After extraction, you should have:
 ```
-~/.local/share/lutris/runners/wine/GameDirectionWine-x86_64/bin/wine64
+~/.local/share/lutris/runners/wine/GameDirectionWine-x86_64/bin/wine
 ```
 Check it works:
 ```
-~/.local/share/lutris/runners/wine/GameDirectionWine-x86_64/bin/wine64 --version
+~/.local/share/lutris/runners/wine/GameDirectionWine-x86_64/bin/wine --version
 ```
 
 ---
