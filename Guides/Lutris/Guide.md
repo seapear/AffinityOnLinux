@@ -15,7 +15,7 @@ Before doing anything, make sure you have a `.exe` version of Affinity apps. You
 - [Affinity Publisher V1](https://store.serif.com/update/windows/publisher/1/)
 
 > [!NOTE]
-> New 10.17+ version found here: (with quicker install) https://github.com/seapear/AffinityOnLinux/blob/main/Guides/Lutris/Guide-V2.md
+> New Experimental 10.17+ version found here: (with quicker install) https://github.com/seapear/AffinityOnLinux/blob/main/Guides/Lutris/Guide-V2.md
 
 ## 1. Install winetricks
 
