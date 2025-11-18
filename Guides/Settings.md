@@ -6,7 +6,7 @@ Affinity apps sometimes tend not to save settings properly. There are two method
 2. Locate the settings folders on a windows machine and paste them into the
    corresponding locations in the `wineprefix`.
 
-## After Installation (Optional Enhancements)
+## Method 1 - AffinityPluginLoader (Recommended Method)
 
 ### Install Affinity Plugin Loader + WineFix  
 > **Author:** [Noah C3](https://github.com/noahc3)  
@@ -20,7 +20,7 @@ Affinity apps sometimes tend not to save settings properly. There are two method
 
 ---
 
-## Method 1 - AffinityPluginLoader (Recommended Method)
+### Installation
 Replace paths dynamically as these commands adapt automatically to your prefix and Affinity directory:
 
 ```bash
