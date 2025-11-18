@@ -87,17 +87,10 @@ Click **Install**, select your local Affinity installer when prompted, and Lut
 ---
 
 ## 🎨 Art Assets
-You can set the icon, cover and banner art for your installed Affinity app.
 
-You can find and download the art assets for Affinity on Lutris from this repository:
+You can find and download icons, cover art and banners for Affinity apps from AffinityOnLinux repository's [`Icons`](/Assets/Icons) and [`Covers`](/Assets/Covers) folders.
 
-| Type | Direct Image Link |
-|------|------------------|
-| **Icon** | [`Affinity-Canva.svg`](/Assets/Icons/Affinity-Canva.svg) |
-| **Cover** | [`Affinity-Canva-Cover.png`](/Assets/Covers/Affinity-Canva-Cover.png) |
-| **Banner** | [`Affinity-Canva-Banner.png`](/Assets/Covers/Affinity-Canva-Banner.png) |
-
-In Lutris, right‑click your Affinity app entry, then select **Configure**. Under the **Game info** tab, click on each square or rectangle and upload the icon, cover and banner art you downloaded from this repository.
+To set these art assets In Lutris, launch Lutris, right‑click your Affinity app entry, then select **Configure**. Under the **Game info** tab, click on each square or rectangle and upload the icon, cover and banner art you downloaded from this repository.
 
 ---
 

@@ -96,7 +96,7 @@ At this point, you should be in the 🎮 Games section of Lutris where a blank r
    * `affinity-designer`
    * `affinity-publisher`
 
-3. You can find icons, cover art and banners for Affinity apps in AffinityOnLinux's [`Icons`](/Assets/Icons) and [`Covers`](/Assets/Covers) folders.
+3. You can find and download icons, cover art and banners for Affinity apps in AffinityOnLinux repository's [`Icons`](/Assets/Icons) and [`Covers`](/Assets/Covers) folders, then set these art assets under the `Game info` tab.
 4. Switch to the `Game options` tab. 
 5. In the **`Executable`** field, copy and paste one of the following:
 
