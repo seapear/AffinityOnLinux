@@ -1,4 +1,4 @@
-# 🧩 Affinity Suite on Linux
+# 🧩 How to Set Up Wine 10.17+ for Affinity on Lutris
 
 > ⚠️ New Experimental Installer is currently in development.  
 > You can already **try it out**, give feedback, and help refine the release.
@@ -18,8 +18,8 @@ This guide covers how to install and test the updated method using the **[Wine�
 
 ## 🧱 Requirements
 Before starting, you should have:
-- A `.exe` installer for your Affinity app (Photo, Designer, Publisher). (v3, or Affinity By Canva will auto install.)  
-- The **Lutris client** will install via [Flathub](https://flathub.org/apps/net.lutris.Lutris) or your distro package manager.  
+- A `.exe` installer for your Affinity app (Photo, Designer, Publisher) (v3, or Affinity By Canva will auto install). 
+- **Lutris** — you can install it via [Flathub](https://flathub.org/apps/net.lutris.Lutris) or your distro package manager. You can check out the [download page of Lutris' official website](https://lutris.net/downloads) and follow the instructions to download and install it. 
 - **winetricks** (needed for dependencies).  
   ```
   sudo apt install winetricks        # Debian/Ubuntu
@@ -31,35 +31,45 @@ Before starting, you should have:
 
 ## 🧩 New Lutris Install Method
 
-### 1️⃣ Install the Recommended Runner
-Download the Wine 10.19 (Staged Portable Runner):  
-**https://github.com/seapear/AffinityOnLinux/releases/tag/v10.19-staged**
+> [!NOTE]
+> After you installed Lutris, make sure to launch Lutris at least once to generate the folder structure.
 
-Extract it to:
-```
-~/.local/share/lutris/runners/wine/
-```
-After extraction, you should have:
-```
-~/.local/share/lutris/runners/wine/GameDirectionWine-x86_64/bin/wine
-```
-Check it works:
-```
-~/.local/share/lutris/runners/wine/GameDirectionWine-x86_64/bin/wine --version
-```
+### 1️⃣ Install the Recommended Runner
+
+Visit this repository's [release page of Wine 10.19 (Staged Portable Runner)](https://github.com/seapear/AffinityOnLinux/releases/tag/v10.19-staged). Scroll down until you see the **Assets** section, download the `GameDirectionWine-x86_64.tar.xz` file, then right click and extract it. You should have a folder now called `GameDirectionWine-x86_64`.
+
+Lutris' Wine-related folders can be found in a hidden directory within your `home` folder. If you can't see hidden folders in your file browser, you can usually enable them by pressing `Ctrl + H`.
+
+- If you installed Lutris via **Flatpak**, navigate to `/home/$USER/.var/app/net.lutris.Lutris/data/lutris/runners/`
+- If you installed Lutris via other methods, navigate to `/home/$USER/.local/share/lutris/runners/`
+
+Create a folder called `wine` if one does not already exist, then copy and paste the Wine fork folder you extracted to this folder.
+
+After extraction, you should have this folder path:
+- If you installed Lutris with Flatpak: `/home/$USER/.var/app/net.lutris.Lutris/data/lutris/runners/wine/GameDirectionWine-x86_64/bin/wine`
+- If you installed Lutris via other methods: `/home/$USER/.local/share/lutris/runners/wine/GameDirectionWine-x86_64/bin/wine`
+
+Check if the Wine runner works by running the following command in the terminal:
+- If you installed Lutris via Flatpak:
+  ```shell
+  /home/$USER/.var/app/net.lutris.Lutris/data/lutris/runners/wine/GameDirectionWine-x86_64/bin/wine --version
+  ```
+- If you installed Lutris via other methods:
+  ```bash
+  /home/$USER/.local/share/lutris/runners/wine/GameDirectionWine-x86_64/bin/wine --version
+  ```
+If it works, the terminal should output a version number of the Wine runner.
 
 ---
 
-### 2️⃣ Use the New Script
-Get the new YAML installer:
-**https://github.com/seapear/AffinityOnLinux/blob/main/Guides/Lutris/InstallScripts/Affinity-gd.yaml**
+### Use the New Lutris Install Script
 
-In Lutris:
-1. Open **Lutris** → click ➕ → **Install from a local install script**  
-2. Select `Affinity-gd.yaml`  
-3. Press **Install** → confirm the install path (e.g. `/home/$USER/Games/affinity-suite`)  
-4. When prompted, set to "download" to get the latest version of the installer or browse for your Affinity `.exe`
-5. Let the setup finish and it will extract metadata, install dependencies, and run the installer automatically.
+1. Visit the [new Lutris install script in this repository](/Guides/Lutris/InstallScripts/Affinity-gd.yaml), then click the download button located on the top right of the file content to download it as a YAML file named `Affinity-gd.yaml`.
+2. Open **Lutris** → click ➕ → **Install from a local install script**  
+3. Select `Affinity-gd.yaml`  
+4. Press **Install** → confirm the install path (e.g. `/home/$USER/Games/affinity-suite`)  
+5. When prompted, set to "download" to get the latest version of the installer or browse for your Affinity `.exe`.
+6. Let the setup finish and it will extract metadata, install dependencies, and run the installer automatically.
 
 The script automatically sets the game executable to:  
 `$GAMEDIR/drive_c/Program Files/Affinity/Affinity/Affinity.exe`
@@ -77,15 +87,17 @@ Click **Install**, select your local Affinity installer when prompted, and Lut
 ---
 
 ## 🎨 Art Assets
-You can set icons and artwork for your entry after install:
+You can set the icon, cover and banner art for your installed Affinity app.
+
+You can find and download the art assets for Affinity on Lutris from this repository:
 
 | Type | Direct Image Link |
 |------|------------------|
-| **Icon** | [`Affinity-Canva.svg`](https://github.com/seapear/AffinityOnLinux/blob/main/Assets/Icons/Affinity-Canva.svg?raw=true) |
-| **Cover** | [`Affinity-Canva-Cover.png`](https://github.com/seapear/AffinityOnLinux/blob/main/Assets/Covers/Affinity-Canva-Cover.png?raw=true) |
-| **Banner** | [`Affinity-Canva-Banner.png`](https://github.com/seapear/AffinityOnLinux/blob/main/Assets/Covers/Affinity-Canva-Banner.png?raw=true) |
+| **Icon** | [`Affinity-Canva.svg`](/Assets/Icons/Affinity-Canva.svg) |
+| **Cover** | [`Affinity-Canva-Cover.png`](/Assets/Covers/Affinity-Canva-Cover.png) |
+| **Banner** | [`Affinity-Canva-Banner.png`](/Assets/Covers/Affinity-Canva-Banner.png) |
 
-In Lutris → right‑click your Affinity entry → **Configure → Game info** → paste those URLs.
+In Lutris, right‑click your Affinity app entry, then select **Configure**. Under the **Game info** tab, click on each square or rectangle and upload the icon, cover and banner art you downloaded from this repository.
 
 ---
 
@@ -112,6 +124,6 @@ Please open issues or pull requests here:
 |------------|-------------|
 | **Wine runner** | `Wine 10.19 (Staged Portable)` |
 | **Installer script** | `Affinity-gd.yaml` |
-| **Prefix path** | `~/Games/affinity-suite/` |
+| **Prefix path** | `/home/$USER/Games/affinity-suite/` |
 | **Executable** | `Affinity.exe` |
 | **Status** | Experimental / Working under development |
