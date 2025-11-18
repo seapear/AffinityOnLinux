@@ -103,7 +103,7 @@ In Lutris, right‑click your Affinity app entry, then select **Configure**. U
 
 ## 🧩 Technical Notes
 - **Runner:** `GameDirectionWine-x86_64` (based on Wine 10.19 Staged)  
-- **Prefix:** `$GAMEDIR` (`~/<Games>/affinity-suite/`)  
+- **Prefix:** `$GAMEDIR` (default: `/home/$USER/Games/affinity-suite/`)  
 - **Architecture:** win64 (default)  
 - **Dependencies:** vcrun2022, dotnet48, corefonts, tahoma, and renderer = Vulkan  
 
