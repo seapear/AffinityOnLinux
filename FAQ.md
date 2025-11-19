@@ -73,7 +73,7 @@ Click on icon for more context if available:
 
 ### 📚 Guides
 - [Wine 10.17+](https://github.com/seapear/AffinityOnLinux/blob/main/Guides/Wine/Guide.md) (Minimal & Recommended)
-- [Lutris](./Guides/Lutris/Guide.md) (Simplist)
+- [Lutris](./Guides/Lutris/Guide.md) (Recommended if you want a GUI Wine manager)
 - [Heroic Games Launcher](./Guides/Heroic/Guide.md)
 - [Bottles](./Guides/Bottles/Guide.md)
 - [Rum](./Guides/Rum/Guide.md) (terminal)

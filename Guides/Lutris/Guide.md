@@ -15,7 +15,7 @@ Before doing anything, make sure you have a `.exe` version of Affinity apps. You
 - [Affinity Publisher V1](https://store.serif.com/update/windows/publisher/1/)
 
 > [!NOTE]
-> New Experimental 10.17+ version found here: (with quicker install) https://github.com/seapear/AffinityOnLinux/blob/main/Guides/Lutris/Guide-V2.md
+> A new guide for a quicker install of Affinity with Lutris using an experimental fork of Wine 10.17+ can be found here: [`/Guides/Lutris/Guide-V2.md`](/Guides/Lutris/Guide-V2.md).
 
 ## 1. Install winetricks
 
@@ -96,7 +96,7 @@ At this point, you should be in the 🎮 Games section of Lutris where a blank r
    * `affinity-designer`
    * `affinity-publisher`
 
-3. You can find icons, cover art and banners for Affinity apps in AffinityOnLinux's [`Icons`](/Assets/Icons) and [`Covers`](/Assets/Covers) folders.
+3. You can find and download icons, cover art and banners for Affinity apps in AffinityOnLinux repository's [`Icons`](/Assets/Icons) and [`Covers`](/Assets/Covers) folders, then set these art assets under the `Game info` tab.
 4. Switch to the `Game options` tab. 
 5. In the **`Executable`** field, copy and paste one of the following:
 
