@@ -1,0 +1,92 @@
+Arch: win64
+CompatData: ''
+Creation_Date: '2025-11-20 14:10:50.517344'
+Custom_Path: false
+DLL_Overrides:
+    wintypes: n
+DXVK: dxvk-2.6.1
+Environment: Custom
+Environment_Variables: {}
+Installed_Dependencies:
+- vcredist2022
+- andale32
+- arial32
+- arialb32
+- comic32
+- courie32
+- georgi32
+- impact32
+- tahoma32
+- times32
+- trebuc32
+- verdan32
+- webdin32
+- allfonts
+- dotnet40
+- dotnet48
+Language: sys
+LatencyFleX: latencyflex-v0.1.1
+NVAPI: dxvk-nvapi-v0.9.0
+Name: AffinityOnLinux
+Parameters:
+    custom_dpi: 96
+    decorated: true
+    discrete_gpu: false
+    dxvk: false
+    dxvk_nvapi: false
+    fixme_logs: false
+    fsr: false
+    fsr_quality_mode: none
+    fsr_sharpening_strength: 2
+    fullscreen_capture: false
+    gamemode: false
+    gamescope: false
+    gamescope_borderless: false
+    gamescope_fps: 0
+    gamescope_fps_no_focus: 0
+    gamescope_fullscreen: true
+    gamescope_game_height: 0
+    gamescope_game_width: 0
+    gamescope_scaling: false
+    gamescope_window_height: 0
+    gamescope_window_width: 0
+    latencyflex: false
+    mangohud: false
+    mangohud_display_on_game_start: true
+    mouse_warp: true
+    obsvkc: false
+    pulseaudio_latency: false
+    renderer: gl
+    sandbox: false
+    sync: wine
+    take_focus: false
+    use_be_runtime: true
+    use_eac_runtime: true
+    use_runtime: false
+    use_steam_runtime: false
+    versioning_automatic: false
+    versioning_compression: false
+    versioning_exclusion_patterns: false
+    virtual_desktop: false
+    virtual_desktop_res: 1280x720
+    vkbasalt: false
+    vkd3d: false
+    vmtouch: false
+    vmtouch_cache_cwd: false
+Path: AffinityOnLinux
+Runner: kron4ek-wine-10.19-amd64
+RunnerPath: ''
+Sandbox:
+    share_net: false
+    share_sound: false
+State: 0
+Uninstallers: {}
+Update_Date: '2025-11-20 16:24:00.800861'
+VKD3D: vkd3d-proton-2.14.1
+Versioning: false
+Versioning_Exclusion_Patterns: []
+Windows: win11
+WorkingDir: ''
+data: {}
+run_in_terminal: false
+session_arguments: ''
