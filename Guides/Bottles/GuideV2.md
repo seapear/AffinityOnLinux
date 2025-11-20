@@ -32,11 +32,10 @@ Alternately, you may want to install Bottles using the [unofficial AppImage](htt
 3. Set the environment to Custom.
 4. Keep Architecture -> `64bit`
 5. Set the runner to **kron4ek-wine-<version>-amd64**
-6. Download the install script file
+6. Download the [install script file](https://github.com/DaRandomCube/AffinityOnLinux/blob/main/Guides/Bottles/InstallScripts/affinity-nu.yaml)
 7. In Bottles, import the install script file for your Wine fork. `Import Configuration -> Affinity-nu.yaml`
 8. Click **Create**.
 
-<img height="350" alt="image" src="https://github.com/user-attachments/assets/f17de84b-859a-49a2-8d01-09da643a2fbf" />
 <img width="1108" height="884" alt="bottle_creation_window" src="https://github.com/user-attachments/assets/ffd4641b-66a9-4bc7-8718-ef64b937e0fc" />
 
 
