@@ -116,10 +116,18 @@ mv /tmp/wintypes.dll.so /tmp/wintypes.dll 2>/dev/null || true
 ---
 
 ### 5. Install Affinity
-> [!NOTE]
-> - Affinity apps found here: [Affinity by Canva](https://www.affinity.studio/) | [Version 2](https://affinity.serif.com/v2/) | [Archived](https://archive.org/details/affinity_20251030)
-> - Make sure you have your installion file in `~/Downloads`.
-> - "$HOME" you may not work and you may need to put in your full path depending on your distro.
+
+Make sure you have a `.exe` version of Affinity apps. You can download Affinity apps from the official Affinity websites:
+
+- [Affinity by Canva](https://downloads.affinity.studio/Affinity%20x64.exe)
+- [Affinity Photo V2](https://store.serif.com/update/windows/photo/2/) 
+- [Affinity Designer V2](https://store.serif.com/update/windows/designer/2/)
+- [Affinity Publisher V2](https://store.serif.com/update/windows/publisher/2/) 
+- [Affinity Photo V1](https://store.serif.com/update/windows/photo/1/)
+- [Affinity Designer V1](https://store.serif.com/update/windows/designer/1/)
+- [Affinity Publisher V1](https://store.serif.com/update/windows/publisher/1/)
+
+Make sure you have your installation file in `$HOME/Downloads`.
 
 ```bash
 WINEPREFIX="$HOME/.affinity" wine "$HOME/Downloads/Affinity x64.exe"
@@ -127,6 +135,9 @@ WINEPREFIX="$HOME/.affinity" wine "$HOME/Downloads/Affinity x64.exe"
 > Adujust *.exe in the path above for V2 Photo/Designer/Publisher, and run 3 times for each installer.
 
 Follow normal installation prompts.
+
+> [!NOTE]
+> `$HOME`` you may not work and you may need to put in your full path, by replacing `$HOME` with `/home/your-username` depending on your distro.
 ---
 
 ### 6. Copy metadata + shim files

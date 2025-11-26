@@ -37,7 +37,7 @@ As users of AffinityOnLinux ourselves, we know firsthand how valuable this tool 
 >
 > | Program | URL |
 > |---------|-----|
-> |Affinity by Canva | https://www.affinity.studio/download           |
+> |Affinity by Canva | https://downloads.affinity.studio/Affinity%20x64.exe |
 > |Photo V2     | https://store.serif.com/update/windows/photo/2/     |
 > |Designer V2  | https://store.serif.com/update/windows/designer/2/  |
 > |Publisher V2 | https://store.serif.com/update/windows/publisher/2/ |
