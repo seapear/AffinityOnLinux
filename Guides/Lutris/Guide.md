@@ -1,5 +1,8 @@
 # How to Set Up Wine for Affinity on Lutris
 
+> [!NOTE]
+> A new guide for a quicker install of Affinity with Lutris using an experimental fork of Wine 10.17+ can be found here: [`/Guides/Lutris/Guide-V2.md`](/Guides/Lutris/Guide-V2.md).
+
 Currently, Lutris is the best method for Nvidia GPU users.
 
 <img src="/Assets/NewLogos/AffinityLutris.png" width="400"/>
@@ -13,9 +16,6 @@ Before doing anything, make sure you have a `.exe` version of Affinity apps. You
 - [Affinity Photo V1](https://store.serif.com/update/windows/photo/1/)
 - [Affinity Designer V1](https://store.serif.com/update/windows/designer/1/)
 - [Affinity Publisher V1](https://store.serif.com/update/windows/publisher/1/)
-
-> [!NOTE]
-> A new guide for a quicker install of Affinity with Lutris using an experimental fork of Wine 10.17+ can be found here: [`/Guides/Lutris/Guide-V2.md`](/Guides/Lutris/Guide-V2.md).
 
 ## 1. Install winetricks
 
