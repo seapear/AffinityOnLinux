@@ -86,16 +86,18 @@ wineboot --init
 ---
 
 ### 3. Install runtime dependencies
-Install core components Affinity depends on.
+Install core components Affinity depends on with winetricks.
 
 ```bash
 winetricks --unattended --force remove_mono vcrun2022 dotnet48 corefonts win11
 ```
-Note: additional options:
-- `renderer=vulkan`
-- `tahoma` (if you are getting pixelated fonts)
 
 > The .NET 4.8 installation is large and may take 10–20 minutes.
+
+Additional components you may want to install with winetricks if you encounter issues with running Affinity with Wine:
+- `renderer=vulkan`
+- `dxvk`
+- `tahoma` (if you are getting pixelated fonts)
 
 ---
 
