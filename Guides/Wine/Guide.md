@@ -1,4 +1,4 @@
-# Affinity On Linux Guide Wine 10.17+
+# Set Up Wine 10.17+ for Affinity Apps on Linux 
 
 ## Why This Guide?
 
