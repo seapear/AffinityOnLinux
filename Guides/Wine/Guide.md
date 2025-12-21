@@ -235,6 +235,7 @@ WINEPREFIX="$HOME/.affinity" wine "$WINEPREFIX/drive_c/Program Files/Affinity/Af
 > - Always download from [Noah C3’s official GitHub releases](https://github.com/noahc3/AffinityPluginLoader/releases).
 
 ### Add Icon to Dock or Panel
+
 - **GNOME / Fedora / Pop OS / Ubuntu default:** open Activities → search *Affinity* → right‑click → **Add to Favorites**.
 - **KDE Plasma / Manjaro / Arch:** right‑click the menu entry → **Add to Panel / Pin to Task Manager**.
 - **XFCE / others:** panel right‑click → **Add New Item → Launcher → Affinity**.
@@ -242,6 +243,12 @@ WINEPREFIX="$HOME/.affinity" wine "$WINEPREFIX/drive_c/Program Files/Affinity/Af
 After doing this, **Affinity** will appear alongside your native apps with its custom blue squircle SVG icon.
 
 If you also install Photo 2, Designer 2, and Publisher 2, you can duplicate and rename the `.desktop` file and just change the `Name`, `Exec`, and `Icon` fields accordingly.
+
+---
+
+## 🗑️ Uninstall Affinity and Wine
+
+See [our guide for uninstalling Affinity and Wine](/Guides/Wine/Guide-Uninstall.md).
 
 ---
 
