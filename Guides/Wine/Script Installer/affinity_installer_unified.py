@@ -1100,7 +1100,7 @@ class AffinityInstallerGUI(QMainWindow):
         # Optional component flags
         self.enable_dxvk = True
         self.enable_vulkan = True
-        self.enable_tahoma = True
+        self.enable_tahoma = False
         
         # Setup UI
         self.create_ui()
@@ -1296,7 +1296,7 @@ class AffinityInstallerGUI(QMainWindow):
         
         # Tahoma Font checkbox
         self.tahoma_checkbox = QCheckBox("Tahoma Font (fonts not showing)")
-        self.tahoma_checkbox.setChecked(True)
+        self.tahoma_checkbox.setChecked(False)
         self.tahoma_checkbox.setStyleSheet("color: #ddd; font-size: 9pt; font-weight: normal; padding: 2px;")
         self.tahoma_checkbox.stateChanged.connect(lambda state: setattr(self, 'enable_tahoma', state == Qt.CheckState.Checked.value))
         checkboxes_layout.addWidget(self.tahoma_checkbox)
@@ -2057,3 +2057,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
