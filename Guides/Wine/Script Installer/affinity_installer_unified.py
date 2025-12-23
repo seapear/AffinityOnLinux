@@ -3,7 +3,7 @@
 Affinity Installer - Unified Single-File Version
 Complete installer with GUI frontend and bash backend in one file
 No external dependencies except PyQt6 (auto-installed)
-Version V4
+Version 5
 """
 
 import os
@@ -61,7 +61,7 @@ GUI_MODE=false
 INSTALLER_PATH=""
 
 # Installation directory
-INSTALL_DIR="$HOME/.AffinityLinux"
+INSTALL_DIR="$HOME/.AffinityOnLinux"
 WINEPREFIX="$INSTALL_DIR"
 
 # Unified log file
@@ -85,6 +85,11 @@ VCRUN_EXISTS=false
 PHOTO_EXISTS=false
 DESIGNER_EXISTS=false
 PUBLISHER_EXISTS=false
+
+# Optional component flags (from GUI)
+ENABLE_DXVK=false
+ENABLE_VULKAN=false
+ENABLE_TAHOMA=false
 
 # ==========================================
 # GUI Output Functions
@@ -277,7 +282,27 @@ install_missing_components() {
     
     log "Installing all dependencies with winetricks"
     
-    WINEPREFIX="$WINEPREFIX" winetricks --unattended --force remove_mono vcrun2022 dotnet48 corefonts win11 webview2 2>&1 | tee -a "$LOG_FILE"
+    # Base components (always installed)
+    COMPONENTS="remove_mono vcrun2022 dotnet48 corefonts win11 webview2"
+    
+    # Append optional components if enabled
+    if [ "$ENABLE_DXVK" = true ]; then
+        COMPONENTS="$COMPONENTS dxvk"
+        log "Adding DXVK to installation (for stability)"
+    fi
+    
+    if [ "$ENABLE_VULKAN" = true ]; then
+        COMPONENTS="$COMPONENTS renderer=vulkan"
+        log "Adding Vulkan renderer to installation (For GPU)"
+    fi
+    
+    if [ "$ENABLE_TAHOMA" = true ]; then
+        COMPONENTS="$COMPONENTS tahoma"
+        log "Adding Tahoma font to installation (fonts not showing up right)"
+    fi
+    
+    log "Installing components: $COMPONENTS"
+    WINEPREFIX="$WINEPREFIX" winetricks --unattended --force $COMPONENTS 2>&1 | tee -a "$LOG_FILE"
     
     gui_progress 60 "Dependencies installation completed"
     
@@ -481,6 +506,18 @@ main() {
             --installer)
                 INSTALLER_PATH="$2"
                 shift 2
+                ;;
+            --enable-dxvk)
+                ENABLE_DXVK=true
+                shift
+                ;;
+            --enable-vulkan)
+                ENABLE_VULKAN=true
+                shift
+                ;;
+            --enable-tahoma)
+                ENABLE_TAHOMA=true
+                shift
                 ;;
             *)
                 shift
@@ -855,7 +892,7 @@ class WineInstaller:
         
         if self.distro in ["ubuntu", "debian", "linuxmint", "pop", "zorin"]:
             return self.install_wine_debian(progress_callback)
-        elif self.distro in ["fedora", "rhel", "centos"]:
+        elif self.distro in ["fedora", "nobara", "rhel", "centos"]:
             return self.install_wine_fedora(progress_callback)
         elif self.distro in ["arch", "manjaro", "endeavouros"]:
             return self.install_wine_arch(progress_callback)
@@ -921,11 +958,14 @@ class BashInstallerThread(QThread):
     progress_update = pyqtSignal(int, str)  # percentage, message
     finished_signal = pyqtSignal(int)  # exit code
     
-    def __init__(self, bash_script, prefix_path, installer_path=None):
+    def __init__(self, bash_script, prefix_path, installer_path=None, enable_dxvk=True, enable_vulkan=True, enable_tahoma=True):
         super().__init__()
         self.bash_script = bash_script
         self.prefix_path = prefix_path
         self.installer_path = installer_path
+        self.enable_dxvk = enable_dxvk
+        self.enable_vulkan = enable_vulkan
+        self.enable_tahoma = enable_tahoma
         self.process = None
     
     def run(self):
@@ -948,6 +988,14 @@ class BashInstallerThread(QThread):
             
             if self.installer_path:
                 cmd.extend(['--installer', str(self.installer_path)])
+            
+            # Add optional component flags
+            if self.enable_dxvk:
+                cmd.append('--enable-dxvk')
+            if self.enable_vulkan:
+                cmd.append('--enable-vulkan')
+            if self.enable_tahoma:
+                cmd.append('--enable-tahoma')
             
             self.process = subprocess.Popen(
                 cmd,
@@ -1025,14 +1073,34 @@ class AffinityInstallerGUI(QMainWindow):
     def __init__(self):
         super().__init__()
         
-        self.setWindowTitle("Affinity Installer for Linux")
-        self.setMinimumSize(1100, 750)
+        self.setWindowTitle("Affinity On Linux • Installer")
+        
+        # Smart window sizing based on screen
+        screen = self.screen().availableGeometry()
+        screen_width = screen.width()
+        screen_height = screen.height()
+        
+        # Calculate optimal window size (85% of screen height, max 900px)
+        optimal_height = min(int(screen_height * 0.85), 900)
+        optimal_width = min(int(screen_width * 0.6), 1000)
+        
+        # Set minimum size smaller for small screens
+        min_height = min(750, optimal_height)
+        min_width = min(900, optimal_width)
+        
+        self.setMinimumSize(min_width, min_height)
+        self.resize(optimal_width, optimal_height)
         
         # Variables
         self.prefix_path = None
         self.installer_path = None
         self.installer_thread = None
         self.sudo_password = None  # Store sudo password
+        
+        # Optional component flags
+        self.enable_dxvk = True
+        self.enable_vulkan = True
+        self.enable_tahoma = True
         
         # Setup UI
         self.create_ui()
@@ -1050,33 +1118,44 @@ class AffinityInstallerGUI(QMainWindow):
     
     def create_ui(self):
         """Create the user interface"""
+        # Create scroll area for better responsiveness
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll.setFrameShape(QScrollArea.Shape.NoFrame)
+        scroll.setStyleSheet("background: #1e1e1e;")
+        self.setCentralWidget(scroll)
+        
         central = QWidget()
-        self.setCentralWidget(central)
+        central.setStyleSheet("background: #1e1e1e;")
+        scroll.setWidget(central)
         
         layout = QVBoxLayout(central)
-        layout.setSpacing(20)
-        layout.setContentsMargins(30, 30, 30, 30)
+        layout.setSpacing(5)
+        layout.setContentsMargins(12, 10, 12, 10)
         
         # Header
-        header = QLabel("affinity for Linux")
-        header_font = QFont("Serif", 32, QFont.Weight.Light)
-        header_font.setItalic(True)
-        header_font.setStyleHint(QFont.StyleHint.Serif)
+        header = QLabel("🎨 Affinity On Linux")
+        header_font = header.font()
+        header_font.setPointSize(14)
+        header_font.setBold(True)
         header.setFont(header_font)
         header.setStyleSheet("""
-            color: white;
-            background: #2a2a2a;
-            padding: 20px;
-            border-radius: 8px;
-            letter-spacing: 2px;
+            color: #2196F3;
+            background: #2b2b2b;
+            padding: 8px;
+            border: 2px solid #2196F3;
+            border-radius: 6px;
         """)
+        header.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(header)
         
-        subtitle = QLabel("Wine 10+ • Complete Suite Support")
+        subtitle = QLabel("Complete Affinity Suite Support • <a href='https://affinityonlinux.com' style='color: #2196F3; text-decoration: none;'>AffinityOnLinux.com</a>")
         subtitle_font = subtitle.font()
-        subtitle_font.setPointSize(11)
+        subtitle_font.setPointSize(8)
         subtitle.setFont(subtitle_font)
-        subtitle.setStyleSheet("color: #999; margin-top: 10px;")
+        subtitle.setStyleSheet("color: #aaa; padding: 2px;")
+        subtitle.setOpenExternalLinks(True)
+        subtitle.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(subtitle)
         
         # Configuration section
@@ -1084,11 +1163,13 @@ class AffinityInstallerGUI(QMainWindow):
         config_group.setStyleSheet("""
             QGroupBox {
                 font-weight: bold;
-                font-size: 12pt;
-                border: 2px solid #ddd;
-                border-radius: 8px;
-                margin-top: 10px;
+                font-size: 9pt;
+                border: 2px solid #4CAF50;
+                border-radius: 6px;
+                margin-top: 4px;
                 padding-top: 10px;
+                background: #2b2b2b;
+                color: #4CAF50;
             }
             QGroupBox::title {
                 subcontrol-origin: margin;
@@ -1097,20 +1178,27 @@ class AffinityInstallerGUI(QMainWindow):
             }
         """)
         config_layout = QVBoxLayout(config_group)
-        config_layout.setSpacing(16)
+        config_layout.setSpacing(6)
         
         # Prefix path
         prefix_layout = QHBoxLayout()
         prefix_label = QLabel("Wine Prefix:")
         prefix_label.setMinimumWidth(120)
+        prefix_label.setStyleSheet("color: #ddd; font-weight: normal;")
         prefix_layout.addWidget(prefix_label)
         
         self.prefix_edit = QLineEdit()
-        default_prefix = str(Path.home() / ".AffinityLinux")
+        default_prefix = str(Path.home() / ".AffinityOnLinux")
         self.prefix_edit.setPlaceholderText(default_prefix)
         self.prefix_edit.setText(default_prefix)
-        self.prefix_edit.setReadOnly(True)  # Make read-only so user can't change it
-        self.prefix_edit.setStyleSheet("padding: 8px; border: 1px solid #555; border-radius: 4px; background: #3a3a3a; color: white;")
+        self.prefix_edit.setReadOnly(True)
+        self.prefix_edit.setStyleSheet("""
+            padding: 8px;
+            border: 2px solid #555;
+            border-radius: 4px;
+            background: #3a3a3a;
+            color: #fff;
+        """)
         prefix_layout.addWidget(self.prefix_edit)
         
         # Browse button removed - user shouldn't change Wine prefix location
@@ -1121,21 +1209,37 @@ class AffinityInstallerGUI(QMainWindow):
         installer_layout = QHBoxLayout()
         installer_label = QLabel("Affinity Installer:")
         installer_label.setMinimumWidth(120)
+        installer_label.setStyleSheet("color: #ddd; font-weight: normal;")
         installer_layout.addWidget(installer_label)
         
         self.installer_edit = QLineEdit()
-        self.installer_edit.setPlaceholderText("Optional: Select .msix installer file")
-        self.installer_edit.setStyleSheet("padding: 8px; border: 1px solid #ccc; border-radius: 4px;")
+        self.installer_edit.setPlaceholderText("Optional: Select .exe or .msix installer file")
+        self.installer_edit.setStyleSheet("""
+            padding: 8px;
+            border: 2px solid #555;
+            border-radius: 4px;
+            background: #3a3a3a;
+            color: #fff;
+        """)
         installer_layout.addWidget(self.installer_edit)
         
         installer_browse = QPushButton("📁 Browse...")
         installer_browse.setStyleSheet("""
-            padding: 8px 16px;
-            background: #555;
-            color: white;
-            border: 1px solid #777;
-            border-radius: 4px;
-            font-weight: bold;
+            QPushButton {
+                padding: 8px 16px;
+                background: #2196F3;
+                color: white;
+                border: 2px solid #1976D2;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+            QPushButton:hover {
+                background: #1976D2;
+                border: 2px solid #0D47A1;
+            }
+            QPushButton:pressed {
+                background: #0D47A1;
+            }
         """)
         installer_browse.clicked.connect(self.browse_installer)
         installer_layout.addWidget(installer_browse)
@@ -1144,16 +1248,120 @@ class AffinityInstallerGUI(QMainWindow):
         
         layout.addWidget(config_group)
         
+        # Optional Components section
+        optional_group = QGroupBox("⚙️ Optional Components")
+        optional_group.setStyleSheet("""
+            QGroupBox {
+                font-weight: bold;
+                font-size: 9pt;
+                border: 2px solid #FF9800;
+                border-radius: 6px;
+                margin-top: 4px;
+                padding-top: 10px;
+                background: #2b2b2b;
+                color: #FF9800;
+            }
+            QGroupBox::title {
+                subcontrol-origin: margin;
+                left: 10px;
+                padding: 0 5px;
+            }
+        """)
+        optional_layout = QVBoxLayout(optional_group)
+        optional_layout.setSpacing(4)
+        
+        # Info label
+        info_label = QLabel("These components enhance stability and compatibility (recommended):")
+        info_label.setStyleSheet("color: #aaa; font-size: 9pt; font-weight: normal; padding: 2px;")
+        info_label.setWordWrap(True)
+        optional_layout.addWidget(info_label)
+        
+        # Checkboxes in horizontal layout
+        checkboxes_layout = QHBoxLayout()
+        checkboxes_layout.setSpacing(15)
+        
+        # DXVK checkbox
+        self.dxvk_checkbox = QCheckBox("DXVK (for stability)")
+        self.dxvk_checkbox.setChecked(True)
+        self.dxvk_checkbox.setStyleSheet("color: #ddd; font-size: 9pt; font-weight: normal; padding: 2px;")
+        self.dxvk_checkbox.stateChanged.connect(lambda state: setattr(self, 'enable_dxvk', state == Qt.CheckState.Checked.value))
+        checkboxes_layout.addWidget(self.dxvk_checkbox)
+        
+        # Vulkan Renderer checkbox
+        self.vulkan_checkbox = QCheckBox("Vulkan Renderer (For GPU)")
+        self.vulkan_checkbox.setChecked(True)
+        self.vulkan_checkbox.setStyleSheet("color: #ddd; font-size: 9pt; font-weight: normal; padding: 2px;")
+        self.vulkan_checkbox.stateChanged.connect(lambda state: setattr(self, 'enable_vulkan', state == Qt.CheckState.Checked.value))
+        checkboxes_layout.addWidget(self.vulkan_checkbox)
+        
+        # Tahoma Font checkbox
+        self.tahoma_checkbox = QCheckBox("Tahoma Font (fonts not showing)")
+        self.tahoma_checkbox.setChecked(True)
+        self.tahoma_checkbox.setStyleSheet("color: #ddd; font-size: 9pt; font-weight: normal; padding: 2px;")
+        self.tahoma_checkbox.stateChanged.connect(lambda state: setattr(self, 'enable_tahoma', state == Qt.CheckState.Checked.value))
+        checkboxes_layout.addWidget(self.tahoma_checkbox)
+        
+        checkboxes_layout.addStretch()
+        optional_layout.addLayout(checkboxes_layout)
+        
+        layout.addWidget(optional_group)
+        
+        # Resources section
+        resources_group = QGroupBox("📚 Resources")
+        resources_group.setStyleSheet("""
+            QGroupBox {
+                font-weight: bold;
+                font-size: 9pt;
+                border: 2px solid #9C27B0;
+                border-radius: 6px;
+                margin-top: 4px;
+                padding-top: 10px;
+                background: #2b2b2b;
+                color: #9C27B0;
+            }
+            QGroupBox::title {
+                subcontrol-origin: margin;
+                left: 10px;
+                padding: 0 5px;
+            }
+        """)
+        resources_layout = QVBoxLayout(resources_group)
+        resources_layout.setSpacing(4)
+        
+        # AffinityPluginLoader link
+        plugin_label = QLabel(
+            "<b><a href='https://github.com/noahc3/AffinityPluginLoader' style='color: #2196F3; text-decoration: none;'>AffinityPluginLoader</a></b> - "
+            "Fix some bugs like pen line - follow this guide"
+        )
+        plugin_label.setOpenExternalLinks(True)
+        plugin_label.setStyleSheet("color: #ddd; font-size: 9pt; font-weight: normal; padding: 4px;")
+        plugin_label.setWordWrap(True)
+        resources_layout.addWidget(plugin_label)
+        
+        # Credits link
+        credits_label = QLabel(
+            "<b><a href='https://github.com/seapear/AffinityOnLinux/blob/main/Credits.md' style='color: #2196F3; text-decoration: none;'>Credits</a></b> - "
+            "Credit to all the amazing work everyone has volunteered"
+        )
+        credits_label.setOpenExternalLinks(True)
+        credits_label.setStyleSheet("color: #ddd; font-size: 9pt; font-weight: normal; padding: 4px;")
+        credits_label.setWordWrap(True)
+        resources_layout.addWidget(credits_label)
+        
+        layout.addWidget(resources_group)
+        
         # Progress section
         progress_group = QGroupBox("📊 Installation Progress")
         progress_group.setStyleSheet("""
             QGroupBox {
                 font-weight: bold;
-                font-size: 12pt;
-                border: 2px solid #ddd;
-                border-radius: 8px;
-                margin-top: 10px;
+                font-size: 9pt;
+                border: 2px solid #00BCD4;
+                border-radius: 6px;
+                margin-top: 4px;
                 padding-top: 10px;
+                background: #2b2b2b;
+                color: #00BCD4;
             }
             QGroupBox::title {
                 subcontrol-origin: margin;
@@ -1162,7 +1370,7 @@ class AffinityInstallerGUI(QMainWindow):
             }
         """)
         progress_layout = QVBoxLayout(progress_group)
-        progress_layout.setSpacing(10)
+        progress_layout.setSpacing(4)
         
         # Progress bar with percentage
         progress_bar_layout = QHBoxLayout()
@@ -1175,17 +1383,19 @@ class AffinityInstallerGUI(QMainWindow):
         self.progress_bar.setFormat("%p%")
         self.progress_bar.setStyleSheet("""
             QProgressBar {
-                border: 2px solid #ddd;
-                border-radius: 8px;
+                border: 2px solid #555;
+                border-radius: 6px;
                 text-align: center;
-                height: 30px;
-                font-size: 14pt;
+                height: 25px;
+                font-size: 11pt;
                 font-weight: bold;
+                color: #fff;
+                background: #3a3a3a;
             }
             QProgressBar::chunk {
                 background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
                     stop:0 #4CAF50, stop:1 #8BC34A);
-                border-radius: 6px;
+                border-radius: 4px;
             }
         """)
         progress_bar_layout.addWidget(self.progress_bar)
@@ -1193,10 +1403,10 @@ class AffinityInstallerGUI(QMainWindow):
         # Percentage label (large)
         self.percentage_label = QLabel("0%")
         self.percentage_label.setStyleSheet("""
-            font-size: 24pt;
+            font-size: 16pt;
             font-weight: bold;
-            color: #2196F3;
-            min-width: 80px;
+            color: #00BCD4;
+            min-width: 60px;
         """)
         self.percentage_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         progress_bar_layout.addWidget(self.percentage_label)
@@ -1205,7 +1415,7 @@ class AffinityInstallerGUI(QMainWindow):
         
         # Current step label
         self.step_label = QLabel("Ready to start installation")
-        self.step_label.setStyleSheet("font-size: 11pt; color: #666; padding: 5px;")
+        self.step_label.setStyleSheet("font-size: 9pt; color: #aaa; padding: 4px;")
         self.step_label.setWordWrap(True)
         progress_layout.addWidget(self.step_label)
         
@@ -1216,11 +1426,13 @@ class AffinityInstallerGUI(QMainWindow):
         log_group.setStyleSheet("""
             QGroupBox {
                 font-weight: bold;
-                font-size: 12pt;
-                border: 2px solid #ddd;
-                border-radius: 8px;
-                margin-top: 10px;
+                font-size: 9pt;
+                border: 2px solid #FFC107;
+                border-radius: 6px;
+                margin-top: 4px;
                 padding-top: 10px;
+                background: #2b2b2b;
+                color: #FFC107;
             }
             QGroupBox::title {
                 subcontrol-origin: margin;
@@ -1229,18 +1441,21 @@ class AffinityInstallerGUI(QMainWindow):
             }
         """)
         log_layout = QVBoxLayout(log_group)
+        log_layout.setContentsMargins(4, 4, 4, 4)
         
         self.log_text = QTextEdit()
         self.log_text.setReadOnly(True)
+        self.log_text.setMinimumHeight(70)
+        self.log_text.setMaximumHeight(100)
         self.log_text.setStyleSheet("""
             QTextEdit {
-                background: #1e1e1e;
+                background: #1a1a1a;
                 color: #d4d4d4;
                 font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
-                font-size: 10pt;
-                border: 1px solid #ccc;
+                font-size: 9pt;
+                border: 2px solid #555;
                 border-radius: 4px;
-                padding: 8px;
+                padding: 6px;
             }
         """)
         log_layout.addWidget(self.log_text)
@@ -1256,21 +1471,23 @@ class AffinityInstallerGUI(QMainWindow):
             QPushButton {
                 background: #4CAF50;
                 color: white;
-                font-size: 12pt;
+                font-size: 10pt;
                 font-weight: bold;
-                padding: 12px 24px;
-                border: none;
+                padding: 8px 16px;
+                border: 2px solid #45a049;
                 border-radius: 6px;
             }
             QPushButton:hover {
                 background: #45a049;
+                border: 2px solid #3d8b40;
             }
             QPushButton:pressed {
                 background: #3d8b40;
             }
             QPushButton:disabled {
-                background: #cccccc;
-                color: #666666;
+                background: #555;
+                color: #888;
+                border: 2px solid #444;
             }
         """)
         self.start_button.clicked.connect(self.start_installation)
@@ -1282,21 +1499,23 @@ class AffinityInstallerGUI(QMainWindow):
             QPushButton {
                 background: #f44336;
                 color: white;
-                font-size: 12pt;
+                font-size: 10pt;
                 font-weight: bold;
-                padding: 12px 24px;
-                border: none;
+                padding: 8px 16px;
+                border: 2px solid #da190b;
                 border-radius: 6px;
             }
             QPushButton:hover {
                 background: #da190b;
+                border: 2px solid #c41400;
             }
             QPushButton:pressed {
                 background: #c41400;
             }
             QPushButton:disabled {
-                background: #cccccc;
-                color: #666666;
+                background: #555;
+                color: #888;
+                border: 2px solid #444;
             }
         """)
         self.stop_button.clicked.connect(self.stop_installation)
@@ -1308,14 +1527,15 @@ class AffinityInstallerGUI(QMainWindow):
             QPushButton {
                 background: #FF9800;
                 color: white;
-                font-size: 12pt;
+                font-size: 10pt;
                 font-weight: bold;
-                padding: 12px 24px;
-                border: none;
+                padding: 8px 16px;
+                border: 2px solid #F57C00;
                 border-radius: 6px;
             }
             QPushButton:hover {
                 background: #F57C00;
+                border: 2px solid #E65100;
             }
             QPushButton:pressed {
                 background: #E65100;
@@ -1689,7 +1909,10 @@ class AffinityInstallerGUI(QMainWindow):
         self.installer_thread = BashInstallerThread(
             BASH_SCRIPT,
             prefix,
-            installer_path
+            installer_path,
+            self.enable_dxvk,
+            self.enable_vulkan,
+            self.enable_tahoma
         )
         self.installer_thread.log_output.connect(self.log)
         self.installer_thread.progress_update.connect(self.update_progress)
@@ -1753,7 +1976,7 @@ class AffinityInstallerGUI(QMainWindow):
             self,
             "Confirm Uninstall",
             "⚠️  This will remove:\n\n"
-            "• Wine prefix directory (~/.AffinityLinux)\n"
+            "• Wine prefix directory (~/.AffinityOnLinux)\n"
             "• All Affinity applications\n"
             "• Desktop shortcuts\n"
             "• All installed components\n\n"

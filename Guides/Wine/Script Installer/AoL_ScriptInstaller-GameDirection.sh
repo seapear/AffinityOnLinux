@@ -2,7 +2,8 @@
 # Complete setup and launcher for Affinity Installer - Unified Version
 # This script sets up the environment and launches the unified installer
 # Supports: Ubuntu/Debian, Fedora, Arch
-# Version V4
+
+# Version V5
 
 set -e  # Exit on error
 
@@ -10,7 +11,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 echo "=========================================="
-echo "Affinity Installer - Unified Version"
+echo "Affinity Installer - V5"
 echo "=========================================="
 echo ""
 
@@ -42,7 +43,7 @@ if ! command -v python3 &> /dev/null; then
             sudo apt update
             sudo apt install -y python3 python3-venv python3-pip
             ;;
-        fedora|rhel|centos)
+        fedora|nobara)
             sudo dnf install -y python3 python3-pip
             ;;
         arch|manjaro|endeavouros)
@@ -50,6 +51,7 @@ if ! command -v python3 &> /dev/null; then
             ;;
         *)
             echo "Error: Unsupported distribution: $DISTRO"
+            echo "Supported: Ubuntu/Debian, Fedora, Arch Linux"
             exit 1
             ;;
     esac
@@ -75,13 +77,15 @@ if ! python3 -m venv --help &> /dev/null; then
             # Try version-specific package first, fall back to generic
             sudo apt install -y python${PYTHON_VERSION}-venv || sudo apt install -y python3-venv
             ;;
-        fedora|rhel|centos)
-            # Fedora includes venv in python3 package, but install just in case
-            sudo dnf install -y python3-pip
+        fedora|nobara)
+            # Fedora includes venv in python3 package by default
+            # Verify it's installed
+            sudo dnf install -y python3
             ;;
         arch|manjaro|endeavouros)
-            # Arch includes venv in python package
-            sudo pacman -S --needed --noconfirm python-pip
+            # Arch includes venv in python package by default
+            # Verify it's installed
+            sudo pacman -S --needed --noconfirm python
             ;;
     esac
     
@@ -98,7 +102,7 @@ if ! command -v pip3 &> /dev/null && ! python3 -m pip --version &> /dev/null; th
         ubuntu|debian|linuxmint|pop|zorin)
             sudo apt install -y python3-pip
             ;;
-        fedora|rhel|centos)
+        fedora|nobara)
             sudo dnf install -y python3-pip
             ;;
         arch|manjaro|endeavouros)
@@ -130,8 +134,8 @@ case $DISTRO in
             libxcb-xfixes0
         ;;
     
-    fedora|rhel|centos)
-        echo "Installing Qt dependencies for Fedora/RHEL..."
+    fedora|nobara)
+        echo "Installing Qt dependencies for Fedora..."
         sudo dnf install -y \
             xcb-util-cursor \
             xcb-util-wm \
@@ -153,8 +157,10 @@ case $DISTRO in
         ;;
     
     *)
-        echo "⚠ Unknown distribution, skipping Qt dependencies..."
-        echo "You may need to install Qt xcb dependencies manually if you encounter errors"
+        echo "⚠ Unsupported distribution: $DISTRO"
+        echo "Supported: Ubuntu/Debian, Fedora, Arch Linux"
+        echo "You may need to install Qt xcb dependencies manually"
+        exit 1
         ;;
 esac
 
