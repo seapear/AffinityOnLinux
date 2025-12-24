@@ -1430,7 +1430,7 @@ class AffinityInstallerGUI(QMainWindow):
                 border: 2px solid #FFC107;
                 border-radius: 6px;
                 margin-top: 4px;
-                padding-top: 10px;
+                padding-top: 15px;
                 background: #2b2b2b;
                 color: #FFC107;
             }
@@ -1441,21 +1441,20 @@ class AffinityInstallerGUI(QMainWindow):
             }
         """)
         log_layout = QVBoxLayout(log_group)
-        log_layout.setContentsMargins(4, 4, 4, 4)
+        log_layout.setContentsMargins(2, 2, 2, 2)
+        log_layout.setSpacing(0)
         
         self.log_text = QTextEdit()
         self.log_text.setReadOnly(True)
-        self.log_text.setMinimumHeight(70)
-        self.log_text.setMaximumHeight(100)
         self.log_text.setStyleSheet("""
             QTextEdit {
                 background: #1a1a1a;
                 color: #d4d4d4;
                 font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
                 font-size: 9pt;
-                border: 2px solid #555;
-                border-radius: 4px;
-                padding: 6px;
+                border: none;
+                border-radius: 0px;
+                padding: 4px;
             }
         """)
         log_layout.addWidget(self.log_text)
@@ -1876,6 +1875,17 @@ class AffinityInstallerGUI(QMainWindow):
         
         installer = self.installer_edit.text().strip()
         installer_path = Path(installer) if installer else None
+
+        # Check if installer was selected
+        if not installer_path:
+            QMessageBox.warning(
+                self,
+                "No Installer Selected",
+                "⚠ Please select an Affinity installer setup file before starting the installation.\n\n"
+                "Click the 'Browse...' button next to 'Affinity Installer' to select your installer file."
+            )
+            return
+
         
         if installer_path and not installer_path.exists():
             QMessageBox.warning(
@@ -2057,4 +2067,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
