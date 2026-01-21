@@ -27,23 +27,21 @@ _A repository containing information on how to get Affinity software working on 
 3. Choose a guide based on your Wine manager of choice:
     - [Guide for Wine 10.17+](./Guides/Wine/Guide.md) (Recommended if you are comfortable with using the terminal)
     - [Guide for Lutris](./Guides/Lutris/Guide.md) (Recommended if you want a GUI Wine manager)
-###    - [Guide for Heroic Games Launcher](./Guides/Heroic/Guide.md)
+    - [Guide for Heroic Games Launcher](./Guides/Heroic/Guide.md)
     - [Guide for Bottles](./Guides/Bottles/Guide.md)
     - [Guide for Rum](./Guides/Rum/Guide.md) (terminal)
-5. Report any issues or bugs you find in our repository's [Issues](https://github.com/seapear/AffinityOnLinux/issues) tab, or on our [Discord](https://discord.gg/t5V9ecpJWZ) in the Help channel.
+5. Report any issues or bugs you find in our repository's [Issues](https://github.com/seapear/AffinityOnLinux/issues) tab, or on our [Discord](https://discord.gg/t5V9ecpJWZ)'s help channels.
 6. If you have a fix or a solution for our guides, submit a [Pull Request](https://github.com/seapear/AffinityOnLinux/pulls) and let us know in #feedback on our [Discord](https://discord.gg/t5V9ecpJWZ).
-7. Finally, grab your ✔️Success Badge on our [Discord](https://discord.gg/t5V9ecpJWZ), we would be love to hear about your real world use of AffinityOnLinux!
+7. Finally, grab your ✔️Success Badge in our [Discord](https://discord.gg/t5V9ecpJWZ), we would be love to hear about your real world use of AffinityOnLinux!
 
-## Unofficial Methods for Installing Affinity on Linux
+## Unofficial Methods to Install Affinity on Linux
 
-Aside from the above, there are other methods for installing Affinity on Linux you may check out:
+You may check out other methods to install Affinity on Linux:
 
-- [Unofficial Appimage and Python GUI installer](https://github.com/ryzendew/Linux-Affinity-Installer) (with the AppImage being the easiest method to install Affinity on Linux)
-- Unofficial [Nix method](https://github.com/mrshmllow/affinity-nix)
+- [ryzendew's Appimage and Python GUI installer](https://github.com/ryzendew/Linux-Affinity-Installer) (with the AppImage being the easiest method to install Affinity on Linux)
+- [mrshmllow's Nix method](https://github.com/mrshmllow/affinity-nix)
 
-Note that these methods are **not official to this AffinityOnLinux repository**. Therefore, if you need support for these install methods, it is strongly recommended to ask their respective creators. This repository's GitHub issues and Discord community do not provide direct support for these install methods.
-
-For the AppImage and Python GUI Installer, please refer to the [ryzendew/Linux-Affinity-Installer](https://github.com/ryzendew/Linux-Affinity-Installer) repository for support.
+Note that these methods are **not official to this AffinityOnLinux repository**. Therefore, if you need support for these install methods, it is strongly recommended to ask their respective authors directly. This AffinityOnLinux repository and Discord do not provide direct support for these install methods.
 
 ## Information
 
