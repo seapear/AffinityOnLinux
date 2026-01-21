@@ -20,34 +20,43 @@ _A repository containing information on how to get Affinity software working on 
   </a>
 </div>
 
-## How to Use This Guide:
+## How to Use This Guide
 
 1. Check if your Linux distribution is compatible in [FAQ ❓](/FAQ.md#tested-methods).
 2. Choose a Wine manager: [Wine 10.17+](./Guides/Wine/Guide.md) (recommended) [Lutris](https://lutris.net/), [Heroic Games Launcher](https://heroicgameslauncher.com/), [Bottles](https://usebottles.com/) or [Rum](https://gitlab.com/xkero/rum).
 3. Choose a guide based on your Wine manager of choice:
     - [Guide for Wine 10.17+](./Guides/Wine/Guide.md) (Recommended if you are comfortable with using the terminal)
     - [Guide for Lutris](./Guides/Lutris/Guide.md) (Recommended if you want a GUI Wine manager)
-    - [Guide for Heroic Games Launcher](./Guides/Heroic/Guide.md)
+###    - [Guide for Heroic Games Launcher](./Guides/Heroic/Guide.md)
     - [Guide for Bottles](./Guides/Bottles/Guide.md)
     - [Guide for Rum](./Guides/Rum/Guide.md) (terminal)
-    - [Guide for Appimage](https://github.com/ryzendew/AffinityOnLinux) (Easiest method, unofficial GUI Installer)
 5. Report any issues or bugs you find in our repository's [Issues](https://github.com/seapear/AffinityOnLinux/issues) tab, or on our [Discord](https://discord.gg/t5V9ecpJWZ) in the Help channel.
 6. If you have a fix or a solution for our guides, submit a [Pull Request](https://github.com/seapear/AffinityOnLinux/pulls) and let us know in #feedback on our [Discord](https://discord.gg/t5V9ecpJWZ).
 7. Finally, grab your ✔️Success Badge on our [Discord](https://discord.gg/t5V9ecpJWZ), we would be love to hear about your real world use of AffinityOnLinux!
 
-### Information
+## Unofficial Methods for Installing Affinity on Linux
+
+Aside from the above, there are other methods for installing Affinity on Linux you may check out:
+
+- [Unofficial Appimage and Python GUI installer](https://github.com/ryzendew/Linux-Affinity-Installer) (with the AppImage being the easiest method to install Affinity on Linux)
+- Unofficial [Nix method](https://github.com/mrshmllow/affinity-nix)
+
+Note that these methods are **not official to this AffinityOnLinux repository**. Therefore, if you need support for these install methods, it is strongly recommended to ask their respective creators. This repository's GitHub issues and Discord community do not provide direct support for these install methods.
+
+For the AppImage and Python GUI Installer, please refer to the [ryzendew/Linux-Affinity-Installer](https://github.com/ryzendew/Linux-Affinity-Installer) repository for support.
+
+## Information
 
 [FAQ ❓](/FAQ.md)
+
+[🗺️ Roadmap & ⚠️ Known issues](/Roadmap.md)
   - Affinity by Canva - Sign in is not working at the moment. Looking for solutions.
   - UI settings does not save. There is a [workaround](Guides/Settings.md).
   - Affinity V1 - [purchased via windows store issue](https://github.com/seapear/AffinityOnLinux/blob/main/FAQ.md#which-affinity-versions-are-supported)
-  - Unofficial [Nix method](https://github.com/mrshmllow/affinity-nix)
-
-[🗺️ Roadmap & ⚠️ Known issues](/Roadmap.md)
 
 [📜 Credits](/Credits.md)
 
-[💬 Discord](https://join.affinityonlinux.com)
+[💬 AffinityOnLinux Discord](https://join.affinityonlinux.com)
 
 ## Disclaimer
 

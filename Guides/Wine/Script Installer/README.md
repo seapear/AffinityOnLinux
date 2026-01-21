@@ -33,7 +33,7 @@ Once the installation is complete, you should find a `.desktop` file created in 
 ## Tips and Troubleshooting
 
 * If the dotnet48 installation seems stuck, try checking the installation progress periodically. It may take some time to complete.
-* If you encounter any issues during the installation process, please refer to the AffinityOnLinux documentation or seek assistance from the community in the [AffinityOnLinux Discord server](https://join.affinityonlinux.com/). Please provide a your log to help identify any fail points. 
+* If you encounter any issues during the installation process, please refer to the AffinityOnLinux documentation or seek assistance from the community in the [AffinityOnLinux Discord](https://join.affinityonlinux.com/). Please provide a your log to help identify any fail points. 
 * Please use `neofetch` or [`fastfetch`](https://github.com/fastfetch-cli/fastfetch) as they are great tools to help the community troubleshoot.
 
 ## Get Started with Affinity on Linux
