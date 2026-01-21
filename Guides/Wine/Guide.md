@@ -5,7 +5,7 @@
 Affinity apps need Windows Runtime (WinRT) APIs, which older Wine versions lacked. 
 You need Wine 10.17 or newer to fix a missing file that previously blocked the installer. The actual WinRT functionality is then provided by adding a separate helper DLL and metadata file.
 
-Thank you @[Wanesty](https://codeberg.org/wanesty) for being the first one to discover this update! You may check out [their guide for installing and running Affinity with Wine](https://affinity.liz.pet/).
+Thank you [Wanesty](https://codeberg.org/wanesty) for being the first one to discover this update! You may check out [her guide for installing and running Affinity with Wine](https://affinity.liz.pet/).
 
 ---
 
@@ -24,7 +24,7 @@ Thank you @[Wanesty](https://codeberg.org/wanesty) for being the first one to di
 > [!NOTE]
 > As an alternative to manually set up Wine 10.17+ to install Affinity with the following steps, you may try out [our experimental Bash script installer](/Guides/Wine/Script%20Installer) to help streamline Affinity installation under Wine. (Download that directory, and run the .sh after giving it permissions to execute)
 
-### 1. Install Wine and Winetricks
+### Step 1: Install Wine and Winetricks
 
 #### Fedora / Nobara (Recommended method)
 
@@ -71,7 +71,7 @@ wine --version
 ```
 Should return **wine‑10.17** or newer.
 
-### 2. Create a clean Wine prefix
+### Step 2: Create a clean Wine prefix
 
 ```bash
 export WINEPREFIX="$HOME/.affinity"
@@ -81,7 +81,7 @@ wineboot --init
 > [!WARNING]
 > You might need to change "$HOME/" to your full home folder path like "/home/YourUsername/" so it points to the [absolute](https://www.redhat.com/sysadmin/linux-path-absolute-relative) location. This is a common problem if you're using a shell that doesn't follow standard POSIX rules.
 
-### 3. Install runtime dependencies
+### Step 3: Install runtime dependencies
 Install core components Affinity depends on with Winetricks.
 
 ```bash
@@ -96,22 +96,7 @@ Additional components you may want to install with winetricks if you encounter i
 - `dxvk`
 - `tahoma` (if you are getting pixelated fonts)
 
-### 4. Download required helper files
-
-These add Windows Runtime metadata support Affinity expects.
-
-```bash
-cd /tmp
-curl -L -o Windows.winmd https://github.com/microsoft/windows-rs/raw/master/crates/libs/bindgen/default/Windows.winmd
-curl -L -o wintypes.dll https://github.com/ElementalWarrior/wine-wintypes.dll-for-affinity/raw/refs/heads/master/wintypes_shim.dll.so
-```
-
-If your download ends with `.dll.so`, rename it:
-```bash
-mv /tmp/wintypes.dll.so /tmp/wintypes.dll 2>/dev/null || true
-```
-
-### 5. Install Affinity
+### Step 4: Install Affinity
 
 > [!NOTE]
 > - Affinity apps can be found here: [Affinity by Canva](https://www.affinity.studio/download) | [Version 2](https://affinity.serif.com/v2/) | [Archived](https://archive.org/details/affinity_20251030)
@@ -126,7 +111,22 @@ Adjust *.exe in the path above for V2 Photo/Designer/Publisher, and run 3 times 
 
 Follow normal installation prompts.
 
-### 6. Copy metadata + shim files
+### Step 5: Download required helper files
+
+These add Windows Runtime metadata support Affinity expects.
+
+```bash
+cd /tmp
+curl -L -o Windows.winmd https://github.com/microsoft/windows-rs/raw/master/crates/libs/bindgen/default/Windows.winmd
+curl -L -o wintypes.dll https://github.com/ElementalWarrior/wine-wintypes.dll-for-affinity/raw/refs/heads/master/wintypes_shim.dll.so
+```
+
+If your download ends with `.dll.so`, rename it:
+```bash
+mv /tmp/wintypes.dll.so /tmp/wintypes.dll 2>/dev/null || true
+```
+
+### Step 6: Copy metadata + shim files
 
 ```bash
 mkdir -p "$WINEPREFIX/drive_c/windows/system32/winmetadata"
@@ -136,7 +136,7 @@ cp /tmp/wintypes.dll "$WINEPREFIX/drive_c/Program Files/Affinity/Affinity/"
 
 If you installed Photo 2, Designer 2, or Publisher 2 separately, copy into each of their directories.
 
-### 7. Configure the `wintypes` DLL override
+### Step 7: Configure the `wintypes` DLL override
 
 ```bash
 WINEPREFIX="$HOME/.affinity" winecfg
@@ -148,7 +148,7 @@ In **Libraries** tab:
 
 <img width="409" height="482" alt="image" src="https://github.com/user-attachments/assets/756320cf-5c19-4eb6-a093-7938e0e40aec" />
 
-### 8. Launch Affinity
+### Step 8: Launch Affinity
 
 ```bash
 WINEPREFIX="$HOME/.affinity" wine "$WINEPREFIX/drive_c/Program Files/Affinity/Affinity/Affinity.exe"
@@ -183,7 +183,7 @@ sudo mv ~/winetricks /usr/local/bin/winetricks
 
 ---
 
-## Optional Enhancements After Installation
+## 🪄 Optional Enhancements After Installation
 
 ### Install Affinity Plugin Loader + WineFix  
 
@@ -219,7 +219,7 @@ mv "AffinityHook.exe" "Affinity.exe"
 
 Now your existing launchers still work. `wine .../Affinity.exe` automatically loads AffinityPluginLoader & WineFix.
 
-### 🧪 Verify Installation of AffinityPluginLoader
+### Verify Installation of AffinityPluginLoader
 
 Run Affinity as before:
 ```bash
