@@ -46,7 +46,7 @@ if ! command -v python3 &> /dev/null; then
         fedora|nobara)
             sudo dnf install -y python3 python3-pip
             ;;
-        arch|manjaro|endeavouros)
+        arch|manjaro|endeavouros|cachyos)
             sudo pacman -S --needed --noconfirm python python-pip
             ;;
         *)
@@ -82,7 +82,7 @@ if ! python3 -m venv --help &> /dev/null; then
             # Verify it's installed
             sudo dnf install -y python3
             ;;
-        arch|manjaro|endeavouros)
+        arch|manjaro|endeavouros|cachyos)
             # Arch includes venv in python package by default
             # Verify it's installed
             sudo pacman -S --needed --noconfirm python
@@ -105,7 +105,7 @@ if ! command -v pip3 &> /dev/null && ! python3 -m pip --version &> /dev/null; th
         fedora|nobara)
             sudo dnf install -y python3-pip
             ;;
-        arch|manjaro|endeavouros)
+        arch|manjaro|endeavouros|cachyos)
             sudo pacman -S --needed --noconfirm python-pip
             ;;
     esac
@@ -145,7 +145,7 @@ case $DISTRO in
             libxkbcommon-x11
         ;;
     
-    arch|manjaro|endeavouros)
+    arch|manjaro|endeavouros|cachyos)
         echo "Installing Qt dependencies for Arch-based system..."
         sudo pacman -S --needed --noconfirm \
             xcb-util-cursor \
