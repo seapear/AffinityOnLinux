@@ -2,8 +2,7 @@
 
 ## Preface
 
-This guide aims to provide a way to manage Wine that does not make use of GUI launchers like Lutris or Bottles.
-We will instead use [`rum`](https://gitlab.com/xkero/rum), a small shell script that will help us manage multiple Wine runners.
+This guide aims to provide a way to manage Wine that does not make use of GUI launchers like Lutris or Bottles. We will instead use [`rum`](https://gitlab.com/xkero/rum), a small shell script that will help us manage multiple Wine runners.
 
 ## Dependencies
 Install the following programs (or the equivalent for your distro) before proceeding. 
@@ -98,6 +97,7 @@ ElementalWarriorWine-x86_64
 Notice how `rum` correctly found our `ElementalWarriorWine`.
 
 ## Alias Setup
+
 We'll register an alias so that we don't need to always give `rum` the full path to the affinity wine prefix.
 Open either your `.bashrc` or dedicated `.bash_aliases` file, and add the following alias:
 
@@ -162,10 +162,11 @@ popd
 ```
 
 ## Installing Affinity Software
-We're finally ready to actually run the installer.
+
+We're finally ready to actually run the installer. You need an installer of Affinity software in the EXE format, not MSIX format.
 
 > [!TIP]
-> Official installers download links:
+>  Official download links of Affinity installers:
 >
 > | Program | URL |
 > |---------|-----|
@@ -176,6 +177,9 @@ We're finally ready to actually run the installer.
 > |Photo V1     | https://store.serif.com/update/windows/photo/1/     |
 > |Designer V1  | https://store.serif.com/update/windows/designer/1/  |
 > |Publisher V1 | https://store.serif.com/update/windows/publisher/1/ |
+
+> [!NOTE]
+> For Affinity by Canva, you need to select "Enterprise (Intel/AMD)" from the "Download for Windows" drop-down menu on the official download page to download the EXE installer.
 
 We'll use the installer for Affinity Photo V1 as an example.
 
@@ -281,6 +285,7 @@ If you also want to enable dark theme for the Wine prefix for Affinity, run the 
 Create a .desktop launcher by following this [Desktop Launcher Guide](/Guides/Rum/Guide-DesktopLauncher.md) so you can open Affinity from your desktop.
 
 ## Credits
+
 Thanks to:
 - [ElementalWarrior](https://gitlab.winehq.org/ElementalWarrior) for his wine fork
 - [Twig6943](https://github.com/Twig6943) for building the wine binary
