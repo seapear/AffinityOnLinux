@@ -22,7 +22,7 @@ Thank you [Wanesty](https://codeberg.org/wanesty) for being the first one to dis
 ## 🧩 Installation Steps
 
 > [!NOTE]
-> As an alternative to manually set up Wine 10.17+ to install Affinity with the following steps, you may try out [our experimental Bash script installer](/Guides/Wine/Script%20Installer) to help streamline Affinity installation under Wine. (Download that directory, and run the .sh after giving it permissions to execute)
+> As an alternative to manually set up Wine 10.17+ to install Affinity with the following steps, you may try out [our experimental Affinity On Linux installer script](/Guides/Wine/Script%20Installer) to help streamline Affinity installation under Wine. Follow the instructions on the page to download and run the installer script.
 
 ### Step 1: Install Wine and Winetricks
 
