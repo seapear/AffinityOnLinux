@@ -12,6 +12,7 @@ Visit the following files from this repository's [script installer directory](/G
 
 - [`AoL_ScriptInstaller-GameDirection.sh`](/Guides/Wine/Script%20Installer/AoL_ScriptInstaller-GameDirection.sh)
 - [`affinity_installer_unified.py`](/Guides/Wine/Script%20Installer/affinity_installer_unified.py)
+
 Make sure you have both `AoL_ScriptInstaller-GameDirection.sh` *and* `affinity_installer_unified.py` files in the same directory before running the installer.
 
 ### Step 3: Grant Executable Permissions to Installer Script
