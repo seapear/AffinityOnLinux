@@ -111,6 +111,8 @@ Adjust *.exe in the path above for V2 Photo/Designer/Publisher, and run 3 times 
 
 Follow normal installation prompts.
 
+After you finish installing Affinity, if your Wine version is **11 or newer**, you can immediately skip to launching Affinity as instructed at Step 8. Otherwise, continue to Step 5 to 7.
+
 ### Step 5: Download required helper files
 
 These add Windows Runtime metadata support Affinity expects.
