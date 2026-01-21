@@ -18,7 +18,7 @@ This guide covers how to install and test the updated method using the **[Wine�
 
 ## 🧱 Requirements
 Before starting, you should have:
-- A `.exe` installer for your Affinity app (Photo, Designer, Publisher) (v3, or Affinity By Canva will auto install). 
+- An `.exe` installer of your Affinity app (Photo, Designer, Publisher) if you use Version 2 of Affinity Suite (v3, or Affinity By Canva will be downloaded and installed  by our Lutris script automatically).
 - **Lutris** — you can install it via [Flathub](https://flathub.org/apps/net.lutris.Lutris) or your distro package manager. You can check out the [download page of Lutris' official website](https://lutris.net/downloads) and follow the instructions to download and install it. 
 - **winetricks** (needed for dependencies).  
   ```
