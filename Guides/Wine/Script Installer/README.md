@@ -1,27 +1,30 @@
 # Installing Affinity on Linux with the AffinityOnLinux Script
-## Prerequisites
-
-* Make sure you have both `Affinity.msix` and `Affinity.exe` files in the same directory.
 
 ## Step-by-Step Installation Guide
 
-### 1. Download and Extract the Files
+### Step 1: Download Afiinity
 
-Download the `Affinity.msix` or `Affinity.exe`.
+Download `Affinity.msix` or `Affinity.exe` from the [download page of Affinity's official website](https://www.affinity.studio/download). From the "Download for Windows" drop-down menu, select "Windows (Intel/AMD)" to download `Affinity.msix`, or "Enterprise (Intel/AMD)" to download `Affinity.exe`.
 
-Download the .sh and .py file from the script installer directory https://github.com/seapear/AffinityOnLinux/tree/main/Guides/Wine/Script%20Installer
+### Step 2: Download Affinity On Linux Installer Scripts
 
-### 2. Grant Executable Permissions
+Visit the following files from this repository's [script installer directory](/Guides/Wine/Script%20Installer), then click the download button located on the top right of the file content to download the files:
 
-Run the command `chmod +x ./*.sh` to grant executable permissions to all shell scripts (.sh) in the current directory.
+- [`AoL_ScriptInstaller-GameDirection.sh`](/Guides/Wine/Script%20Installer/AoL_ScriptInstaller-GameDirection.sh)
+- [`affinity_installer_unified.py`](/Guides/Wine/Script%20Installer/affinity_installer_unified.py)
 
-### 3. Run the Installer Script
+Make sure you have both `AoL_ScriptInstaller-GameDirection.sh` *and* `affinity_installer_unified.py` files in the same directory before running the installer.
 
-Execute the script by running one of the `.sh` installers (e.g., `AoL_ScriptInstaller-GameDirection.sh`). Follow the prompts to complete the installation process.
+### Step 3: Grant Executable Permissions to Installer Script
 
-### Note
+Run the command `chmod +x ./*.sh` to grant executable permissions to the `AoL_ScriptInstaller-GameDirection.sh` shell script in the current directory.
 
-The dotnet48 installation may take some time and appear to hang. Please be patient, as it's a crucial step in setting up Affinity on your Linux system.
+### Step 4: Run the Installer Script
+
+Execute the `AoL_ScriptInstaller-GameDirection.sh` shell script. Follow the prompts to complete the installation process.
+
+> [!NOTE]
+> The dotnet48 installation may take some time and appear to hang. Please be patient, as it's a crucial step in setting up Affinity on your Linux system.
 
 ## Post-Installation
 
@@ -29,10 +32,9 @@ Once the installation is complete, you should find a `.desktop` file created in 
 
 ## Tips and Troubleshooting
 
-* Make sure you have both `AoL_ScriptInstaller-GameDirection.sh` or `affinity_installer_unified.py` files in the same directory before running the installer.
 * If the dotnet48 installation seems stuck, try checking the installation progress periodically. It may take some time to complete.
-* If you encounter any issues during the installation process, please refer to the AffinityOnLinux documentation or seek assistance from the community in the discord. Please provide a your log to help identify any fail points. 
-* Please use `Neofetch`/`Fastfetch` as they are great tools to help the community troubleshoot.
+* If you encounter any issues during the installation process, please refer to the AffinityOnLinux documentation or seek assistance from the community in the [AffinityOnLinux Discord](https://join.affinityonlinux.com/). Please provide a your log to help identify any fail points. 
+* Please use `neofetch` or [`fastfetch`](https://github.com/fastfetch-cli/fastfetch) as they are great tools to help the community troubleshoot.
 
 ## Get Started with Affinity on Linux
 
