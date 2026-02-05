@@ -46,6 +46,16 @@ Alternately, you may want to install Bottles using the [unofficial AppImage](htt
 
 The Affinity app should now work inside that Bottle.
 
+## 6. Add wintypes.dll
+
+1. Download [`wintypes.dll`](https://github.com/ElementalWarrior/wine-wintypes.dll-for-affinity/raw/refs/heads/master/wintypes_shim.dll.so).
+2. Rename it from `wintypes_shim.dll.so` to `wintypes.dll`.
+3. For each program installed, copy it into that program directory. For Affinity Canva that's `drive_c/Program Files/Affinity/Affinity/`.
+4. Open the settings for your bottle and open Wine Configuration from Tools > Legacy Wine Tools > Configuration.
+5. In the libraries tab, add an override for `wintypes` and edit it to load `Native (Windows)`
+
+<img width="2880" height="1920" alt="Screenshot of the wine configuration menu. The Edit Override window is at the front with the Native (Windows) option selected. Also visible is the Wine configuration window in the libraries tab. The wintypes library is selected in the Existing overrides list. Behind the Wine configuration window is the Details menu for the Affinity bottle scrolled nearly to the bottom with the tools menu visible" src="https://github.com/user-attachments/assets/fb802a52-eab3-457d-938d-48f8dae48af9" />
+
 ## Additional Tips and Tricks
 
 ### Common Location
