@@ -99,7 +99,7 @@ Additional components you may want to install with winetricks if you encounter i
 ### Step 4: Install Affinity
 
 > [!NOTE]
-> - Affinity apps can be found here: [Affinity by Canva](https://www.affinity.studio/download) | [Version 2](https://affinity.serif.com/v2/) | [Archived](https://archive.org/details/affinity_20251030)
+> - Affinity apps can be found here: [Affinity by Canva](https://www.affinity.studio/download) (use "Enterprise" to get the `exe`) | [Version 2](https://affinity.serif.com/v2/) | [Archived](https://archive.org/details/affinity_20251030)
 > - Make sure you have your installation file in `~/Downloads`.
 > - "$HOME" you may not work and you may need to put in your full path depending on your distro.
 
