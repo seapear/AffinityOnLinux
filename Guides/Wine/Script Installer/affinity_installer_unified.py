@@ -283,7 +283,11 @@ install_missing_components() {
     log "Installing all dependencies with winetricks"
     
     # Base components (always installed)
-    COMPONENTS="remove_mono vcrun2022 dotnet48 corefonts win11 webview2"
+    # Note: "webview2" is intentionally absent: winetricks has no such verb
+    # (passing it makes winetricks print its usage text and install nothing),
+    # and installing the WebView2 runtime by other means is known to make
+    # Affinity's onboarding/help dialogs hang under Wine.
+    COMPONENTS="remove_mono vcrun2022 dotnet48 corefonts win11"
     
     # Append optional components if enabled
     if [ "$ENABLE_DXVK" = true ]; then
