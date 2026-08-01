@@ -283,7 +283,11 @@ install_missing_components() {
     log "Installing all dependencies with winetricks"
     
     # Base components (always installed)
-    COMPONENTS="remove_mono vcrun2022 dotnet48 corefonts win11 webview2"
+    # Note: "webview2" is intentionally absent: winetricks has no such verb
+    # (passing it makes winetricks print its usage text and install nothing),
+    # and installing the WebView2 runtime by other means is known to make
+    # Affinity's onboarding/help dialogs hang under Wine.
+    COMPONENTS="remove_mono vcrun2022 dotnet48 corefonts win11"
     
     # Append optional components if enabled
     if [ "$ENABLE_DXVK" = true ]; then
@@ -431,6 +435,48 @@ install_affinity_app() {
 }
 
 # ==========================================
+# DXVK Workarounds
+# ==========================================
+
+configure_dxvk_workarounds() {
+    # Fix black right-click/context menus and flyout popups (issue #72).
+    # DXVK leaves Affinity's D3D9 popup surfaces uninitialised until they are
+    # presented (doitsujin/dxvk#2749); deferring surface creation and pinning
+    # shader model 1 works around it.
+    log "Configuring DXVK workarounds (black context menu fix)"
+
+    local affinity_exe=$(find "$WINEPREFIX/drive_c" -name "Affinity.exe" 2>/dev/null | head -1)
+
+    if [ -z "$affinity_exe" ] || [ ! -f "$affinity_exe" ]; then
+        log "Affinity.exe not found, skipping dxvk.conf setup"
+        return 0
+    fi
+
+    local affinity_dir=$(dirname "$affinity_exe")
+
+    cat > "$affinity_dir/dxvk.conf" <<EOF
+# Fix black right-click/context menus and flyout popups in Affinity under
+# Wine (doitsujin/dxvk#2749): D3D9 popup surfaces stay uninitialised (black)
+# until presented. Deferring surface creation and pinning shader model 1
+# works around it.
+d3d9.deferSurfaceCreation = True
+d3d9.shaderModel = 1
+EOF
+
+    log "Wrote $affinity_dir/dxvk.conf"
+
+    # Register the config path prefix-wide so DXVK finds it regardless of the
+    # launcher's working directory. DXVK opens the value directly as a host
+    # path, so it must be the native Linux path, not a Z:\ Windows path.
+    WINEPREFIX="$WINEPREFIX" wine reg add "HKCU\\Environment" /v DXVK_CONFIG_FILE \
+        /d "$affinity_dir/dxvk.conf" /f 2>&1 | tee -a "$LOG_FILE"
+
+    log "Registered DXVK_CONFIG_FILE in HKCU\\Environment"
+
+    return 0
+}
+
+# ==========================================
 # Create Desktop Shortcuts
 # ==========================================
 
@@ -563,6 +609,9 @@ main() {
     # Install Affinity if installer provided
     if [ -n "$INSTALLER_PATH" ]; then
         install_affinity_app
+        if [ "$ENABLE_DXVK" = true ]; then
+            configure_dxvk_workarounds
+        fi
         create_desktop_shortcuts
     fi
     
