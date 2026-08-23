@@ -67,7 +67,7 @@ script:
   files:
     - setup: https://downloads.affinity.studio/Affinity%20x64.exe
     - WinMetadata: https://archive.org/download/win-metadata/WinMetadata.zip
-    - Windows.winmd: "https://github.com/microsoft/windows-rs/raw/master/crates/libs/bindgen/default/Windows.winmd"
+    - Windows.winmd: "https://github.com/microsoft/windows-rs/raw/4ad797be890f1d9404fa376a223ba0cedc061582/crates/libs/bindgen/default/Windows.winmd"
     - Wintypes_Shim.dll.so: "https://github.com/ElementalWarrior/wine-wintypes.dll-for-affinity/raw/refs/heads/master/wintypes_shim.dll.so"
 
   metadata:
