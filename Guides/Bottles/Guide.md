@@ -48,11 +48,21 @@ This is also known as your Wine runner.
    - [ElementalWarrior](/Guides/Bottles/InstallScripts/Affinity-ew.yaml)
    - [Wine-tkg-affinity](/Guides/Bottles/InstallScripts/Affinity-tkg.yaml)
 7. In Bottles, import the install script file for your Wine fork. `Import Configuration -> Affinity-ew.yaml`
-8. Click **Create**.
+8. Click **Create**. If Wine asks to install Mono, click **No** or **Cancel**.
 
 <img height="350" alt="image" src="https://github.com/user-attachments/assets/f17de84b-859a-49a2-8d01-09da643a2fbf" />
 
-## 5. Extract WinMetadata
+## 5. Remove Wine Mono and install .NET Framework
+
+Bottles pre-installs **Wine Mono Windows Support**, which conflicts with .NET Framework 4.8 and can cause CLR crashes (for example `Unhandled exception: 0xe0434352`) when running the Affinity installer. [Wine Mono must be removed before installing .NET Framework 4.8](https://github.com/wine-mono/wine-mono#composition).
+
+1. Open your bottle → **Tools** → **Legacy Wine Tools** → **Control Panel** → **Add/Remove Programs**.
+2. If **Wine Mono Windows Support** is listed, select it and click **Remove**.
+3. Open **Dependencies** and install **dotnet48**. The install should take several minutes; if it finishes very quickly, Wine Mono may still be present—repeat steps 1–2 and reinstall **dotnet48**.
+
+This workaround is [documented in Bottles issue #2887](https://github.com/bottlesdevs/Bottles/issues/2887#issuecomment-2646118028).
+
+## 6. Extract WinMetadata
 
 1. Download the [`WinMetadata.zip` archive file](https://archive.org/download/win-metadata/WinMetadata.zip).
 2. Extract the `WinMetadata` folder from the archive into `drive_c/windows/system32`.

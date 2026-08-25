@@ -2,7 +2,8 @@ Arch: win64
 CompatData: ''
 Creation_Date: '2024-10-18 16:42:58.782336'
 Custom_Path: false
-DLL_Overrides: {}
+DLL_Overrides:
+    mscoree: n,b
 DXVK: dxvk-2.4.1
 Environment: Custom
 Environment_Variables: {}
@@ -21,8 +22,6 @@ Installed_Dependencies:
 - verdan32
 - webdin32
 - allfonts
-- dotnet40
-- dotnet48
 - vcredist2022 
 #Install vcredist2015 if the program crashes on you while saving.
 Language: sys

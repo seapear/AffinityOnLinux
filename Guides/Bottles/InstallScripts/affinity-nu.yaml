@@ -3,6 +3,7 @@ CompatData: ''
 Creation_Date: '2025-11-20 14:10:50.517344'
 Custom_Path: false
 DLL_Overrides:
+    mscoree: n,b
     wintypes: n
 DXVK: dxvk-2.6.1
 Environment: Custom
@@ -22,8 +23,6 @@ Installed_Dependencies:
 - verdan32
 - webdin32
 - allfonts
-- dotnet40
-- dotnet48
 Language: sys
 LatencyFleX: latencyflex-v0.1.1
 NVAPI: dxvk-nvapi-v0.9.0
