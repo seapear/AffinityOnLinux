@@ -93,6 +93,8 @@ Click on icon for more context if available:
 > - [Exporting keeps offsetting by a Pixel?](https://discord.com/channels/1281706644073611358/1418128283408531509)
 > - [How to set wine to darkmode?](https://github.com/seapear/AffinityOnLinux/tree/main/Guides#enabling-dark-theme-in-wine)
 > - [I can't put redock/rearrange my panels?](https://github.com/seapear/AffinityOnLinux/issues/67#issuecomment-3314310457)
+> - **Designer or Publisher freezes when working with nested SVG groups?**  
+>   This is a known Wine `d2d1` limitation ([#76](https://github.com/seapear/AffinityOnLinux/issues/76), [#109](https://github.com/seapear/AffinityOnLinux/issues/109)). Workaround: keep snapping (the magnet tool) disabled while editing nested SVG curves. If you need snapping, install [AffinityPluginLoader + WineFix](Guides/Settings.md) — its patched `d2d1.dll` fixes the underlying bezier-geometry freeze. If the app hangs, use your desktop's "Terminate" on the window and click **Cancel** on the save prompt to recover without force-killing the process.
 
 ### How do I get support?
 > *Post a question in the [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or Check out the [Discord](https://discord.com/invite/t5V9ecpJWZ)*
