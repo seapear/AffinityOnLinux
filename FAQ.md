@@ -93,6 +93,8 @@ Click on icon for more context if available:
 > - [Exporting keeps offsetting by a Pixel?](https://discord.com/channels/1281706644073611358/1418128283408531509)
 > - [How to set wine to darkmode?](https://github.com/seapear/AffinityOnLinux/tree/main/Guides#enabling-dark-theme-in-wine)
 > - [I can't put redock/rearrange my panels?](https://github.com/seapear/AffinityOnLinux/issues/67#issuecomment-3314310457)
+> - **Affinity by Canva crashes when reordering workspaces?**  
+>   This is a known Wine drag-and-drop issue. Workaround: run `winecfg`, go to the **Graphics** tab, and **uncheck** "Allow the window manager to control the windows". Then restart Affinity. This prevents the hang/crash when dragging workspace tabs in the Studio Manager.
 
 ### How do I get support?
 > *Post a question in the [Github Issues](https://github.com/seapear/AffinityOnLinux/issues) or Check out the [Discord](https://discord.com/invite/t5V9ecpJWZ)*
