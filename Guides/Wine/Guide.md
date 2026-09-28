@@ -96,6 +96,10 @@ Additional components you may want to install with winetricks if you encounter i
 - `dxvk`
 - `tahoma` (if you are getting pixelated fonts)
 
+> [!WARNING]
+> - `tahoma`: with Affinity v3 a native Tahoma can make startup crash with `FailFast` ("Unrecoverable system error") in `TypefaceMap.MapUnresolvedCharacters`. Removing the font files afterwards was not enough in testing; a prefix built without the verb was stable. Only add it if you actually see pixelated fonts.
+> - `renderer=vulkan`: with the wined3d Vulkan renderer the Affinity v3 Welcome window can render white. See [White Welcome window](#white-welcome-window) below.
+
 ### Step 4: Install Affinity
 
 > [!NOTE]
@@ -108,6 +112,14 @@ WINEPREFIX="$HOME/.affinity" wine "$HOME/Downloads/Affinity x64.exe"
 ```
 
 Adjust *.exe in the path above for V2 Photo/Designer/Publisher, and run 3 times for each installer.
+
+> [!NOTE]
+> If the Affinity v3 setup program crashes (`Value cannot be null. Parameter name: icon` in `SetupUI.Util.GetShieldIcon`), or you downloaded `Affinity x64.msix` instead of an `.exe`, you can skip the installer. The MSIX is a zip archive, so extract its `App/` folder into the install location:
+> ```bash
+> D="$HOME/.affinity/drive_c/Program Files/Affinity/Affinity"
+> mkdir -p "$D" && cd "$D"
+> unzip -q "$HOME/Downloads/Affinity x64.msix" 'App/*' && cp -a App/. . && rm -rf App
+> ```
 
 Follow normal installation prompts.
 
@@ -161,6 +173,26 @@ Adjust the `drive_c/Program Files` path for Photo 2, Designer 2, or Publishe
 ---
 
 ## 🧠 Troubleshooting
+
+### UI is tiny with fractional scaling
+
+On GNOME Wayland at 125% or 133% scaling with Xwayland native scaling, Wine windows get a 2x canvas and Affinity renders at half size. Set the prefix DPI to 192 (use 96 again on a monitor at 100%):
+```bash
+WINEPREFIX="$HOME/.affinity" wine reg add 'HKCU\Control Panel\Desktop' /v LogPixels /t REG_DWORD /d 192 /f
+```
+
+### White Welcome window
+
+If the main window looks correct but the Welcome (Home) window is white, with only a plain "Home" button and maybe the tutorial cards, the Direct3D 9 path WPF uses is failing. This was seen with the wined3d Vulkan renderer. Testing ruled out the GPU, theme, DPI and the Affinity profile. Either stop using `renderer=vulkan`, or give Affinity DXVK's d3d9 only by copying `x64/d3d9.dll` from a [DXVK release](https://github.com/doitsujin/dxvk/releases) into the Affinity folder:
+```bash
+cp dxvk-*/x64/d3d9.dll "$HOME/.affinity/drive_c/Program Files/Affinity/Affinity/"
+WINEPREFIX="$HOME/.affinity" WINEDLLOVERRIDES="d3d9=n,b" wine "$HOME/.affinity/drive_c/Program Files/Affinity/Affinity/Affinity.exe"
+```
+With DXVK providing d3d9, leave `DXVK_CONFIG` unset: `d3d9.deferSurfaceCreation = True` makes new windows render white again, and `d3d9.shaderModel = 1` makes the UI sluggish.
+
+### Use one Wine build per prefix
+
+Running a prefix even once with a different Wine build (for example WineHQ after setting it up with another build) makes Wine update it in place, and Affinity may stop reaching its main window. Keep one Wine build per prefix, and recreate the prefix if it happened.
 
 ### Manual Winetricks Install
 
